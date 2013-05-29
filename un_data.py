@@ -1,45 +1,84 @@
+# -*- coding: utf-8 -*-
+
 from bs4 import BeautifulSoup
 from urllib2 import urlopen
 from mechanize import Browser
 import pandas as pd
+import os
 
 mech = Browser()
 
-def ReadPage(url):
+base_url = "http://treaties.un.org/pages/"
+
+def read_page(url):
     page = mech.open(url)
     html = page.read()
     soup = BeautifulSoup(html.decode("utf-8", "ignore"))
     return soup
 
-def ParseTable(soup):
-    table = soup.find(lambda tag: tag.name == "table" and tag.has_key("id") 
-                  and tag["id"] == "ctl00_ContentPlaceHolder1_tblgrid")
-
+def get_chap_list(table_tag, base_url):
+    soup = read_page(base_url + "ParticipationStatus.aspx")
+    table = soup.find(lambda tag:tag.name == "table" and 
+                                tag.has_attr("id") and 
+                                tag["id"] == table_tag)
     df = []
 
-    for row in table.findAll("tr")[1:]:
+    for row in table.findAll("tr")[0:]:
         col = row.findAll("td")
-        country = col[0].get_text(strip = True)
-        sig_date = col[1].get_text(strip = True)
-        asr_date = col[2].get_text(strip = True)
-        record = [country, sig_date, asr_date]
+        
+        chapter = col[0].get_text(strip = True)
+        directory = "chap_" + str(chapter)
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+    
+        link = col[1].find("a").get("href")
+        name = col[2].get_text(strip = True)
+    
+        record = [chapter, link, name]
         df.append(record)
-
+        
     return df
 
-#UN International Covenant on Civil and Political Rights
-cpr_url = "http://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-4&chapter=4&lang=en"
+chap_list_table_tag = "ctl00_ContentPlaceHolder1_dgChapterList"
+chap_list = get_chap_list(chap_list_table_tag, base_url)
 
-soup = ReadPage(cpr_url)
-cpr_df = ParseTable(soup)
-cpr_df = pd.DataFrame(cpr_df, columns = ["country", "sig_date", "asr_date"])
-cpr_df.to_csv("./data/cpr_un_data.csv", na_rep = "NA")
+def get_treaty_list(table_tag, base_url, chap_list):
+    df = []
+    
+    for chap in range(0, len(chap_list)):
+        soup = read_page(base_url + str(chap_list[chap][1]))
+        table = soup.find(lambda tag:tag.name == "table" and 
+                          tag.has_attr("id") and 
+                          tag["id"] == table_tag)
+        for row in table.findAll("tr")[0:]:
+            col = row.findAll("td")
+            number = col[0].get_text(strip = True)
+            name = col[1].get_text(strip = True)
+            url = col[1].find("a").get("href")
+            record = [chap_list[chap][0], number, name, url]
+            df.append(record)
+    
+    return df
+            
+chap_table_tag = "ctl00_ContentPlaceHolder1_dgSubChapterList"
+treaty_list = get_treaty_list(chap_table_tag, base_url, chap_list)
 
-#UN Convention against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment
-cat_url = "http://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-9&chapter=4&lang=en"
+def get_treaties(table_tag, base_url, treaty_list):
+    df = []
+    
+    for treaty in range(0, len(treaty_list)):
+        soup = read_page(base_url + str(treaty_list[treaty][3]))
+        table = soup.find(lambda tag:tag.name == "table" and 
+                          tag.has_attr("id") and 
+                          tag["id"] == table_tag)
+        for row in table.findAll("tr")[1:]:
+            col = row.findAll("td")
+            country = col[0].get_text(strip = True)
+            
+            print country
+            
+        
+treaties_table_tag = "ctl00_ContentPlaceHolder1_tblgrid"
+get_treaties(treaties_table_tag, base_url, treaty_list)
 
-soup = ReadPage(cat_url)
-cat_df = ParseTable(soup)
-cat_df = pd.DataFrame(cat_df, columns = ["country", "sig_date", "asr_date"])
-cat_df.to_csv("./data/cat_un_data.csv", na_rep = "NA")
 
