@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from urllib2 import urlopen
 from mechanize import Browser
 import pandas as pd
-import os
+import re, sys, os, unicodedata
 
 def read_page(url):
     mech = Browser()
@@ -33,7 +33,7 @@ def get_treaty_list(table_tag, base_url, chap_list):
     df = []
     for chap in range(0, len(chap_list)):
         soup = read_page(base_url + str(chap_list[chap][1]))
-        table = soup.find(lambda tag:tag.name == "table" and 
+        table = soup.find(lambda tag:tag.name == "table" and
                           tag.has_attr("id") and 
                           tag["id"] == table_tag)
         for row in table.findAll("tr")[0:]:
@@ -49,29 +49,29 @@ def get_treaty_list(table_tag, base_url, chap_list):
 def get_treaties(table_tag, base_url, treaty_list):
     df = []
     for treaty in range(0, len(treaty_list)):
-        try:
-            soup = read_page(base_url + str(treaty_list[treaty][3]))
-            table = soup.find(lambda tag:tag.name == "table" and 
-                              tag.has_attr("id") and 
-                              tag["id"] == table_tag)
-            for row in table.findAll("tr")[1:]:
-                col = row.findAll("td")
-                country = col[0].get_text(strip = True)
-                sig = col[1].get_text(strip = True)
-                if len(col) == 2:
-                    adr = "NA"
-                elif len(col) == 3:
-                    adr = col[2].get_text(strip = True)
-                else:
-                    print("chapter" + str(treaty_list[treaty][0]) + ", treaty" + 
-                          str(treaty_list[treaty[1]]) + "unhandled")
-                    break
-                record = [treaty_list[treaty][0], treaty_list[treaty][1], 
-                          treaty_list[treaty][2], country, sig, adr]
-                df.append(record)
-            print(str(treaty) + " of " + str(len(treaty_list)) + " complete")
-        except:
-            break
+        soup = read_page(base_url + str(treaty_list[treaty][3]))
+        table = soup.find(lambda tag:tag.name == "table" and 
+                          tag.has_attr("id") and 
+                          tag["id"] == table_tag)
+        for row in table.findAll("tr")[1:]:
+            col = row.findAll("td")
+            country = col[0].get_text(strip = True)
+            sig = col[1].get_text(strip = True)
+            if len(col) == 2:
+                adr = "NA"
+            elif len(col) == 3:
+                adr = col[2].get_text(strip = True)
+            else:
+                print(str(treaty_list[treaty][0]) + "-" + str(treaty_list[treaty][1]) + 
+                      " error        ")
+                break
+            record = [treaty_list[treaty][0], treaty_list[treaty][1],
+                      unicodedata.normalize("NFKD", treaty_list[treaty][2]).encode("ascii", "ignore"), 
+                      country, sig, adr]
+            df.append(record)
+        sys.stdout.write(str(treaty) + " of " + str(len(treaty_list)) + " complete\r")
+        sys.stdout.flush()
+    return df
 
 base_url = "http://treaties.un.org/pages/"
 
@@ -84,10 +84,10 @@ treaty_list = get_treaty_list(chap_table_tag, base_url, chap_list)
 treaties_table_tag = "ctl00_ContentPlaceHolder1_tblgrid"
 treaty_data = get_treaties(treaties_table_tag, base_url, treaty_list)
 
-df = pd.DataFrame(treaty_data, columns = ["chapter", "treaty_no", "treaty_name", 
-                                          "country", "sig_date", "adr_date"])
+treaty_data = pd.DataFrame(treaty_data, columns = ["chapter", "treaty_no", "treaty_name", 
+                                                   "country", "sig_date", "adr_date"])
 
 if not os.path.exists("data"):
     os.makedirs("data")
 
-df.to_csv("./data/un_data.csv", na_rep = "NA")
+treaty_data.to_csv("./data/un_data.csv", na_rep = "NA", encoding = "utf-8")
