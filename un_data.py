@@ -5,6 +5,7 @@ from urllib2 import urlopen
 from mechanize import Browser
 import pandas as pd
 import re, sys, os, unicodedata
+from datetime import datetime
 
 def read_page(url):
     mech = Browser()
@@ -57,6 +58,7 @@ def get_treaties(table_tag, base_url, treaty_list):
             col = row.findAll("td")
             country = col[0].get_text(strip = True)
             sig = col[1].get_text(strip = True)
+
             if len(col) == 2:
                 adr = "NA"
             elif len(col) == 3:
@@ -65,9 +67,31 @@ def get_treaties(table_tag, base_url, treaty_list):
                 print(str(treaty_list[treaty][0]) + "-" + str(treaty_list[treaty][1]) + 
                       " error        ")
                 break
+            
+            treaty_name = unicodedata.normalize("NFKD", treaty_list[treaty][2]).encode("ascii", "ignore")
+            country = re.sub("\d|,", "", country)
+            sig = re.sub("\t", " ", sig)
+            sig = re.sub(" [a-z]$", "", sig).strip()
+
+            try:
+                sig = datetime.strptime(sig, "%d %b %Y").strftime("%m-%d-%Y")
+            except:
+                sig = "NA"
+
+            try:
+                adr_type = re.search(" [a-z]$", adr).group(0).strip()
+            except:
+                adr_type = "NA"
+
+            adr = re.sub(" [a-z]$", "", adr).strip()
+
+            try:
+                adr = datetime.strptime(adr, "%d %b %Y").strftime("%m-%d-%Y")
+            except:
+                adr = "NA"
+
             record = [treaty_list[treaty][0], treaty_list[treaty][1],
-                      unicodedata.normalize("NFKD", treaty_list[treaty][2]).encode("ascii", "ignore"), 
-                      country, sig, adr]
+                      treaty_name, country, sig, adr, adr_type]
             df.append(record)
         sys.stdout.write(str(treaty) + " of " + str(len(treaty_list)) + " complete\r")
         sys.stdout.flush()
@@ -85,7 +109,8 @@ treaties_table_tag = "ctl00_ContentPlaceHolder1_tblgrid"
 treaty_data = get_treaties(treaties_table_tag, base_url, treaty_list)
 
 treaty_data = pd.DataFrame(treaty_data, columns = ["chapter", "treaty_no", "treaty_name", 
-                                                   "country", "sig_date", "adr_date"])
+                                                   "country", "sig_date", "adr_date",
+                                                   "adr_type"])
 
 if not os.path.exists("data"):
     os.makedirs("data")
