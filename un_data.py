@@ -3,9 +3,9 @@
 from bs4 import BeautifulSoup
 from urllib2 import urlopen
 from mechanize import Browser
-import pandas as pd
-import re, sys, os, unicodedata
+import re, sys, os, unicodedata, csv
 from datetime import datetime
+import pandas as pd
 
 def read_page(url):
     mech = Browser()
@@ -40,62 +40,39 @@ def get_treaty_list(table_tag, base_url, chap_list):
         for row in table.findAll("tr")[0:]:
             col = row.findAll("td")
             number = col[0].get_text(strip = True)
+            number = re.sub(".$", "", str(number))
             name = col[1].get_text(strip = True)
+            name = unicodedata.normalize("NFKD", name).encode("ascii", "ignore")
             url = col[1].find("a").get("href")
-            record = [chap_list[chap][0], number, name, url]
+            record = [chap_list[chap][0], number, name, base_url + str(url)]
             df.append(record)
+    index_file = pd.DataFrame(df, columns = ["chapter_no", "treaty_no", "treaty_name", "url"])
+    index_file.to_csv("index.csv", index = False, encoding = "utf-8")
     print("treaty list successfully fetched")
     return df
             
 def get_treaties(table_tag, base_url, treaty_list):
-    df = []
     for treaty in range(0, len(treaty_list)):
-        soup = read_page(base_url + str(treaty_list[treaty][3]))
+        soup = read_page(str(treaty_list[treaty][3]))
         table = soup.find(lambda tag:tag.name == "table" and 
                           tag.has_attr("id") and 
                           tag["id"] == table_tag)
-        for row in table.findAll("tr")[1:]:
-            col = row.findAll("td")
-            country = col[0].get_text(strip = True)
-            sig = col[1].get_text(strip = True)
-
-            if len(col) == 2:
-                adr = "NA"
-            elif len(col) == 3:
-                adr = col[2].get_text(strip = True)
-            else:
-                print(str(treaty_list[treaty][0]) + "-" + str(treaty_list[treaty][1]) + 
-                      " error        ")
-                break
-            
-            treaty_name = unicodedata.normalize("NFKD", treaty_list[treaty][2]).encode("ascii", "ignore")
-            country = re.sub("\d|,", "", country)
-            sig = re.sub("\t", " ", sig)
-            sig = re.sub(" [a-z]$", "", sig).strip()
-
-            try:
-                sig = datetime.strptime(sig, "%d %b %Y").strftime("%m-%d-%Y")
-            except:
-                sig = "NA"
-
-            try:
-                adr_type = re.search(" [a-z]$", adr).group(0).strip()
-            except:
-                adr_type = "NA"
-
-            adr = re.sub(" [a-z]$", "", adr).strip()
-
-            try:
-                adr = datetime.strptime(adr, "%d %b %Y").strftime("%m-%d-%Y")
-            except:
-                adr = "NA"
-
-            record = [treaty_list[treaty][0], treaty_list[treaty][1],
-                      treaty_name, country, sig, adr, adr_type]
-            df.append(record)
+        df = []
+        for row in table.findAll("tr"):
+            data = row.findAll("td")
+            for i in range(0, len(data)):
+                data[i] = data[i].get_text(strip = True)
+                if i == 0:
+                    data[i] = re.sub("\d|,", "", data[i])
+                data[i] = re.sub("\t", "", data[i])
+                data[i] = unicodedata.normalize("NFKD", data[i]).encode("ascii", "ignore")
+            df.append(data)
+        filename = str(treaty_list[treaty][0]) + "-" + str(treaty_list[treaty][1])
+        if not os.path.exists("data"):
+            os.makedirs("data")
+        pd.DataFrame(df).to_csv("data/" + filename + ".csv", header = False, index = False)
         sys.stdout.write(str(treaty) + " of " + str(len(treaty_list)) + " complete\r")
         sys.stdout.flush()
-    return df
 
 base_url = "http://treaties.un.org/pages/"
 
@@ -106,13 +83,4 @@ chap_table_tag = "ctl00_ContentPlaceHolder1_dgSubChapterList"
 treaty_list = get_treaty_list(chap_table_tag, base_url, chap_list)
             
 treaties_table_tag = "ctl00_ContentPlaceHolder1_tblgrid"
-treaty_data = get_treaties(treaties_table_tag, base_url, treaty_list)
-
-treaty_data = pd.DataFrame(treaty_data, columns = ["chapter", "treaty_no", "treaty_name", 
-                                                   "country", "sig_date", "adr_date",
-                                                   "adr_type"])
-
-if not os.path.exists("data"):
-    os.makedirs("data")
-
-treaty_data.to_csv("./data/un_data.csv", na_rep = "NA", encoding = "utf-8")
+get_treaties(treaties_table_tag, base_url, treaty_list)
