@@ -1,0 +1,37 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+body {
+    color: #000305;
+    font-size: 90%;
+    font-family: 'Source Sans Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.25;
+    margin: 0;
+    padding: 1em;
+    text-align: left;
+}
+
+h1 {font-size: 1.5em; font-weight: 400;}
+
+a {
+    text-decoration: none;
+    color: #003366;
+    -webkit-transition: color .2s ease-in-out;
+}
+a:visited {text-decoration: none; color:#003366}
+a:hover {text-decoration: underline; color: #003366}
+
+p {margin-bottom: 1.143em;}
+
+table {
+    margin: auto; 
+    width: auto; 
+    height: auto;
+    text-align: left; 
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table.padded-table td {padding: 1px 5px 1px 5px;}
+
+th {text-align: center; font-weight: 400;}
