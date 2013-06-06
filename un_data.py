@@ -80,7 +80,7 @@ def htmlize_treaty_list(treaty_list):
     data_url = "https://raw.github.com/zmjones/untreaties/master/data/"
     f.write("""<html lang="en"><head><title></title></head><body><h1><center>U.N. Treaty Data</center></h1>""")
     f.write("""<link rel="stylesheet" href="style.css" type="text/css"/>""")
-    f.write("""<p>This page contains all United Nations tready data listed at 
+    f.write("""<p>This page contains all United Nations treaty data listed at 
                <a href="http://treaties.un.org/pages/ParticipationStatus.aspx">treaties.un.org</a>.
                 The chapter and treaty links return you to the UN treaty or chapter page and the "CSV"
                 link downloads the treaty data. Utilities to clean and transform the data further, as 
