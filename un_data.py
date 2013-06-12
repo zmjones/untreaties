@@ -57,13 +57,15 @@ def get_treaties(table_tag, base_url, treaty_list):
         table = soup.find(lambda tag:tag.name == "participants")
         if table is None:
             table = soup.find(lambda tag:tag.name == "specialtables")
-            if table is None: # or len(table) <= 1:
+            if table is None:
                 continue
             df = []
             for row in table.findAll("tableheader"):
                 labels = row.findAll("title")
                 for i in range(0, len(labels)):
                     labels[i] = labels[i].get_text(strip = True)
+                    if i == 0:
+                        labels[i] = re.sub("\d|,", "", labels[i])
                     labels[i] = re.sub("\t|<title>|</title>", "", labels[i])
                     labels[i] = unicodedata.normalize("NFKD", labels[i]).encode("ascii", "ignore")
                 df.append(labels)
@@ -91,8 +93,8 @@ def get_treaties(table_tag, base_url, treaty_list):
             os.makedirs("data")
         df = pd.DataFrame(df)
         if not df.empty: 
+            df.ix[:, 0] = df.ix[:, 0].map(lambda x: re.sub("\d|\[|\]|,", "", x))
             df.to_csv("data/" + filename + ".csv", header = False, index = False)
-
         sys.stdout.write(str(treaty) + " of " + str(len(treaty_list)) + " complete\r")
         sys.stdout.flush()
 
