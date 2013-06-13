@@ -13,7 +13,9 @@ def get_chap_list(table_tag, base_url):
     table = soup.find(lambda tag:tag.name == "table" and 
                                 tag.has_attr("id") and 
                                 tag["id"] == table_tag)
+
     df = []
+
     for row in table.findAll("tr")[0:]:
         col = row.findAll("td")
         chapter = col[0].get_text(strip = True)
@@ -21,16 +23,21 @@ def get_chap_list(table_tag, base_url):
         name = col[2].get_text(strip = True)
         record = [chapter, link, name]
         df.append(record)
+
     print("chapter list successfully fetched")
+
     return df
 
 def get_treaty_list(table_tag, base_url, chap_list):
     df = []
+
     for chap in range(0, len(chap_list)):
         soup = read_page(str(chap_list[chap][1]))
         table = soup.find(lambda tag:tag.name == "table" and
                           tag.has_attr("id") and 
                           tag["id"] == table_tag)
+
+
         for row in table.findAll("tr")[0:]:
             col = row.findAll("td")
             number = col[0].get_text(strip = True)
@@ -40,61 +47,92 @@ def get_treaty_list(table_tag, base_url, chap_list):
             url = base_url + col[1].find("a").get("href")
             record = [chap_list[chap][0], number, name, url, chap_list[chap][1], chap_list[chap][2]]
             df.append(record)
+
     index_file = pd.DataFrame(df, columns = ["chapter_no", "treaty_no", 
                                              "treaty_name", "url", "chap_url", "chap_name"])
     index_file.to_csv("index.csv", index = False, encoding = "utf-8")
     print("treaty list successfully fetched")
-    return df            
 
-def get_treaties(table_tag, base_url, treaty_list):
+    return df
+
+def get_xml(treaty_url):
+    soup = read_page(treaty_url)
+    xml_link = soup.find(lambda tag:tag.name == "a" and
+                         tag.has_attr("id") and
+                         tag["id"] == "ctl00_ContentPlaceHolder1_lnkXml")
+    xml_link = xml_link["href"]
+    soup = read_page("http://treaties.un.org" + str(xml_link))
+
+    return soup
+
+def get_normal_table(soup):
+    table = soup.find(lambda tag:tag.name == "participants")
+
+    if table is None:
+        return None
+        
+    df = []
+
+    for row in table.findAll("row"):
+        data = row.findAll("entry")
+        for i in range(0, len(data)):
+            data[i] = data[i].get_text(strip = True)
+            if i == 0:
+                data[i] = re.sub("\d|,", "", data[i])
+            data[i] = re.sub("\t|<superscript>|</superscript>", "", data[i])
+            data[i] = unicodedata.normalize("NFKD", data[i]).encode("ascii", "ignore")
+        df.append(data)
+    
+    return df
+
+def get_special_table(soup):
+    table = soup.find(lambda tag:tag.name == "specialtables")
+
+    if table is None:
+        return None
+
+    df = []
+
+    for row in table.findAll("tableheader"):
+        labels = row.findAll("title")
+        for i in range(0, len(labels)):
+            labels[i] = labels[i].get_text(strip = True)
+            if i == 0:
+                labels[i] = re.sub("\d|,", "", labels[i])
+            labels[i] = re.sub("\t|<title>|</title>", "", labels[i])
+            labels[i] = unicodedata.normalize("NFKD", labels[i]).encode("ascii", "ignore")
+        df.append(labels)
+
+    for row in table.findAll("row"):
+        data = row.findAll("column")
+        for i in range(0, len(data)):
+            data[i] = data[i].get_text(strip = True)
+            data[i] = re.sub("\t|<superscript>|</superscript>", "", data[i])
+            data[i] = unicodedata.normalize("NFKD", data[i]).encode("ascii", "ignore")
+        df.append(data)
+
+    return df
+
+def get_treaties(base_url, treaty_list):
     for treaty in range(0, len(treaty_list)):
-        soup = read_page(str(treaty_list[treaty][3]))
-        xml_link = soup.find(lambda tag:tag.name == "a" and
-                             tag.has_attr("id") and
-                             tag["id"] == "ctl00_ContentPlaceHolder1_lnkXml")
-        xml_link = xml_link["href"]
-        soup = read_page("http://treaties.un.org" + str(xml_link))
-        table = soup.find(lambda tag:tag.name == "participants")
-        if table is None:
-            table = soup.find(lambda tag:tag.name == "specialtables")
-            if table is None:
-                continue
-            df = []
-            for row in table.findAll("tableheader"):
-                labels = row.findAll("title")
-                for i in range(0, len(labels)):
-                    labels[i] = labels[i].get_text(strip = True)
-                    if i == 0:
-                        labels[i] = re.sub("\d|,", "", labels[i])
-                    labels[i] = re.sub("\t|<title>|</title>", "", labels[i])
-                    labels[i] = unicodedata.normalize("NFKD", labels[i]).encode("ascii", "ignore")
-                df.append(labels)
-            for row in table.findAll("row"):
-                data = row.findAll("column")
-                for i in range(0, len(data)):
-                    data[i] = data[i].get_text(strip = True)
-                    data[i] = re.sub("\t|<superscript>|</superscript>", "", data[i])
-                    data[i] = unicodedata.normalize("NFKD", data[i]).encode("ascii", "ignore")
-                df.append(data)
-        else:
-            df = []
-            for row in table.findAll("row"):
-                data = row.findAll("entry")
-                for i in range(0, len(data)):
-                    data[i] = data[i].get_text(strip = True)
-                    if i == 0:
-                        data[i] = re.sub("\d|,", "", data[i])
-                    data[i] = re.sub("\t|<superscript>|</superscript>", "", data[i])
-                    data[i] = unicodedata.normalize("NFKD", data[i]).encode("ascii", "ignore")
-                df.append(data)
+        soup = get_xml(str(treaty_list[treaty][3]))
+
+        df = get_normal_table(soup)
+        
+        if df is None:
+            df = get_special_table(soup)
 
         filename = str(treaty_list[treaty][0]) + "-" + str(treaty_list[treaty][1])
+
         if not os.path.exists("data"):
             os.makedirs("data")
+
         df = pd.DataFrame(df)
+
         if not df.empty: 
             df.ix[:, 0] = df.ix[:, 0].map(lambda x: re.sub("\d|\[|\]|,", "", x))
             df.to_csv("data/" + filename + ".csv", header = False, index = False)
+
         sys.stdout.write(str(treaty) + " of " + str(len(treaty_list)) + " complete\r")
         sys.stdout.flush()
 
@@ -107,4 +145,4 @@ chap_table_tag = "ctl00_ContentPlaceHolder1_dgSubChapterList"
 treaty_list = get_treaty_list(chap_table_tag, base_url, chap_list)
             
 treaties_table_tag = "ctl00_ContentPlaceHolder1_tblgrid"
-get_treaties(treaties_table_tag, base_url, treaty_list)
+get_treaties(base_url, treaty_list)
