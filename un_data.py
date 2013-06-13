@@ -65,6 +65,17 @@ def get_xml(treaty_url):
 
     return soup
 
+def clean_entry(datum, head = False):
+    datum = re.sub("\t|<title>|</title>|<superscript>|</superscript>", "", datum)
+
+    if type(datum) is unicode:
+        datum = unicodedata.normalize("NFKD", datum).encode("ascii", "ignore")
+
+    if head:
+        datum = re.sub("\d|,", "", datum)
+
+    return datum
+
 def get_normal_table(soup):
     table = soup.find(lambda tag:tag.name == "participants")
 
@@ -78,9 +89,8 @@ def get_normal_table(soup):
         for i in range(0, len(data)):
             data[i] = data[i].get_text(strip = True)
             if i == 0:
-                data[i] = re.sub("\d|,", "", data[i])
-            data[i] = re.sub("\t|<superscript>|</superscript>", "", data[i])
-            data[i] = unicodedata.normalize("NFKD", data[i]).encode("ascii", "ignore")
+                data[i] = clean_entry(data[i], True)
+            data[i] = clean_entry(data[i])
         df.append(data)
     
     return df
@@ -98,17 +108,15 @@ def get_special_table(soup):
         for i in range(0, len(labels)):
             labels[i] = labels[i].get_text(strip = True)
             if i == 0:
-                labels[i] = re.sub("\d|,", "", labels[i])
-            labels[i] = re.sub("\t|<title>|</title>", "", labels[i])
-            labels[i] = unicodedata.normalize("NFKD", labels[i]).encode("ascii", "ignore")
+                labels[i] = clean_entry(labels[i], True)
+            labels[i] = clean_entry(labels[i])
         df.append(labels)
 
     for row in table.findAll("row"):
         data = row.findAll("column")
         for i in range(0, len(data)):
             data[i] = data[i].get_text(strip = True)
-            data[i] = re.sub("\t|<superscript>|</superscript>", "", data[i])
-            data[i] = unicodedata.normalize("NFKD", data[i]).encode("ascii", "ignore")
+            data[i] = clean_entry(data[i])
         df.append(data)
 
     return df
