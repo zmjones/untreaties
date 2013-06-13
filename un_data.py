@@ -1,12 +1,11 @@
 # -*- coding: utf-8 -*-
 
 from bs4 import BeautifulSoup
-import re, sys, os, unicodedata, csv, requests
+import re, sys, os, unicodedata, csv, requests, lxml.html
 import pandas as pd
 
 def read_page(url):
-    soup = BeautifulSoup(requests.get(url).content)
-    return soup
+    return BeautifulSoup(requests.get(url).content)
 
 def get_chap_list(table_tag, base_url):
     soup = read_page(base_url + "ParticipationStatus.aspx")
@@ -52,7 +51,6 @@ def get_treaty_list(table_tag, base_url, chap_list):
                                              "treaty_name", "url", "chap_url", "chap_name"])
     index_file.to_csv("index.csv", index = False, encoding = "utf-8")
     print("treaty list successfully fetched")
-
     return df
 
 def get_xml(treaty_url):
@@ -61,9 +59,7 @@ def get_xml(treaty_url):
                          tag.has_attr("id") and
                          tag["id"] == "ctl00_ContentPlaceHolder1_lnkXml")
     xml_link = xml_link["href"]
-    soup = read_page("http://treaties.un.org" + str(xml_link))
-
-    return soup
+    return read_page("http://treaties.un.org" + str(xml_link))
 
 def clean_entry(datum, head = False):
     datum = re.sub("\t|<title>|</title>|<superscript>|</superscript>", "", datum)
@@ -121,6 +117,29 @@ def get_special_table(soup):
 
     return df
 
+#http://stackoverflow.com/questions/4607920/python-strip-html-from-text-data
+def strip_it(s):
+    doc = lxml.html.fromstring(s)
+    txt = doc.xpath('text()')
+    txt = ' '.join(txt)
+    return re.sub('\s+', ' ', txt)
+
+def get_declarations(soup, treaty_id):
+    table = soup.find(lambda tag:tag.name == "declarations")
+
+    if table is not None:
+        for row in table.findAll("declaration"):
+            name = row.find("participant").get_text(strip = True).lower()
+            name = clean_entry(name, True)
+            text = row.get_text(strip = True)
+            text = clean_entry(strip_it(text))
+
+            if not os.path.exists("declarations"):
+                os.makedirs("declarations")
+
+            f = open("declarations/" + name + "-" + treaty_id + ".txt", "w")
+            f.write(text)
+
 def get_treaties(base_url, treaty_list):
     for treaty in range(0, len(treaty_list)):
         soup = get_xml(str(treaty_list[treaty][3]))
@@ -130,7 +149,9 @@ def get_treaties(base_url, treaty_list):
         if df is None:
             df = get_special_table(soup)
 
-        filename = str(treaty_list[treaty][0]) + "-" + str(treaty_list[treaty][1])
+        treaty_id = str(treaty_list[treaty][0]) + "-" + str(treaty_list[treaty][1])
+
+        get_declarations(soup, treaty_id)
 
         if not os.path.exists("data"):
             os.makedirs("data")
@@ -139,7 +160,7 @@ def get_treaties(base_url, treaty_list):
 
         if not df.empty: 
             df.ix[:, 0] = df.ix[:, 0].map(lambda x: re.sub("\d|\[|\]|,", "", x))
-            df.to_csv("data/" + filename + ".csv", header = False, index = False)
+            df.to_csv("data/" + treaty_id + ".csv", header = False, index = False)
 
         sys.stdout.write(str(treaty) + " of " + str(len(treaty_list)) + " complete\r")
         sys.stdout.flush()
