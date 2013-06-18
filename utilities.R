@@ -1,25 +1,34 @@
 nameConvert <- function(df) {
   require(countrycode)
-  df$cowcode <- countrycode(df$Participant, "country.name", "cown")
-  print("Serbia was not matched.") #unknown if there are other mis-matches
+  df$cowcode <- countrycode(df$Participant, "country.name", "cown", warn = TRUE)
+  #to-do: find out which countries don't parse correctly, add exceptions
   return(df)
 }
 
-multipleField <- function(x) {
+createColumns <- function(x, head) {
   require(stringr)
-  x <- ifelse(str_trim(x) == "", NA, str_trim(x))
-  if(any(grepl(" [a-z]$", x)) == TRUE)
-    return(data.frame("type" = str_trim(str_extract(x, " [a-z]$")),
-                      "date" = ifelse(grepl(" [a-z]$", x), str_replace(x, " [a-z]$", ""), x)))
-  else
-    return(x)
-}
+  type <- str_extract(x, "[a-zA-Z]?{2}$")
+  head <- gsub("\\.", " ", head)
+  type <- ifelse(type == "A", "A ", type) #a bit of a hack
+  text <- str_extract(head, paste0("[a-zA-Z]* ", type))
+  text <- substr(text, 0, nchar(text) - (nchar(type) + 1))
+  data <- gsub(" [a-zA-Z]?{2}$", "", x)
 
-cleanMultipleField <- function(df) {
-  print("renaming the columns is suggested!")
-  df <- apply(df, 2, multipleField)
-  require(plyr)
-  df <- lapply(df, function(x) if(is.vector(x)) return(x) else return(data.frame(t(ldply(x)))[-1, ]))
-  df <- do.call("cbind", df)
+  df <- cbind(type, text, data)
+  df <- apply(df, 2, function(x) ifelse(x == "", NA, x))
+  df <- as.data.frame(df)
+
+  cols <- unique(df$text[!is.na(df$text)])
+
+  for(i in seq_along(cols))
+    df[cols[i]] <- ifelse(df$text == cols[i], df$data, NA)
+
+  df <- df[, !names(df) %in% c("type", "text", "data")]
   return(df)
 }
+
+require(RCurl)
+df <- read.csv(text = getURL("https://raw.github.com/zmjones/untreaties/master/data/10-10.csv"))
+
+createColumns(df[, 3], colnames(df)[3])
+
