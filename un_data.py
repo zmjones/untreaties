@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from bs4 import BeautifulSoup
-import re, sys, os, csv, requests, time, unicodedata
+import re, sys, os, csv, requests, time
 import pandas as pd
 
 def read_page(url):
@@ -167,10 +167,9 @@ def get_treaties(base_url, treaty_list):
 
 base_url = "http://treaties.un.org/pages/"
 chap_list_table_tag = "ctl00_ContentPlaceHolder1_dgChapterList"
-treaties_table_tag = "ctl00_ContentPlaceHolder1_tblgrid"
+chap_table_tag = "ctl00_ContentPlaceHolder1_dgSubChapterList"
 
 if __name__ == "__main__":
     chap_list = get_chap_list(chap_list_table_tag, base_url)
-    chap_table_tag = "ctl00_ContentPlaceHolder1_dgSubChapterList"
     treaty_list = get_treaty_list(chap_table_tag, base_url, chap_list)
     get_treaties(base_url, treaty_list)
