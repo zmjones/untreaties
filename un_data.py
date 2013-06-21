@@ -161,6 +161,7 @@ def get_treaties(base_url, treaty_list):
         if df is None:
             df = get_special_table(soup)
         treaty_id = str(treaty_list[treaty][0]) + "-" + str(treaty_list[treaty][1])
+        treaty_id = re.sub("\.", "-", treaty_id)
         if not os.path.exists("declarations"):
             os.makedirs("declarations")
         get_declarations(soup, treaty_id)
