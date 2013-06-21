@@ -28,7 +28,7 @@ createColumns <- function(x, head) {
 }
 
 require(RCurl)
-df <- read.csv(text = getURL("https://raw.github.com/zmjones/untreaties/master/data/10-10.csv"))
+df <- read.csv(text = getURL("https://raw.github.com/zmjones/untreaties/master/data/27-15.csv"))
 
-createColumns(df[, 3], colnames(df)[3])
+createColumns(df[, 2], colnames(df)[2])
 
