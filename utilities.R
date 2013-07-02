@@ -28,10 +28,21 @@ createColumns <- function(x, head) {
   return(df)
 }
 
+expandColumns <- function(df) {
+  test <- apply(df[, -1], 2, function(x) any(grepl(" [a-zA-Z]+$", x)))
+  cols <- vector("list", length(test))
+
+  for(i in 1:length(test)) {
+    if(test[i])
+      cols[[i]] <- createColumns(df[, colnames(df) %in% names(test[i])], names(test[i]))
+    else
+      cols[[i]] <- df[, colnames(df) %in% names(test[i])]
+  }
+
+  df <- data.frame("Participant" = df[, 1], do.call("cbind", cols))
+  colnames(df) <- gsub("\\.", "_", colnames(df))
+  return(df)
+}
+
 df <- read.csv("./data/27-15.csv", check.names = FALSE, na.string = "")
-
-createColumns(df[, 3], colnames(df)[3])
-
-
-
-
+df <- expandColumns(df)
