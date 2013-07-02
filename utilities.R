@@ -1,15 +1,28 @@
+rm(list = ls())
+
 require(stringr)
 require(reshape2)
 require(countrycode)
 
-nameConvert <- function(df) {
-  df$cowcode <- countrycode(df$Participant, "country.name", "cown", warn = TRUE)
-  #to-do: find out which countries don't parse correctly, add exceptions
+nameConvert <- function(df, drop = FALSE) {    
+  df$cowcode <- countrycode(df$participant, "country.name", "cown")
+  if (any(df$participant == "Serbia")) {
+    message("Serbia is not listed by COW, assigning GW code.")
+    df$cowcode[df$participant == "Serbia"] <- 340
+  }
+  
+  no.ccode <- c("European Union", "Niue", "Cook Islands")
+  if (any(df$participant %in% no.ccode) & drop == TRUE)
+    df <- df[!is.na(df$cowcode), ]
+  else
+    message("Some observations do not have country codes.")
+
   return(df)
 }
 
 createColumns <- function(x, head) {
   type <- str_extract(x, "[a-zA-Z]+$")
+  type <- ifelse(type == "1", "one", type) #I think there is only one instance of this
   atypes <- unique(type[!is.na(type)])
 
   df <- vector(mode = "list", length(atypes))
@@ -33,16 +46,17 @@ expandColumns <- function(df) {
   cols <- vector("list", length(test))
 
   for(i in 1:length(test)) {
-    if(test[i])
+    if (test[i])
       cols[[i]] <- createColumns(df[, colnames(df) %in% names(test[i])], names(test[i]))
     else
       cols[[i]] <- df[, colnames(df) %in% names(test[i])]
   }
 
-  df <- data.frame("Participant" = df[, 1], do.call("cbind", cols))
+  df <- data.frame("participant" = df[, 1], do.call("cbind", cols))
   colnames(df) <- gsub("\\.", "_", colnames(df))
   return(df)
 }
 
 df <- read.csv("./data/27-15.csv", check.names = FALSE, na.string = "")
 df <- expandColumns(df)
+df <- nameConvert(df)
