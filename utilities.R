@@ -1,37 +1,37 @@
+require(stringr)
+require(reshape2)
+require(countrycode)
+
 nameConvert <- function(df) {
-  require(countrycode)
   df$cowcode <- countrycode(df$Participant, "country.name", "cown", warn = TRUE)
   #to-do: find out which countries don't parse correctly, add exceptions
   return(df)
 }
 
 createColumns <- function(x, head) {
-  require(stringr)
-  type <- str_extract(x, "[a-zA-Z]?{2}$")
-  head <- gsub("\\.", " ", head)
-  type <- ifelse(type == "A", "A ", type) #a bit of a hack
-  text <- str_extract(head, paste0("[a-zA-Z]* ", type))
-  text <- substr(text, 0, nchar(text) - (nchar(type) + 1))
-  data <- gsub(" [a-zA-Z]?{2}$", "", x)
+  type <- str_extract(x, "[a-zA-Z]+$")
+  atypes <- unique(type[!is.na(type)])
 
-  df <- cbind(type, text, data)
-  df <- apply(df, 2, function(x) ifelse(x == "", NA, x))
-  df <- as.data.frame(df)
+  df <- vector(mode = "list", length(atypes))
 
-  cols <- unique(df$text[!is.na(df$text)])
+  for(i in seq_along(atypes)) {
+    check <- grepl(paste0(" ", atypes[i], "$"), x)
+    data <- ifelse(check, gsub(" [a-zA-Z]+$", "", x[check]), NA)
+    assign(atypes[i], data)
+    df[[i]] <- get(atypes[i])
+  }
 
-  for(i in seq_along(cols))
-    df[cols[i]] <- ifelse(df$text == cols[i], df$data, NA)
-
-  df <- df[, !names(df) %in% c("type", "text", "data")]
+  df <- do.call("cbind", df)
+  df <- data.frame(x, df)
+  df$x <- ifelse(apply(df, 1, function(x) all(is.na(x[-1]))), x, NA)
+  names(df) <- gsub("\\(.*\\)", "", tolower(str_trim(unlist(str_split(head, ",")))))
   return(df)
 }
 
-#to fix multi-word label problem
-#match until you run into another of the types
+df <- read.csv("./data/27-15.csv", check.names = FALSE, na.string = "")
 
-require(RCurl)
-df <- read.csv("./data/27-15.csv")
+createColumns(df[, 3], colnames(df)[3])
 
-createColumns(df[, 2], colnames(df)[2])
+
+
 
