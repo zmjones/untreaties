@@ -27,8 +27,11 @@ createColumns <- function(x, head) {
   return(df)
 }
 
+#to fix multi-word label problem
+#match until you run into another of the types
+
 require(RCurl)
-df <- read.csv(text = getURL("https://raw.github.com/zmjones/untreaties/master/data/27-15.csv"))
+df <- read.csv("./data/27-15.csv")
 
 createColumns(df[, 2], colnames(df)[2])
 
