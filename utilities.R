@@ -1,3 +1,8 @@
+require(stringr)
+require(lubridate)
+require(plyr)
+require(reshape2)
+
 createColumns <- function(x, head) {
   if (is.data.frame(x) & ncol(x) == 1) {
     head <- colnames(x)
@@ -38,11 +43,11 @@ expandColumns <- function(df) {
   return(df)
 }
 
-loadData <- function(chap, treaty, expand = FALSE, panel = FALSE) {
+loadData <- function(chap, treaty, expand = FALSE, panel = FALSE, ...) {
   df <- read.csv(paste0("./treaties/", chap, "-", treaty, ".csv"),
                  check.names = FALSE, na.string = "")
   if (expand == TRUE & panel == TRUE)
-    df <- expandPanel(expandColumns(df))
+    df <- expandPanel(expandColumns(df), ...)
   else if (expand == TRUE & panel == FALSE)
     df <- expandColumns(df)
   else if (expand == FALSE & panel == TRUE)
