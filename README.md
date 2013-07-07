@@ -26,7 +26,7 @@ The `R` script `utilities.R` contains a number of functions that make working wi
 
 ### Examples
 
-    > head(loadData("10", "2"))
+    > loadData(chap = "10", treaty = "2")
        Participant   Signature Ratification, Accession(a)
     1      Algeria  4 Aug 1963                10 Sep 1964
     2       Angola        <NA>               9 Jan 1981 a
@@ -35,7 +35,7 @@ The `R` script `utilities.R` contains a number of functions that make working wi
     5 Burkina Faso 21 Nov 1963                22 Sep 1964
     6      Burundi  4 Aug 1963               2 Jan 1968 a
 
-    > head(loadData("10", "2", TRUE))
+    > loadData(chap = "10", treaty = "2", expand = TRUE)
        participant   signature ratification   accession
     1      Algeria  4 Aug 1963  10 Sep 1964        <NA>
     2       Angola        <NA>         <NA> 31 Mar 1972
@@ -44,7 +44,7 @@ The `R` script `utilities.R` contains a number of functions that make working wi
     5 Burkina Faso 21 Nov 1963  22 Sep 1964        <NA>
     6      Burundi  4 Aug 1963         <NA> 26 Aug 1968
 
-    > head(loadData("10", "2", TRUE, TRUE, "1945", "2013"), 25)
+    > loadData(chap = "10", treaty = "2", expand = TRUE, panel = TRUE, syear = "1945", eyear = "2013")
        participant year signature ratification accession
     1      Algeria 1945         0            0         0
     2      Algeria 1946         0            0         0
@@ -72,7 +72,7 @@ The `R` script `utilities.R` contains a number of functions that make working wi
     24     Algeria 1968         1            1         0
     25     Algeria 1969         1            1         0
 
-    > head(searchTreaties("charter of the united nations", .1))
+    > searchTreaties(treaty.name = "charter of the united nations", dist.val = .1)
     multiple matches found
     [1] "charter of the united nations (deposited in the archives of the government of..."
     [2] "declarations of acceptance of the obligations contained in the charter of the..."
