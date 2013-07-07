@@ -63,9 +63,10 @@ convertPanel <- function(x, pyear) {
   return(x)
 }
 
-expandPanel <- function(df, sdate, edate) {
+expandPanel <- function(df, syear, eyear) {
   df <- do.call("ddply", list(df, "participant", transform, 
-                year = call("year", x = seq(ymd(sdate), ymd(edate), "year"))))
+                year = call("year", x = seq(ymd(paste0(syear, "-1-1")),
+                                      ymd(paste0(eyear, "-1-1")), "year"))))
   date.df <- findDates(df)
   other.df <- df[, !(colnames(df) %in% colnames(date.df))]
   df <- data.frame(other.df, apply(date.df, 2, function(x) convertPanel(x, df$year)))
@@ -84,7 +85,7 @@ findDates <- function(df, type = FALSE) {
   return(date.df)
 }
 
-searchTreaties <- function(treaty.name, dist.val = .1, trim = TRUE) {
+searchTreaties <- function(treaty.name, dist.val = .1, trim = TRUE, ...) {
   index.df <- read.csv("index.csv")
   tname <- agrep(treaty.name, index.df$treaty_name, max.distance = dist.val)
   if (length(tname) == 0)
@@ -104,5 +105,5 @@ searchTreaties <- function(treaty.name, dist.val = .1, trim = TRUE) {
     message(paste0("loading ", strtrim(index.df$treaty_name[tname], 69), "..."))
   else
     message(paste0("loading ", strtrim(index.df$treaty_name[tname], 69)))
-  return(loadData(index.df$chapter_no[tname], index.df$treaty_no[tname]))
+  return(loadData(index.df$chapter_no[tname], index.df$treaty_no[tname], ...))
 }
