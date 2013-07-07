@@ -2,7 +2,9 @@ This repository contains a set of scripts that allow the retrieval of the [Unite
 
 ### Getting the data
 
-You can clone or download the data contained in this repository or scrape it using `un_data.py`, which requires `pandas`, `requests`, and '`beautifulsoup4`. The script with generate a `index.csv` along with a folder containing the treaty data itself (`treaties/`) and a folder containing declarations made by participants (contained in `declarations/`).
+You can clone (see below) or [download](https://github.com/zmjones/untreaties/archive/master.zip) the data contained in this repository or scrape it using `un_data.py`, which requires `pandas`, `requests`, and `beautifulsoup4`. The script with generate a `index.csv` along with a folder containing the treaty data itself (`treaties/`) and a folder containing declarations made by participants (contained in `declarations/`).
+
+	git clone git@github.com:zmjones/untreaties.git
 
 ### Transforming the data
 
