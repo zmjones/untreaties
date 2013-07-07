@@ -92,12 +92,7 @@ searchTreaties <- function(treaty.name, dist.val = .1, trim = TRUE, ...) {
     stop("no matches found")
   else if (length(tname) > 1) {
     message("multiple matches found")
-    for(i in 1:length(tname)) {
-      if (str_length(tname[i] >= 77))
-        print(paste0(strtrim(index.df$treaty_name[tname], 77), "..."))
-      else
-        print(strtrim(index.df$treaty_name[tname], 77))
-    }
+    print(paste0(strtrim(index.df$treaty_name[tname], 77), "..."))
     cat("Which treaty would you like to load? ")
     tname <- as.integer(readLines(file("stdin"), 1))
   }

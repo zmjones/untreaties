@@ -2,7 +2,7 @@ This repository contains a set of scripts that allow the retrieval of the [Unite
 
 ### Getting the data
 
-You can clone (see below) or [download](https://github.com/zmjones/untreaties/archive/master.zip) the data contained in this repository or scrape it using `un_data.py`, which requires `pandas`, `requests`, and `beautifulsoup4`. The script will generate a `index.csv` along with a folder containing the treaty data itself (`treaties/`) and a folder containing declarations made by participants (contained in `declarations/`).
+You can clone (see below) or [download](https://github.com/zmjones/untreaties/archive/master.zip) the data contained in this repository or scrape it using `un_data.py`, which requires `pandas`, `requests`, and `beautifulsoup4`. The script will generate `index.csv` along with a folder containing the treaty data itself (`treaties/`) and a folder containing declarations made by participants (contained in `declarations/`).
 
 	git clone git@github.com:zmjones/untreaties.git
 
@@ -74,26 +74,6 @@ The `R` script `utilities.R` contains a number of functions that make working wi
 
     > head(searchTreaties("charter of the united nations", .1))
     multiple matches found
-    [1] "charter of the united nations (deposited in the archives of the government of..."
-    [2] "declarations of acceptance of the obligations contained in the charter of the..."
-    [3] "amendments to articles 23,27 and 61 of the charter of the united nations, ado..."
-    [4] "amendment to article 109 of the charter of the united nations, adopted by the..."
-    [5] "amendment to article 61 of the charter of the united nations, adopted by the ..."
-    [1] "charter of the united nations (deposited in the archives of the government of..."
-    [2] "declarations of acceptance of the obligations contained in the charter of the..."
-    [3] "amendments to articles 23,27 and 61 of the charter of the united nations, ado..."
-    [4] "amendment to article 109 of the charter of the united nations, adopted by the..."
-    [5] "amendment to article 61 of the charter of the united nations, adopted by the ..."
-    [1] "charter of the united nations (deposited in the archives of the government of..."
-    [2] "declarations of acceptance of the obligations contained in the charter of the..."
-    [3] "amendments to articles 23,27 and 61 of the charter of the united nations, ado..."
-    [4] "amendment to article 109 of the charter of the united nations, adopted by the..."
-    [5] "amendment to article 61 of the charter of the united nations, adopted by the ..."
-    [1] "charter of the united nations (deposited in the archives of the government of..."
-    [2] "declarations of acceptance of the obligations contained in the charter of the..."
-    [3] "amendments to articles 23,27 and 61 of the charter of the united nations, ado..."
-    [4] "amendment to article 109 of the charter of the united nations, adopted by the..."
-    [5] "amendment to article 61 of the charter of the united nations, adopted by the ..."
     [1] "charter of the united nations (deposited in the archives of the government of..."
     [2] "declarations of acceptance of the obligations contained in the charter of the..."
     [3] "amendments to articles 23,27 and 61 of the charter of the united nations, ado..."
