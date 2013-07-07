@@ -34,7 +34,7 @@ def get_chap_list(table_tag, base_url):
         col = row.find_all("td")
         chapter = col[0].get_text(strip = True)
         link = base_url + col[1].find("a").get("href")
-        name = col[2].get_text(strip = True)
+        name = col[2].get_text(strip = True).lower()
         record = [chapter, link, name]
         df.append(record)
     print("chapter list successfully fetched")
@@ -55,12 +55,12 @@ def get_treaty_list(table_tag, base_url, chap_list):
             col = row.find_all("td")
             number = col[0].get_text(strip = True)
             number = re.sub(".$", "", str(number))
-            name = clean_entry(col[1].get_text(strip = True))
+            name = clean_entry(re.sub(r"\xc2|\xa0", "", col[1].get_text(strip = True))).lower()
             url = base_url + col[1].find("a").get("href")
             record = [chap_list[chap][0], number, name, url, chap_list[chap][1], chap_list[chap][2]]
             df.append(record)
     index_file = pd.DataFrame(df, columns = ["chapter_no", "treaty_no", 
-                                             "treaty_name", "url", "chap_url", "chap_name"])
+                                             "treaty_name", "url", "chapter_url", "chapter_name"])
     index_file.to_csv("index.csv", index = False, encoding = "utf-8")
     print("treaty list successfully fetched")
     return df
@@ -83,10 +83,10 @@ def clean_entry(datum, head=False):
     removes cruft from data entry
     """
     datum = re.compile(r"<[^<]*?/?>|\t|\r|\n|\f|\[|\]").sub("", datum)
-    datum = re.sub(r"\s+", " ", datum).strip()
+    datum = re.sub(r"\s+|\xc2|\xa0", " ", datum)
     if head:
         datum = re.sub("\d|,", "", datum)
-    return datum
+    return datum.strip()
 
 
 def get_normal_table(soup):
@@ -165,12 +165,12 @@ def get_treaties(base_url, treaty_list):
         if not os.path.exists("declarations"):
             os.makedirs("declarations")
         get_declarations(soup, treaty_id)
-        if not os.path.exists("data"):
-            os.makedirs("data")
+        if not os.path.exists("treaties"):
+            os.makedirs("treaties")
         df = pd.DataFrame(df)
         if not df.empty: 
             df.ix[:, 0] = df.ix[:, 0].map(lambda x: re.sub("\d|,", "", x))
-            df.to_csv("data/" + treaty_id + ".csv", header = False, index = False, encoding = "utf-8")
+            df.to_csv("treaties/" + treaty_id + ".csv", header = False, index = False, encoding = "utf-8")
         sys.stdout.write(str(treaty) + " of " + str(len(treaty_list)) + " complete\r")
         sys.stdout.flush()
 
