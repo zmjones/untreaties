@@ -1,4 +1,4 @@
-A set of scripts that allows the retrieval of the [United Nations' Treaty Collection](http://treaties.un.org/), and transformation of the retrieved data.
+This repository contains a set of scripts that allow the retrieval of the [United Nations' Treaty Collection](http://treaties.un.org/), and transformation of the retrieved data.
 
 ### Getting the data
 
@@ -6,21 +6,103 @@ You can clone or download the data contained in this repository or scrape it usi
 
 ### Transforming the data
 
-The `R` script `utilities.R` contains a number of functions that make working with the raw data easier. You can load these functions by simply sourcing the file.
+The `R` script `utilities.R` contains a number of functions that make working with the raw data easier. You can load these functions by simply sourcing the file. It requires `stringr`, `lubridate`, `plyr`, and `reshape2`.
 
  - `loadData` loads the data for a specific treaty given its chapter and treaty numbers, which are passed as strings. You can optionally expand the column names (if needed). If you choose to expand the column names you can also transform the data into a country-year format, given a start date and an end date (both passed as strings in a day-month-year format).
 
  - `searchTreaties` searches through the `treaty_name` column in `index.csv` using approximate string matching given a maximum distance (internally it uses `agrep`). If multiple matches are found, the user can select the best match from the console. The `trim` option is logical and truncates console output to 80 characters (it is true by default).
 
- - `createColumns` takes a character vector of dates (or a dataframe with one column) with a trailing type identifier (a one or two character code) and a name for said column. It returns an expanded version of that column with column dimension equal to the number of unique type identifiers + 1.
+ - `createColumns` takes a character vector of dates (or a dataframe with one column) with a trailing type identifier (a one or two character code) and a name for said column. It returns an expanded version of that column with column dimension equal to the number of unique type identifiers plus one (for the no identifier category).
 
  - `expandColumns` takes a dataframe that may need to be expanded, passes columns that need to be expanded to `createColumns`, and combines the results.
 
  - `convertPanel` takes a character vector of dates (of the form "%d-%b-%Y") and a year for comparison and returns a binary variable indicating whether the year of the date that was passed is less than or equal to the comparison year.
 
- - `expandPanel` takes a dataframe, a starting, and an ending date, and returns a dataframe with `nrow(df) * (year(eyear) - year(syear))` rows, i.e. a country-year format.
+ - `expandPanel` takes a dataframe, a start year, and an ending year, and returns a dataframe with in country-year format.
 
  - `findDates` takes a dataframe and finds columns which follow the "%d-%b-%Y" date format. Optionally allows for dates with a trailing type identifier.
- 
 
+### Examples
 
+    > head(loadData("10", "2"))
+       Participant   Signature Ratification, Accession(a)
+    1      Algeria  4 Aug 1963                10 Sep 1964
+    2       Angola        <NA>               9 Jan 1981 a
+    3        Benin  8 Oct 1963                25 Aug 1964
+    4     Botswana        <NA>              31 Mar 1972 a
+    5 Burkina Faso 21 Nov 1963                22 Sep 1964
+    6      Burundi  4 Aug 1963               2 Jan 1968 a
+
+    > head(loadData("10", "2", TRUE))
+       participant   signature ratification   accession
+    1      Algeria  4 Aug 1963  10 Sep 1964        <NA>
+    2       Angola        <NA>         <NA> 31 Mar 1972
+    3        Benin  8 Oct 1963  25 Aug 1964        <NA>
+    4     Botswana        <NA>         <NA> 15 Apr 1976
+    5 Burkina Faso 21 Nov 1963  22 Sep 1964        <NA>
+    6      Burundi  4 Aug 1963         <NA> 26 Aug 1968
+
+    > head(loadData("10", "2", TRUE, TRUE, "1945", "2013"), 25)
+       participant year signature ratification accession
+    1      Algeria 1945         0            0         0
+    2      Algeria 1946         0            0         0
+    3      Algeria 1947         0            0         0
+    4      Algeria 1948         0            0         0
+    5      Algeria 1949         0            0         0
+    6      Algeria 1950         0            0         0
+    7      Algeria 1951         0            0         0
+    8      Algeria 1952         0            0         0
+    9      Algeria 1953         0            0         0
+    10     Algeria 1954         0            0         0
+    11     Algeria 1955         0            0         0
+    12     Algeria 1956         0            0         0
+    13     Algeria 1957         0            0         0
+    14     Algeria 1958         0            0         0
+    15     Algeria 1959         0            0         0
+    16     Algeria 1960         0            0         0
+    17     Algeria 1961         0            0         0
+    18     Algeria 1962         0            0         0
+    19     Algeria 1963         1            0         0
+    20     Algeria 1964         1            1         0
+    21     Algeria 1965         1            1         0
+    22     Algeria 1966         1            1         0
+    23     Algeria 1967         1            1         0
+    24     Algeria 1968         1            1         0
+    25     Algeria 1969         1            1         0
+
+    > head(searchTreaties("charter of the united nations", .1))
+    multiple matches found
+    [1] "charter of the united nations (deposited in the archives of the government of..."
+    [2] "declarations of acceptance of the obligations contained in the charter of the..."
+    [3] "amendments to articles 23,27 and 61 of the charter of the united nations, ado..."
+    [4] "amendment to article 109 of the charter of the united nations, adopted by the..."
+    [5] "amendment to article 61 of the charter of the united nations, adopted by the ..."
+    [1] "charter of the united nations (deposited in the archives of the government of..."
+    [2] "declarations of acceptance of the obligations contained in the charter of the..."
+    [3] "amendments to articles 23,27 and 61 of the charter of the united nations, ado..."
+    [4] "amendment to article 109 of the charter of the united nations, adopted by the..."
+    [5] "amendment to article 61 of the charter of the united nations, adopted by the ..."
+    [1] "charter of the united nations (deposited in the archives of the government of..."
+    [2] "declarations of acceptance of the obligations contained in the charter of the..."
+    [3] "amendments to articles 23,27 and 61 of the charter of the united nations, ado..."
+    [4] "amendment to article 109 of the charter of the united nations, adopted by the..."
+    [5] "amendment to article 61 of the charter of the united nations, adopted by the ..."
+    [1] "charter of the united nations (deposited in the archives of the government of..."
+    [2] "declarations of acceptance of the obligations contained in the charter of the..."
+    [3] "amendments to articles 23,27 and 61 of the charter of the united nations, ado..."
+    [4] "amendment to article 109 of the charter of the united nations, adopted by the..."
+    [5] "amendment to article 61 of the charter of the united nations, adopted by the ..."
+    [1] "charter of the united nations (deposited in the archives of the government of..."
+    [2] "declarations of acceptance of the obligations contained in the charter of the..."
+    [3] "amendments to articles 23,27 and 61 of the charter of the united nations, ado..."
+    [4] "amendment to article 109 of the charter of the united nations, adopted by the..."
+    [5] "amendment to article 61 of the charter of the united nations, adopted by the ..."
+    Which treaty would you like to load? 1
+    loading charter of the united nations (deposited in the archives of the gover
+                           Participant Ratification
+    1                        Argentina  24 Sep 1945
+    2                        Australia   1 Nov 1945
+    3                          Belarus  24 Oct 1945
+    4                          Belgium  27 Dec 1945
+    5 Bolivia (Plurinational State of)  14 Nov 1945
+    6                           Brazil  21 Sep 1945
