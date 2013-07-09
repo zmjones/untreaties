@@ -137,13 +137,14 @@ def get_declarations(soup, treaty_id):
     """
     table = soup.find(lambda tag:tag.name == "declarations")
     if table is not None:
-        df = []
         for row in table.find_all("declaration"):
             name = clean_entry(row.find("participant").get_text(strip = True).lower(), True)
             text = row.find_all(lambda tag:tag.name == "text" and 
                                tag.has_attr("type") and tag["type"] == "para")
+            if os.path.exists("declarations/" + treaty_id + ".txt"):
+                os.remove("declarations/" + treaty_id + ".txt")
             with open("declarations/" + treaty_id + ".txt", "a+") as f:
-                f.writelines(name.encode("utf-8") + "\n")
+                f.writelines("#" + name.encode("utf-8") + "\n")
                 for entry in text:
                     entry = clean_entry(entry.get_text(strip = True))
                     f.writelines(entry.encode("utf-8"))
