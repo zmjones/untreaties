@@ -1,10 +1,13 @@
-This repository contains a set of scripts that allow the retrieval of the [United Nations' Treaty Collection](http://treaties.un.org/), and transformation of the retrieved data. Please [open an issue]() if you find any errors or would like to suggest a feature. Pull requests are welcome!
+This repository contains a set of scripts that allow the retrieval of the [United Nations' Treaty Collection](http://treaties.un.org/), and transformation of the retrieved data. Please [open an issue](https://github.com/zmjones/untreaties/issues/new) if you find any errors or would like to suggest a feature. Pull requests are welcome!
 
 ### Getting the data
 
 You can clone (see below) or [download](https://github.com/zmjones/untreaties/archive/master.zip) the data contained in this repository or scrape it using `un_data.py`, which requires `pandas`, `requests`, and `beautifulsoup4`. The script will generate `index.csv` along with a folder containing the treaty data itself (`treaties/`) and a folder containing declarations made by participants (contained in `declarations/`).
 
 	git clone git@github.com:zmjones/untreaties.git
+	cd untreaties
+	python un_data.py
+	...
 
 ### Transforming the data
 
@@ -12,7 +15,7 @@ The [R](http://cran.us.r-project.org/) script `utilities.R` contains a number of
 
  - `loadData` loads the data for a specific treaty given its chapter and treaty numbers, which are passed as strings. You can optionally expand the column names (if needed). If you choose to expand the column names you can also transform the data into a country-year format, given a start date and an end date (both passed as strings in a day-month-year format).
 
- - `searchTreaties` searches through the `treaty_name` column in `index.csv` using approximate string matching given a maximum distance (internally it uses `agrep`). If multiple matches are found, the user can select the best match from the console. The `trim` option is logical and truncates console output to 80 characters (it is true by default).
+ - `searchTreaties` searches through the `treaty_name` column in `index.csv` using approximate string matching given a maximum distance (internally it uses `agrep`). If multiple matches are found, the user can select the best match from the console. The `trim` option is logical and truncates console output to 80 characters (it is true by default). This function calls `loadData` internally, and allows overloading, so you can pass arguments to `loadData` by passing arguments to `searchTreaties`. Note that you have to name the arguments explicitly (you can't just use argument ordering).
 
  - `createColumns` takes a character vector of dates (or a dataframe with one column) with a trailing type identifier (a one or two character code) and a name for said column. It returns an expanded version of that column with column dimension equal to the number of unique type identifiers plus one (for the no identifier category).
 
@@ -20,9 +23,9 @@ The [R](http://cran.us.r-project.org/) script `utilities.R` contains a number of
 
  - `convertPanel` takes a character vector of dates (of the form `"%d-%b-%Y"`) and a year for comparison and returns a binary variable indicating whether the year of the date that was passed is less than or equal to the comparison year.
 
- - `expandPanel` takes a dataframe, a start year, and an ending year, and returns a dataframe with in country-year format.
+ - `expandPanel` takes a dataframe, a start year, and an ending year (both strings), and returns a dataframe with in country-year format with each data column converted into a binary variable.
 
- - `findDates` takes a dataframe and finds columns which follow the "%d-%b-%Y" date format. Optionally allows for dates with a trailing type identifier.
+ - `findDates` takes a dataframe and finds columns which follow the `%d-%b-%Y` date format. Optionally allows for dates with a trailing type identifier.
 
 ### Examples
 
@@ -81,7 +84,6 @@ The [R](http://cran.us.r-project.org/) script `utilities.R` contains a number of
     [4] "amendment to article 109 of the charter of the united nations, adopted by the..."
     [5] "amendment to article 61 of the charter of the united nations, adopted by the ..."
     Which treaty would you like to load? 1
-    loading charter of the united nations (deposited in the archives of the gover...
                            Participant Ratification
     1                        Argentina  24 Sep 1945
     2                        Australia   1 Nov 1945
@@ -89,3 +91,20 @@ The [R](http://cran.us.r-project.org/) script `utilities.R` contains a number of
     4                          Belgium  27 Dec 1945
     5 Bolivia (Plurinational State of)  14 Nov 1945
     6                           Brazil  21 Sep 1945
+
+	> searchTreaties(treaty.name = "charter of the united nations",
+                     expand = TRUE, panel = TRUE, syear = "1945", eyear = "2011")
+	multiple matches found
+    [1] "charter of the united nations (deposited in the archives of the government of..."
+    [2] "declarations of acceptance of the obligations contained in the charter of the..."
+    [3] "amendments to articles 23,27 and 61 of the charter of the united nations, ado..."
+    [4] "amendment to article 109 of the charter of the united nations, adopted by the..."
+    [5] "amendment to article 61 of the charter of the united nations, adopted by the ..."
+    Which treaty would you like to load? 1
+      participant year ratification
+    1   Argentina 1945            1
+    2   Argentina 1946            1
+    3   Argentina 1947            1
+    4   Argentina 1948            1
+    5   Argentina 1949            1
+    6   Argentina 1950            1
