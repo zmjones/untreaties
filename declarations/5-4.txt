@@ -1,30 +1,30 @@
-austria
+#austria
 "Austria declares to retain the right to deprive a person of his nationality, if such person enters, on his own free will, the military service of a foreign State."Austria declares to retain the right to deprive a person of his nationality, if such person being in the service of a foreign State, conducts himself in a manner seriously prejudicial to the interests or to the prestige of the Republic of Austria."
 
-brazil
+#brazil
 On 10 December 2009, the Secretary-General received from the Government of Brazil, the following communication:In reference to the instrument of accession relating to the Convention on the Reduction of Statelessness, concluded in New York on 30 August 1961, the Government of the Federative Republic of Brazil declares that, in accordance with Article 8, paragraph 3, sub-paragraph “a”, item “ii”of the Convention, the Federative Republic of Brazil retains the right to deprive a person of his nationality when he conducts himself in a manner seriously prejudicial to the vital interests of the Brazilian State.The Secretary-General also wishes to communicate the following information received by the Government of Brazil on 18 December 2009 (Original: English):“The National Congress of Brazil approved the text of the Convention on the Reduction of Statelessness by means of Legislative Decree n. 274, of 4 October 2007. In accordance with Legislative Decree n. 274/2007, the text of the Convention is approved expressly with the restriction allowed for in article 8 (3) (a) (ii) of the Convention, so that the Federative Republic of Brazil retains the right to deprive a person of his nationality when he conducts himself in a manner seriously prejudicial to the vital interests of the Brazilian State.” In this regard, it is noted that the instrument of accession to the Convention deposited by Brazil with the Secretary-General on 25 October 2007 did not specify the above restriction, in accordance with article 8 (3) of the Convention.
 
-france
+#france
 At the time of signature of this Convention, the Government of the French Republic declares that it reserves the right to exercise the power available to it under article 8 (3) on the terms laid down in that paragraph, when it deposits the instrument of ratification of the Convention.The Government of the French Republic also declares, in accordance with article 17 of the Convention, that it makes a reservation in respect of article 11, and that article 11 will not apply so far as the French Republic is concerned.The Government of the French Republic further declares, with respect to article 14 of the Convention, that in accordance with article 17 it accepts the jurisdiction of the Court only in relation to States Parties to this Convention which shall also have accepted its jurisdiction subject to the same reservations; it also declares that article 14 will not apply when there exists between the French Republic and another party to this Convention an earlier treaty providing another method for the settlement of disputes between the two States.
 
-germany
+#germany
 The Federal Republic of Germany will apply the said Convention:(a)in respect of elimination of statelessness, to persons who are stateless under the terms of article 1, paragraph 1, of the Convention relating to the Status of Stateless Persons of 28 September 1954;(b)in respect of prevention of statelessness and retention of nationality, to German nationals within the meaning of the Basic Law (Constitution) for the Federal Republic of Germany.
 
-ireland
+#ireland
 "In accordance with paragraph 3 of article 8 of the Convention Ireland retains the right to deprive a naturalised Irish citizen of his citizenship pursuant to section 19 (1) (b) of the Irish Nationality and Citizenship Act, 1956, on grounds specified in the aforesaid paragraph."
 
-jamaica
+#jamaica
 “Upon acceding to the Convention on the Reduction of Statelessness, the Government of Jamaica declares, pursuant to Article 8 of the Convention, that it retains the right under its laws to deprive a person of his or her nationality in the circumstances outlined in Paragraph 3 of that Article in the Convention.”
 
-new zealand
+#new zealand
 "New Zealand declares that in accordance with paragraph 3 of article 8 of the Convention New Zealand retains the right to deprive a person of his New Zealand citizenship on the following grounds, being grounds existing in New Zealand law at the present time:the person has, while a New Zealand citizen and while of or over the age of 18 years and of full capacity,(a)Acquired the nationality or citizenship of another country by any voluntary and formal act, and acted in a manner that is contrary to the interests of New Zealand; or(b)Voluntarily exercised any of the privileges or performed any of the duties of another nationality or citizenship possessed by him in a manner that is contrary to the interests of New Zealand."
 
-niger
+#niger
 With reservations in respect of articles 11, 14 and 15.
 
-tunisia
+#tunisia
 The Government of Tunisia declares that it does not consider itself bound by the provisions of article 11 concerning the establishment of a body responsible for assisting in the presentation of claims to obtain nationality to the appropriate authorities, or of article 14, which provides for the competence of the International Court of Justice to rule on disputes concerning the interpretation or application of the Convention.The Republic of Tunisia declares that, in accordance with article 8, paragraph 3, of the Convention , it retains the right to deprive a person of Tunisian nationality in the following circumstances as provided for in its existing national law:1.If he occupies a post in the public service of a foreign State or in foreign armed forces and retains it for more than one month after being enjoined by the Government of Tunisia to leave the post, unless it is found that it was impossible for him to do so.2.If he is convicted of an act held to be a crime or an offence against the external or internal security of the State.3.If he engages, for the benefit of a foreign State, in acts which are incompatible with his status as a Tunisian national and which are prejudicial to Tunisia's interests.4.If he is convicted in Tunisia or abroad for an act held to be a crime under Tunisian law and carrying a sentence of at least five years' imprisonment.5.If he is convicted of evading his obligations under the law regarding recruitment into the armed forces.6.If it is discovered, subsequent to issuance of the naturalization certificate, that the person concerned did not fulfil the conditions required by law allowing him to be naturalized.7.If the alien has made a false declaration, employed fraudulent means or knowingly submitted a document containing a false or incorrect statement for the purpose of obtaining naturalization.
 
-united kingdom of great britain and northern ireland
+#united kingdom of great britain and northern ireland
 "The Government of the United Kingdom declares that, in accordance with paragraph 3 (a) of Article 8 of the Convention, notwithstanding the provisions of paragraph 1 of Article 8, the United Kingdom retains the right to deprive a naturalised person of his nationality on the following grounds, being grounds existing in United Kingdom law at the present time: that, inconsistently with his duty of loyalty to Her Britannic Majesty, the person"(i) Has, in disregard of an express prohibition of Her Britannic Majesty, rendered or continued to render services to, or received or continued to receive emoluments from, another State, or"(ii) Has conducted himself in a manner seriously prejudicial to the vital interests of Her Britannic Majesty."
 

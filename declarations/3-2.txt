@@ -1,78 +1,78 @@
-bahrain
+#bahrain
 "The accession by the State of Bahrain to the said Convention shall in no way constitute recognition of Israel or be a cause for the establishment of any relations of any kind herewith."
 
-belarus
+#belarus
 The Byelorussian Soviet Socialist Republic does not consider itself bound by the provisions of sections 24 and 32 of the Convention, concerning the compulsory jurisdiction of the International Court of Justice. Concerning the jurisdiction of the International Court of Justice in disputes arising out of the interpretation or application of the Convention, the Byelorussian Soviet Socialist Republic will maintain the same position as hitherto, namely, that for any dispute to be referred to the International Court of Justice for settlement, the agreement of all Parties involved in the dispute must be obtained in each individual case. This reservation similarly applies to the provision contained in section 32, stipulating that the advisory opinion of the International Court of Justice shall be accepted as decisive.
 
-bulgaria
+#bulgaria
 
 
-china
+#china
 The Government of the People's Republic of China has reservations on the provisions of section 32, article IX, of the said Convention.
 
-côte d'ivoire
+#côte d'ivoire
 It is not possible for any Government fully to comply with the requirements of section 11 of that Convention in so far as it requires the specialized agency to enjoy in the territory of a State party to the Convention treatment not less favourable than that accorded by the Government of that State to any other Government in the matter of priorities and rates on telecommunications, unless and until all other Governments collaborate in according this treatment to the agency in question. It is understood that this matter is being discussed in the International Telecommunication Union.
 
-cuba
+#cuba
 The Revolutionary Government of Cuba does not consider itself bound by the provisions of sections 24 and 32 of the Convention, under which the International Court of Justice has compulsory jurisdiction in disputes arising out of the interpretation or application of the Convention. Concerning the competence of the International Court of Justice in such disputes, Cuba takes the position that for any dispute to be referred to the International Court of Justice for settlement, the agreement of all parties involved in the dispute must be obtained in each individual case. This reservation also applies to the provision of section 32 requiring the parties concerned to accept the advisory opinion of the International Court of Justice as decisive.
 
-czech republic
+#czech republic
 
 
-france
+#france
 Only property, funds and assets belonging to agencies, administered by them and earmarked for the functions assigned to them under the agreements by which they were established, and to which France has acceded, shall enjoy the privileges and immunities provided for in the Convention.When an official of the agencies who does not have the same status as a member of the diplomatic staff under the Convention commits a traffic violation or causes a road accident, the privileges and immunities shall not apply.The provisions of section 11 concerning facilities in respect of communications shall not apply to the specialized agencies.Officials employed abroad and resident in France shall be subject to the provisions of the law applicable in France with respect to entry and stay in the national territory.The privileges and immunities, exemptions and facilities accorded to the executive head of each agency in reference to diplomatic envoys shall not be extended to any other official, except one acting on the former's behalf during his absence from duty.The privileges and immunities of experts sent on mission to the specialized agencies shall not exceed those accorded to officials of the specialized agencies.France shall not be bound by the provisions of section 32 concerning the International Court of Justice, except where a prior attempt to settle the difference amicably has failed.In the event of a conflict between the provisions of the Convention and the provisions of the individual agreements concluded between the specialized agencies and France, the provisions of these agreements shall have precedence.
 
-gabon
+#gabon
 It is not possible for any Government fully to comply with the requirements of section 11 of that Convention in so far as it requires the specialized agency to enjoy in the territory of a State party to the Convention treatment not less favourable than that accorded by the Government of that State to any other Government in the matter of priorities and rates on telecommunications, unless and until all other Governments collaborate in according this treatment to the agency in question. It is understood that this matter is being discussed in the International Telecommunication Union.
 
-germany
+#germany
 "The Government of the Federal Republic of Germany takes the liberty of calling attention to the fact that the provisions of section 11 of article IV of the Convention, to the effect that the specialized agencies shall enjoy, in the territory of each State party to this Convention, for their official communications, treatment not less favourable than that accorded by the Government of such State to any other Government in the matter of priorities, rates and other taxes, cannot be fully complied with by any Government. Reference is made to the provisions of article 37 and of annex 3 of the International Telecommunication Convention concluded at Buenos Aires in 1952, as well as to the resolutions Nos. 27 and 28 appended to that Convention."
 
-hungary
+#hungary
 
 
-indonesia
+#indonesia
 "(1)Article II (b) section 3: The capacity of the specialized agencies to acquire and dispose of immovable property shall be exercised with due regard to national laws and regulations."(2)Article IX section 32: With regard to the competence of the International Court of Justice in disputes concerning the interpretation or application of the Convention, the Government of Indonesia reserves the right to maintain that in every individual case the agreement of the parties to the dispute is required before the Court for a ruling."
 
-italy
+#italy
 In the event that some of the specialized agencies which are mentioned in the instrument of accession and to which Italy undertakes to apply the Convention should decide to establish their headquarters or their regional offices in Italian territory, the Italian Government will be able to avail itself of the option of concluding with such agencies, in accordance with Section 39 of the Convention supplemental agreements specifying, in particular, the limits within which immunity from jurisdiction may be granted to a given agency or immunity from jurisdiction and exemption from taxation granted to officials of that agency.
 
-lithuania
+#lithuania
 "... The Government of the Republic of Lithuania has made the reservation in respect of article 2 (3) (b), that the specialized agencies shall not be entitled to acquire land in the territory of the Republic of Lithuania, in view of the land regulations laid down by the Article 47 of the Constitution of the Republic of Lithuania."
 
-madagascar
+#madagascar
 The Malagasy Government will not be able to comply fully with the provisions of article IV, section 11, of the Convention, which states that the specialized agencies shall enjoy, in the territory of each State party to the Convention, for their official communications, treatment not less favourable than that accorded by the Government of such State to any other Government, in the matter of priorities, rates and taxes on telecommunications, until such time as all Governments decide to co-operate by according such treatment to the agencies in question.
 
-mongolia
+#mongolia
 
 
-new zealand
+#new zealand
 "The Government of New Zealand, in common with other Governments, cannot give full effect to article IV, section 11, of the Convention, which requires that the specialized agencies shall enjoy, in the territory of each State party to the Convention, for their official communications, treatment not less favourable than the treatment accorded by the Government of such a State to any other Government in the matter of priorities, rates and taxes on telecommunications, as long as all Governments have not decided to co-operate in granting this treatment to the agencies in question."It is noted that this matter has been receiving the consideration of the United Nations and of the International Telecommunication Union. It is also noted that the final text of the annex of the Convention approved by the International Telecommunication Union, and transmitted by the Union to the Secretary- General of the United Nations in accordance with section 36 of the Convention, contains a statement that the Union would not claim for itself the enjoyment of privileged treatment with regard to the facilities in respect of communications provided in section 11 of the Convention."
 
-norway
+#norway
 "The Norwegian Government is of the opinion that it is impossible for any government to comply fully with Section 11 of the said Convention, which requires that the Specialized Agencies shall enjoy, in the territory of each state party to the Convention, for their official communications, treatment no less favourable than that accorded by the Government of such State to any other Government in the matter of priorities, rates and taxes on telecommunications as long as all governments have not agreed to grant to the agency in question, the treatment specified in this Section."
 
-pakistan
+#pakistan
 "The enjoyment by Specialized Agencies of the communication privileges provided for in Article IV, Section 11 of the Convention cannot, in practice, be determined by unilateral action of individual Governments and has in fact been determined by the International Telecommunication Convention, Atlantic City, 1947 and Telegraph and Telephone Regulations annexed thereto, Pakistan would, therefore, not be able to comply with the provisions of Article IV, Section 11 of the Convention in view of Resolution No. 28 (annexure I) passed at the Plenipotentiary Conference of the International Telecommunication Union, held in Buenos Aires in 1952."The International Telecommunication Union shall not claim for itself the communication privileges provided in Article IV, Section 11 of the Convention."
 
-poland
+#poland
 
 
-romania
+#romania
 The Socialist Republic of Romania states that it does not consider itself bound by the provisions of sections 24 and 32, whereby the question whether an abuse of a privilege or immunity has occurred, and differences arising out of the interpretation or application of the Convention and disputes between specialized agencies and Member States, shall be referred to the International Court of Justice. The position of the Socialist Republic of Romania is that such questions, differences or disputes may be referred to the International Court of Justice only with the agreement of the parties in each individual case.
 
-russian federation
+#russian federation
 The Union of Soviet Socialist Republics does not consider it self bound by the provisions of sections 24 and 32 of the Convention, concerning the compulsory jurisdiction of the International Court of Justice. Concerning the jurisdiction of the International Court of Justice in disputes arising out of the interpretation or application of the Convention, the USSR will maintain the same position as hitherto, namely, that for any dispute to be referred to the International Court of Justice for settlement, the agreement of all Parties involved in the dispute must be obtained in each individual case. This reservation similarly applies to the provision contained in section 32, stipulating that the advisory opinion of the International Court of Justice shall be accepted as decisive.
 
-slovakia
+#slovakia
 
 
-south africa
+#south africa
 "1.The Government of the Republic of South Africa does not consider itself bound by the provisions of Article III, Section 7 in so far as it relates to the buying, selling and holding of gold as certain limitations exist in the Republic regarding the buying, selling and holding of gold.Explanatory note: the buying, selling and holding of gold in the Republic is regulated. In terms of Exchange Control Regulation 2 no person other than an Authorized Dealer may buy or borrow any gold from, or sell, to any person not being an Authorized Dealer, unless exemption from Exchange Control Regulation 5 has been authorized (Mining Houses and Mining Producers may elect to sell their total gold holdings to the approved counter parties, including foreign counter parties, provided that the Exchange Control Department of the South African Reserve Bank has given the necessary exemption from the aforementioned regulation).2.Pending a decision by the Government of the Republic of South Africa on the compulsory jurisdiction of the International Court of Justice, the Government of the Republic does not consider itself bound by the terms of Article IX, Section 32 of the Convention which provides for the compulsory jurisdiction of the International Court of Justice in differences arising out of the interpretation or application of the Convention. The Republic will adhere to the position that, for the submission of a particular dispute for settlement by the International Court, the consent of all the parties to the dispute is required in every individual case. This reservation is equally applicable to the provisions contained in the said section, which stipulate that the advisory opinion of the International Court is to be accepted as decisive."
 
-ukraine
+#ukraine
 The Ukrainian Soviet Socialist Republic does not consider itself bound by the provisions of sections 24 and 32 of the Convention, concerning the compulsory jurisdiction of the International Court of Justice. Concerning the jurisdiction of the International Court of Justice in disputes arising out of the interpretation or application of the Convention, the Ukrainian Soviet Socialist Republic will maintain the same position as hitherto, namely, that for any dispute to be referred to the International Court of Justice for settlement, the agreement of all Parties involved in the dispute must be obtained in each individual case. This reservation similarly applies to the provision contained in section 32, stipulating that the advisory opinion of the International Court of Justice shall be accepted as decisive.
 
-united kingdom of great britain and northern ireland
+#united kingdom of great britain and northern ireland
 "It is not possible for any Government fully to comply with the requirements of Section 11 of that Convention in so far as it requires the Specialized Agency to enjoy in the territory of a state party to the Convention treatment not less favourable than that accorded by the Government of that state to any other Government in the matter of priorities and rates on telecommunications, unless and until all other Governments collaborate in according this treatment to the Agency in question. It is understood that this matter is being discussed in the International Telecommunication Union.""With regard to the Universal Postal Union and the World Meteorological Organization, ... no Government can fully comply with Section 11 of this Convention which requires that the specialized agencies shall enjoy, in the territory of each State party to the Convention, for their official communications, treatment not less favourable than that accorded by the Government of such a State to any other Government in the matter of priorities, rates and taxes on telecommunications so long as all the other Governments have not decided to co-operate in granting this treatment to the agencies in question. This matter is under consideration by the United Nations and the International Telecommunication Union."The final text of the annex to the Convention approved by the International Telecommunication Union and transmitted by the Union to the Secretary-General of the United Nations in accordance with Section 36 of the Convention contains a statement that the Union would not claim for itself the enjoyment of privileged treatment with regard to the facilities in respect of communications provided in Section 11 of the Convention.""Her Majesty's Government observe in connection with its notification of application to the International Maritime Organisation that it would be impracticable for any Government fully to comply with Section 11 of the Convention which requires that the Specialized Agencies shall enjoy, in the territory of each State party to the Convention, for their official communications, treatment not less favourable than that accorded by the Government of such State to any other Government in the matter of priorities, rates and taxes on telecommunications, until such time as all the other Governments have decided to co-operate in granting this treatment to the agencies in question. This matter is under consideration by the United Nations and the International Telecommunication Union."
 

@@ -1,6 +1,6 @@
-belgium
+#belgium
 “This signature engages also the French Community, the Flemish Community, the German-speaking Community, the Walloon Region, the Flemish Region and the Brussels-Capital Region.”
 
-syrian arab republic
+#syrian arab republic
 The accession of the Syrian Arab Republic to this Protocol shall in no way imply its recognition of Israel or entail its entry into any dealings with Israel in the matters governed by the provisions thereof.
 

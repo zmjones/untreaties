@@ -1,30 +1,30 @@
-belarus
+#belarus
 Pursuant to article 15, paragraph 1, of the Convention, the Republic of Belarus will not apply article 14 of the Convention insofar as it concerns the referral of disputes to the International Court of Justice.In accordance with article 2, paragraph 1, of the Convention, the Republic of Belarus declares that the guideline document of the Republic of Belarus RD RB 02190.1.37-2003, entitled 'Measurement of vessels: calculation of displacement and tonnage', shall apply in the territory of the Republic of Belarus.
 
-belgium
+#belgium
 
 
-bulgaria
+#bulgaria
 It further declares that the validity of measurement certifi- cates issued by its measurement offices for vessels intended for the carriage of goods may be extended only by one of the said offices.The term of validity of measurement certificates issued by its measurement offices for inland navigation vessels is 15 years and cannot be extended.
 
-czech republic
+#czech republic
 
 
-france
+#france
 Since the measurement signs affixed by the French services are not intended solely to establish the fact of measurement, the said signs shall not be either removed or effaced at the time of remeasurement; instead, an indelible mark consisting of a small cross with vertical and horizontal arms of equal length shall be applied to the left of such signs.
 
-hungary
+#hungary
 The Presidential Council of the Hungarian People's Republic declares that it does not consider itself bound by those provisions of article 14 of the Convention which refer the disputes between Contracting Parties to the International Court of Justice.
 
-netherlands
+#netherlands
 
 
-romania
+#romania
 The Socialist Republic of Romania declares, pursuant to article 15, paragraph 1, that it does not consider itself bound by the provisions of article 14 of the Convention. The position of the Socialist Republic of Romania is that disputes relating to the interpretation or application of the Convention may be referred to the International Court of Justice only with the consent of all the parties to the dispute, in each individual case.
 
-russian federation
+#russian federation
 In accordance with article 15, paragraph 1, of the Convention on the Measurement of Inland Navigation Vessels the Union of Soviet Socialist Republics does not consider itself bound by the provisions of article 14 of that Convention, to the effect that any dispute between two or more Contracting Parties concerning the interpretation or application of this Convention which the Parties are unable to settle by negotiation or by other settlement procedures may, at the request of any of the Contracting Parties concerned, be referred for settlement to the International Court of Justice, and declares that for the referral of such disputes to the International Court, the consent of all the parties to the dispute is necessary in each individual case;In accordance with article 10, paragraph 6, of the 1966 Convention on the Measurement of Inland Navigation Vessels, the Union of Soviet Socialist Republics declares that the provisions of this Convention shall not apply to inland waterways of the Union of Soviet Socialist Republics that are open to navigation only for vessels flying the flag of the Union of Soviet Socialist Republics.
 
-slovakia
+#slovakia
 
 

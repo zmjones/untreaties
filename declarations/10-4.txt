@@ -1,57 +1,57 @@
-australia
+#australia
 "The Australian Government further declares in accordance with paragraph 2 of article 56 of the said Agreement that it retains the right to levy taxation in respect of salary and emoluments paid by the Bank for services rendered in Australia to a Director, alternate, officer or employee of the Bank, including an expert performing a mission for the Bank, being a resident of Australia within the meaning of the Australian legislation relating to income tax unless the person is not a citizen of Australia and came to Australia solely for the purpose of performing duties of the office in the Bank held by him.In connection with the above declaration the Government of Australia further specified that "although paragraph 2 of article 56 refers to 'citizens or nationals'and not to residents, it is understood that the persons intended to be covered by the word `resident' in the declaration include, in addition to citizens, per sons already living in Australia at the time of recruitment as po- tential Australian citizens who, in fact, under Australian law have duties of a similar character to citizens. They may, therefore, be considered as within the category of persons envisaged by the words `citizens or nationals'."The Australian Government is unable to accord to the Bank, in respect of any mailbags which the Bank might wish to despatch through postal channels in Australia, the reduced rates which the Australian Government accords, on the basis of reciprocity, to certain other Governments in respect of mailbags despatched through postal channels by their diplomatic missions in Australia."The Australian Government is, insofar as the article applies to priorities, rates and taxes on telecommunications, unable fully to comply with article 54 of the Agreement which requires that the Bank in respect of its official communications shall be accorded by each member treatment not less favourable than that accorded to the official communications of any other member, until such time as all other Governments have decided to co-operate in granting this treatment to international organiz- ations. This reservation shall not affect the right of the Bank to lodge press telegrams at prescribed press rates to the press and radio in Australia."The Australian Government understands that nothing in the said Agreement affects the application of any Australian law relating to quarantine."
 
-canada
+#canada
 "Canada retains for itself and its political subdivisions the right to tax Canadian citizens resident or ordinarily resident in Canada."
 
-denmark
+#denmark
 "According to article 14, paragraph ix, in the Agreement establishing the Asian Development Bank, `the proceeds of any loan, investment or other financing undertaken in the ordinary operations of the Bank or with Special Funds established by the Bank pursuant to paragraph 1 (i) of article 19, shall be used only for procurement in member countries of goods and services produced in member countries. . .'."The declared shipping policy of the Danish Government is based on the principle of free circulation of shipping in interna-tional trade in free and fair competition. In accordance with this policy transactions and transfers in connexion with maritime transport should not be hampered by provisions giving preferential treatment to one country or a group of countries, the aim always being that normal commercial consideration should determine the method and flag of shipment. The Government of Denmark trusts that article 14, paragraph ix, will not be applied contrary to this principle."
 
-france
+#france
 Pursuant to article 56 (2) of the said Agreement, the French Government retains for itself the right to levy taxes, as provided by French law, on salaries and emoluments paid by the Bank to French nationals.
 
-germany
+#germany
 "1. The Federal Republic of Germany makes use of the reservation provided for in article 56, paragraph 2, of the Agreement establishing the Asian Development Bank and retains for itself and its political subdivisions the right to tax salaries and emoluments paid by the Asian Development Bank to Germans within the meaning of Article 116 of the Basic Law for the Federal Republic of Germany who have their domicile or ordinary residence in the area of application of the said Basic Law, including Land Berlin;"2. The Agreement establishing the Asian Development Bank shall also apply to Land Berlin as from the day on which the Convention will enter into force for the Federal Republic of Germany."
 
-india
+#india
 "The Government of India declares that India retains for herself and her political subdivision the right to tax salaries and emoluments paid by the Asian Development Bank to citizens or nationals of India."
 
-italy
+#italy
 "The Italian Government, pursuant to article 56, paragraph 2, of the Agreement, retains for itself and its political subdivisions the right to tax salaries and emoluments paid by the Bank to Italian citizens employed in offices of the Bank that might be set up in Italy or performing any activities in Italy on behalf of the Bank."On the occasion of the deposit of the instrument of ratifica- tion, the Permanent Representative of Italy to the United Nations, on the instructions of the Minister for Foreign Affairs of Italy, has made the following observations:"The Italian Government considers that paragraph 1 of article 56 is to be construed in the light of current practice concerning exemption of international organizations from taxation. According to such practice, relief from taxation is granted to international organizations only in respect of articles acquired in pursuance of the official activities of an organization and, in the case of internal indirect taxes, only for substantial purchases where it is reasonably practicable to allow such relief."The Italian Government considers that the provision of article 50, paragraph 1, concerning immunity from jurisdiction is to be construed within the limits in which such immunity is provided by international law."The Permanent Representative also has the honour to inform your Excellency that it is the intention of the Italian Government to seek from the Asian Development Bank an understanding to the effect that the special procedure to be provided for pursuant to paragraph 2 of article 50 of the by-laws and regulations of the Bank or in contracts entered into with the Bank should not be of prejudice to the jurisdiction of Italian Courts with respect to any claims put forward by private parties."
 
-japan
+#japan
 "Japan retains for itself and its political subdivisions the right to tax salaries and emoluments paid by the Bank to its nationals."
 
-malaysia
+#malaysia
 "The Government of Malaysia declares that it retains for itself the right to tax salaries and emoluments paid."
 
-netherlands
+#netherlands
 This ratification is subject to the reservation provided for in article 56, paragraph 2, of the Convention.
 
-new zealand
+#new zealand
 
 
-norway
+#norway
 "According to article 14, paragraph ix, in the Agreement establishing the Asian Development Bank, 'the proceeds of any loan, investment or other financing undertaken in the ordinary operations of the Bank or with Special Funds established by the Bank pursuant to paragraph 1 (i) of article 19, shall be used only for procurement in member countries of goods and services produced in member countries . . .'."The declared shipping policy of the Norwegian Government is based on the principle of free circulation of shipping in international trade in free and fair competition. In accordance with this policy transactions and transfers in connection with maritime transport should not be hampered by provisions giving preferential treatment to one country or a group of countries, the aim always being that normal commercial consideration should determine the method and flag of shipment. The Government of Norway trusts that article 14, paragraph ix, will not be applied contrary to this principle."
 
-philippines
+#philippines
 "The Government of the Philippines declares that it retains for itself and its political subdivisions the right to tax salaries and emoluments paid by the Bank to citizens or nationals of the Philippines."
 
-republic of korea
+#republic of korea
 "The Republic of Korea retains for itself and its political subdivisions the right to tax salaries and emoluments paid by the Bank to its nationals."
 
-singapore
+#singapore
 "Singapore retains for itself the right to tax salaries and emoluments paid by the Asian Development Bank to citizens and nationals of Singapore."
 
-sri lanka
+#sri lanka
 "In accordance with paragraph 2 of article 56 of the Asian Development Bank Agreement, the Government of Ceylon retains for itself and its political subdivision the right to tax salaries and emoluments paid by the Bank to citizens or nationals of Ceylon resident or ordinarily resident in Ceylon."
 
-sweden
+#sweden
 "According to the main rule of article 14, paragraph ix, in the Agreement establishing the Asian Development Bank, the proceeds of any loan, investment or other financing undertaken by the Bank shall be used only for procurement in member countries of goods."The shipping policy of the Swedish Government is based on the principle of free circulation of shipping in international trade in free and fair competition. The Swedish Government trusts that article 14, paragraph ix, will not be applied contrary to this principle. Similarly, it is part of the assistance policy of the Swedish Government that multilateral development assistance should be based on the principle of free international competitive bidding. The Swedish Government expresses the hope that it will be possible to reach agreement on such modification of article 14, paragraph ix, that it does not conflict with this principle."
 
-united kingdom of great britain and northern ireland
+#united kingdom of great britain and northern ireland
 "In accordance with paragraph 2 of article 56, the Government of the United Kingdom declare that they retain the right to tax salaries and emoluments paid by the Asian Development Bank to citizens of the United Kingdom and Colonies."In a letter transmitting the instrument of ratification, the Permanent Representative of the United Kingdom to the United Nations, has made the following observations:"Article 54 of the Agreement has the effect of affording Government telecommunication privileges to the Asian Development Bank. The list of persons and authorities entitled to such privileges in Annex 3 to the International Telecommunications Convention signed at Geneva on the 21st of December, 1959, does not include international organizations other than the United Nations. There is thus a clear conflict between article 54 and the Telecommunications Convention, to which the United Kingdom (and no doubt other members of the Asian Development Bank) is a party. The United Kingdom wishes to propose that this conflict be considered at an early meeting of the Board of Governors."Paragraph 1 of article 56 of the Agreement might perhaps be construed as allowing the Asian Development Bank complete exemption from all customs duties and taxes on goods without any qualification. It is current practice to accord relief from taxation on goods to international organizations only in respect of articles acquired in pursuance of the official activities of an organization, and, in the case of internal indirect taxes, only for substantial purchases where it is reasonably practicable to allow such relief. The Government of the United Kingdom consider that paragraph 1 of article 56 is to be construed in the light of current practice."The Permanent Representative also has the honour to inform you that it is the intention of the Government of the United Kingdom to seek from the Asian Development Bank:"(a) An understanding that it will insure any motor vehicle belonging to, or operated on behalf of, the Bank against third party claims for damage arising from an accident caused by such a vehicle in the United Kingdom and that the immunity of the Bank from legal process under paragraph 1 of article 50 will not be asserted in the case of any civil action in the United Kingdom by a third party for damage arising from an accident caused by such a vehicle;"(b) An understanding that no immunity under article 55 will be asserted in respect of any motor traffic offence committed by a member of the personnel of the Bank or in respect of damage caused by a motor vehicle belonging to, or driven by, him."
 
-united states of america
+#united states of america
 "The United States of America retains for itself and for all political subdivisions of the United States of America the right to tax salaries and emoluments paid by the Asian Development Bank to any citizen or national of the United States of America."
 

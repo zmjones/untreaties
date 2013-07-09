@@ -1,45 +1,45 @@
-algeria
+#algeria
 The Democratic and Popular Republic of Algeria does not consider itself bound by article 40 of the said Convention and declares that a dispute may be submitted to arbitration only with the agreement of all the parties.
 
-bulgaria
+#bulgaria
 
 
-cuba
+#cuba
 The Revolutionary Government of the Republic of Cuba does not consider itself bound by the provisions of paragraphs 2 and 3 of article 40 of the Convention. At the same time it states that, if this reservation is rejected by more than two-thirds of the Parties to the Convention, it will consider that the Convention has not been ratified by the Revolutionary Government of Cuba, in accordance with the provisions of paragraph 3 of article 39.
 
-el salvador
+#el salvador
 In connexion with article 4, El Salvador reserves its rights with respect to the temporary importation of component parts for the repair of motor vehicles in view of the fact that such component parts may be difficult to identify when taken out of the country; it therefore considers that payment of the taxes prescribed by the law should be made in such cases. The same reservation is made in connexion with other articles of the Convention which refer to component parts for repairs.
 
-guatemala
+#guatemala
 "The Guatemalan Government reserves its right:"(1)To consider that the provisions of the Convention shall apply solely to natural persons and not to legal persons and bodies corporate as provided in chapter I, article 1;"(2)To consider that article 4 shall not be applicable to Guatemala;"(3)Not to accept the provisions of article 38 in respect of territories in dispute which are under the de fact o administration of another State."
 
-hungary
+#hungary
 Article 38 of the Convention is at variance with the United Nations General Assembly resolution 1514 (XV) of 16December 1960 on the Granting of Independence to Colonial Countries and Peoples.The Hungarian People's Republic does not consider itself bound by the provisions contained in paragraph 2 of article 40 of the Convention.
 
-india
+#india
 With reference to article 1 (e) :"The Government of India reserves the right to exclude 'legal' persons from the categories of persons to whom conces- sions envisaged in this Convention are applicable."With reference to article 2 :"Notwithstanding the provisions of article 2 of this Convention, the Government of India reserves the right to exclude from the benefits of this article persons normally resident outside India who, on the occasion of a temporary visit to India, take up paid employment or any other form of gainful occupation."
 
-israel
+#israel
 "The Government of Israel shall not be bound to admit without payment of import duties and import taxes the importation of component parts of the repair of vehicles temporarily imported; likewise, import prohibitions and restrictions in force at the time being in Israel may be applied to the importation of such component parts.""In view of the fact that land frontiers with neighbouring States are closed at the present time and that, consequently, private road vehicles may not be re-exported except through an Israel port, the Government of Israel shall not be bound to accept as evidence of re-exportation of vehicles or component parts thereof, any of the documents referred to in paragraphs 1 and 2 of article 24."
 
-mexico
+#mexico
 "The Delegation of Mexico, in accordance with the declaration duly made when the matter was under discussion in Working Party I, reserves its rights with regard to article 4, which authorizes the temporary importation of component parts for the repair of motor vehicles. The Delegation cannot agree to this article because the procedure in question is contrary to the legislation of its country, and because such spare parts do not usually have the specifications which would permit of their identification on exit. In the Delegation's opinion, this procedure would be prejudicial to the country's fiscal interests, because in this way it would be possible to import new spare parts without payment of duty by re-exporting old parts belonging to a vehicle not the tourist's own. It has therefore been considered more appropriate that in such cases the proper duty should be paid."The same reservation is made with regard to other articles of this Convention which refer to component parts for making repairs."
 
-poland
+#poland
 
 
-romania
+#romania
 The Romanian People's Republic does not consider itself bound by the provisions of article 40, paragraphs 2 and 3, of the Convention. The position of the Romanian People's Republic is that a dispute concerning the interpretation or application of the Convention may be submitted to arbitration only with the agreement of all the parties in dispute and that only persons nominated by unanimous agreement of the parties in dispute may act as arbitrators.
 
-russian federation
+#russian federation
 The Government of the Union of Soviet Socialist Republics, considering that disputes concerning the interpretation or application of the Customs Convention on the Temporary Importation of Private Road Vehicles can be decided by arbitration, declares that a dispute may be submitted to arbitration only with the agreement of all the parties in dispute and that only persons nominated by unanimous agreement of the parties in dispute may act as arbitrators.
 
-senegal
+#senegal
 1.Notwithstanding the provisions of article 2 of the said Convention, the Government of the Republic of Senegal reserves to itself the right to exclude from the benefits of the said article persons normally resident outside Senegal who, on the occasion of a temporary visit to Senegal, take up paid employment or any form of gainful occupation;2.The Government of the Republic of Senegal reserves the right:a)To consider that the provisions of the Convention shall apply solely to natural persons and not to legal persons and bodies corporate as provided in chapter 1, article 1;b)To consider that article 4 shall not be applicable to its territory;c)Not to accept the provisions of article 38 in respect of territories in dispute which are under the de facto administration of another State.
 
-sri lanka
+#sri lanka
 "Notwithstanding the provisions of article 2 of this Convention, the Government of Ceylon reserves to itself the right to exclude from the benefits of this article persons normally resident outside Ceylon who, on the occasion of a temporary visit to Ceylon, take up paid employment or any other form of gainful occupation."
 
-tunisia
+#tunisia
 A dispute may be submitted to arbitration only with the agreement of all the parties in dispute.
 

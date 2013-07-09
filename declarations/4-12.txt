@@ -1,24 +1,24 @@
-azerbaijan
+#azerbaijan
 “It is provided for the application of the death penalty in time of war pursuant to a conviction of a person for a most serious crime of a military nature committed during wartime.”
 
-brazil
+#brazil
 ... with an express reservation to article 2.
 
-chile
+#chile
 Reservation:The State of Chile formulates the reservation authorised under article 2, paragraph 1, of the Second Optional Protocol to the International Covenant on Civil and Political Rights, aiming at the abolition of the death penalty, and may in consequence apply the death penalty in time of war pursuant to a conviction for a most serious crime of a military nature committed during wartime.
 
-cyprus
+#cyprus
 
 
-greece
+#greece
 Subject to article 2 for the application of the death penalty in time of war pursuant to a conviction for a most serious crime of a military nature committed during wartime.
 
-malta
+#malta
 
 
-republic of moldova
+#republic of moldova
 "Until the full re-establishment of the territorial integrity of the Republic of Moldova, the provisions of the Convention shall be applied only on the territory controlled effectively by the authorities of the Republic of Moldova."
 
-spain
+#spain
 
 

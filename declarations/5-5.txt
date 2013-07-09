@@ -1,102 +1,102 @@
-angola
+#angola
 The Government of Angola, in accordance with article VII, paragraph 1, declares that it does not consider itself bound by article IV of the Protocol, concerning settlement of disputes relating to the interpretation of the Protocol.
 
-botswana
+#botswana
 "Subject to the reservation in respect of article IV of the said Protocol and in respect of the application in accordance with article I thereof of the provisions of articles 7, 17, 26, 31, 32 and 34 and paragraph 1 of article 12 of the Convention relating to the Status of Refugees, done at Geneva on 28 July 1951."
 
-burundi
+#burundi
 In acceding to this Protocol, the Government of the Republic of Burundi enters the following reservations:1.The provisions of article 22 are accepted, in respect of elementary education, only(a)In so far as they apply to public education, and not to private education;(b)On the understanding that the treatment applicable to refugees shall be the most favourable accorded to nationals of other States.2.The provisions of article 17 (1) and (2) are accepted as mere recommendations and, in any event, shall not be interpreted as necessarily involving the régime accorded to nationals of countries with which the Republic of Burundi may have concluded regional, customs, economic or political agreements.3.The provisions of article 26 are accepted only subject to the reservation that refugees:(a)Do not choose their place of residence in a region bordering on their country of origin;(b)Refrain, in any event, when exercising their right to move freely, from any activity or incursion of a subversive nature with respect to the country of which they are nationals.
 
-cape verde
+#cape verde
 In all cases where the 1951 Convention relating to the Status of Refugees grants to refugees the most favorable treatment accorded to nationals of a foreign country, this provision shall not be interpreted as involving the régime accorded to nationals of countries with which Cape Verde has concluded regional customs, economic or political agreements.
 
-chile
+#chile
 See chapter V.2.
 
-china
+#china
 With a reservation in respect of article 4.
 
-congo
+#congo
 The Protocol is accepted with the exception of article IV.
 
-el salvador
+#el salvador
 With the reservation that the Government of El Salvador will not apply article 4 of the Protocol.
 
-ethiopia
+#ethiopia
 See chapter V.2.
 
-finland
+#finland
 See chapter V.2.
 
-ghana
+#ghana
 "The Government of Ghana does not consider itself bound by article IV of the Protocol regarding the settlement of disputes."
 
-guatemala
+#guatemala
 
 
-honduras
+#honduras
 With respect to article I (1):The Government of the Republic of Honduras does not consider itself bound by those articles of the Convention to which it has entered reservations.
 
-israel
+#israel
 "The Government of Israel accedes to the Protocol subject to the same statements and reservations made at the time of ratifying the Convention relating to the Status of Refugees, done at Geneva on 28 July 1951, in accordance with the provisions of article VII (2) of the Protocol."
 
-jamaica
+#jamaica
 “Subject to the reservations set out below, ... :1.The Government of Jamaica understands articles 8 and 9 of the Convention as not preventing it from taking, in time of war or other grave and exceptional circumstances, measures in the interest of national security in the case of a refugee on the ground of his nationality.2.The Government of Jamaica can only undertake that the provisions of paragraph 2 of article 17 of the Convention will be applied so far as the law of Jamaica allows.3.The Government of Jamaica can only undertake that the provisions of article 24 of the Convention will be applied so far as the law of Jamaica allows.4.The Government of Jamaica can only undertake that the provisions of paragraphs l, 2, and 3 of article 25 of the Convention will be applied so far as the law of Jamaica allows.5.The Government of Jamaica does not accept the obligation imposed by article IV of the Protocol relating to the Status of Refugees with regard to the settlement of disputes."
 
-latvia
+#latvia
 “DeclarationIn accordance with paragraph 2 of the article VII of the said Protocol, the Republic of Latvia declares that the reservations made in accordance with article 41 of the Convention Relating to the Status of Refugees of 1951 are applicable in relation to the obligations under the Protocol."See chapter V.2.
 
-luxembourg
+#luxembourg
 See chapter V.2.
 
-malawi
+#malawi
 "The Government of the Republic of Malawi reiterates its declaration on recognition as compulsory the jurisdiction of the International Court of Justice made on 12 December, 1966 in conformity with Article 36, paragraph 2 of the Statute of the Court. In this respect, the Government of the Republic of Malawi regards the phrase `settled by other means' in Article 38 of the Convention and Article IV of the Protocol to be those means stipulated in Article 33 of the Charter of the United Nations."
 
-malta
+#malta
 In accordance with article VII (2), the reservations to the Convention relating to the Status of Refugees of 28 July 1951 by the Government of Malta on deposit of its instrument of accession on 17 June 1971, pursuant to article 42 of the said Convention, are applicable in relation to its obligations under the present Protocol.
 
-netherlands
+#netherlands
 "In accordance with article VII of the Protocol, all reservations made by the Kingdom of the Netherlands upon signature and ratification of the Convention relating to the Status of Refugees, which was signed in Geneva on 28 July 1951, are regarded to apply to the obligations resulting from the Protocol."
 
-peru
+#peru
 The Government of Peru hereby expressly declares, with reference to the provisions of article I, paragraph 1, and article II of the aforementioned Protocol, that compliance with the obligations undertaken by virtue of the act of accession to that instrument shall be ensured by the Peruvian State using all the means at its disposal, and the Government of Peru shall endeavour in all cases to co-operate as far as possible with the Office of the United Nations High Commissioner for Refugees.
 
-portugal
+#portugal
 “1.The Protocol will be applied without any geographical limitation.2.In all cases in which the Protocol confers upon the refugees the most favoured person status granted to nationals of a foreign country, this clause will not be interpreted in such a way as to mean the status granted by Portugal to the nationals of Brazil or to the nationals of other countries with whom Portugal may establish commonwealth type relations."
 
-republic of korea
+#republic of korea
 
 
-rwanda
+#rwanda
 For the settlement of any dispute between States Parties, recourse may be had to the International Court of Justice only with the prior agreement of the Rwandese Republic.
 
-somalia
+#somalia
 See chapter V.2.
 
-st. vincent and the grenadines
+#st. vincent and the grenadines
 "In accordance with the provisions of Article VII paragraph 1 of the aforesaid Protocol, however, the Government of Saint Vincent and the Grenadines makes a reservation with respect to Articles IV of the Protocol that, for the submission of any dispute in terms of that article to the jurisdiction of the International Court of Justice, the express consent of all the parties to the dispute is required in each case."
 
-swaziland
+#swaziland
 Subject to the following reservations in respect of the application of the Convention relating to the Status of Refugees, done at Geneva on 28 July 1951, under article I of the Protocol:"(1) The Government of the Kingdom of Swaziland is not in a position to assume obligations as contained in article 22 of the said Convention, and therefore will not consider itself bound by the provisions therein;(2) Similarly, the Government of the Kingdom of Swaziland is not in a position to assume the obligations of article 34 of the said Convention, and must expressly reserve the right not to apply the provisions therein.""The Government of the Kingdom of Swaziland deems it essential to draw attention to the accession as a Member of the United Nations, and not as a Party to the Convention relating to the Status of Refugees by reason of succession or otherwise."
 
-timor-leste
+#timor-leste
 "In conformity with Article VII and I of the Protocol, the Democratic Republic of Timor-Leste accedes to the Protocol, with the understanding that it has made reservations to Articles 16 (2), 20, 21, 22, 23 and 24 of the Convention relating to the Status of Refugees adopted by the General Assembly of the United Nations on the 28 July, 1951."
 
-turkey
+#turkey
 The instrument of accession stipulates that the Government of Turkey maintains the provisions of the declaration made under section B of article 1 of the Convention relating to the Status of Refugees, done at Geneva on 28 July 1951, according to which it applies the Convention only to persons who have become refugees as a result of events occurring in Europe, and also the reservation clause made upon ratification of the Convention to the effect that no provision of this Convention may be interpreted as granting to refugees greater rights than those accorded to Turkish citizens in Turkey.
 
-uganda
+#uganda
 See chapter V.2.
 
-united kingdom of great britain and northern ireland
+#united kingdom of great britain and northern ireland
 "(a) In accordance with the provisions of the first sentence of Article VII.4 of the Protocol, the United Kingdom hereby excludes from the application of the Protocol the following territories for the international relations of which it is responsible: Jersey, Southern Rhodesia, Swaziland.(b) In accordance with the provisions of the second sentence of Article VII.4 of the said Protocol, the United Kingdom hereby extends the application of the Protocol to the following territories for the international relations of which it is responsible: St. Lucia, Montserrat."
 
-united republic of tanzania
+#united republic of tanzania
 "Subject to the reservation, hereby made, that the provisions of Article IV of the Protocol shall not be applicable to the United Republic of Tanzania except within the explicit consent of the Government of the United Republic of Tanzania."
 
-united states of america
+#united states of america
 With the following reservations in respect of the application, in accordance with article I of the Protocol, of the Convention relating to the Status of Refugees, done at New York on 28 July 1951:"The United States of America construes Article 29 of the Convention as applying only to refugees who are resident in the United States and reserves the right to tax refugees who are not residents of the United States in accordance with its general rules relating to non-resident aliens.The United States of America accepts the obligation of paragraph 1 (b) of Article 24 of the Convention except insofar as that paragraph may conflict in certain instances with any provisions of title II (old age, survivors' and disability insurance) or title XVIII (hospital and medical insurance for the aged) of the Social Security Act. As to any such provision, the United States will accord to refugees lawfully staying in its territory treatment no less favorable than is accorded aliens generally in the same circumstances."
 
-venezuela (bolivarian republic of)
+#venezuela (bolivarian republic of)
 In implementing the provisions of the Protocol which confer on refugees the most favourable treatment accorded to nationals of a foreign country, it shall be understood that such treatment does not include any rights and benefits which Venezuela has granted or may grant regarding entry into or sojourn in Venezuela territory to nationals of countries with which Venezuela has concluded regional or subregional integration, customs, economic or political agreements.The instrument of accession also contains a reservation in respect of article IV.
 

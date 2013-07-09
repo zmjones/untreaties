@@ -1,69 +1,69 @@
-algeria
+#algeria
 The Government of the People’s Democratic Republic of Algeria declares, with regard to article 20, paragraph 2 of the Convention, that in every case, the agreement of the all parties concerned is necessary to submit a dispute to the International Court of Justice or to arbitration.
 
-chile
+#chile
 The Government of Chile considers that the provisions of this Convention . . . help to consolidate and expand the legal regime that Chile has established through various international instruments on the control of transboundary movements of hazardous wastes and their disposal, whose scope of application covers both the continental territory of the Republic and its area of jurisdiction situated south of latitude 60oS, in accordance with the provisions of article 4, paragraph 6, of the present Convention.
 
-colombia
+#colombia
 It is the understanding of Colombia that the implementation of the present Convention shall in no case restrict, but rather shall strengthen, the application of the juridical and political principles which, as was made clear in the statement made on 21 March to the Basel Conference, govern the actions taken by the Colombian State in matters covered by the Convention -- in other words, inter alia , the latter may in no case be interpreted or applied in a manner inconsistent with the competence of the Colombian State to apply those principles and other norms of its internal rule to its land area (including the subsoil), air space, territorial sea, submarine continental shelf and exclusive economic maritime zone, in accordance with international law.The Government of Colombia, pursuant to article 26, paragraph 2, of the said Convention, declares, for the purposes of implementing this international instrument, that article 81 of the Political Constitution of Colombia prohibits the bringing of nuclear residues and toxic wastes into the national territory.
 
-cuba
+#cuba
 The Government of the Republic of Cuba declares, with regard to article 20 of the Basel Convention on the Control of Transboundary Movements of Hazardous Wastes and Their Disposal, that any disputes between Parties as to the interpreta- tion or application of, or compliance with, this Convention or any protocol thereto, shall be settled through negotiation through the diplomatic channel or submitted to arbitration under the conditions set out in Annex VI on arbitration.
 
-denmark
+#denmark
 "Denmark's signature of the Global Convention of the Control of Transboundary Movements of Hazardous Wastes and their Disposal does not apply to Greenland and the Faroe Islands."“Denmark deposited its instrument of approval to the Basel Convention on the Control of Transboundary Movements of Hazardous Wastes and their Disposal on 6 February 1994. This instrument did not confirm the territorial exclusion concerning the application of the Convention with respect to Greenland and the Faroe Islands, which had been made upon the signature of the Convention on 22 March 1989. The approval of the Convention in 1994 therefore includes both Greenland and the Faroe Islands.”
 
-ecuador
+#ecuador
 The elements contained in the Convention which has been signed may in no way be interpreted in a manner inconsistent with the domestic legal norms of the Ecuadorian State, or with the exercise of its national sovereignty.
 
-germany
+#germany
 "It is the understanding of the Government of the Federal Republic of Germany that the provisions in article 4, paragraph 12 of this Convention shall in no way affect the exercise of navigation rights and freedoms as provided for in international law. Accordingly, it is the view of the Government of the Federal Republic of Germany that nothing in this Convention shall be deemed to require the giving of notice to or the consent of any State for the passage of hazardous wastes on a vessel under the flag of a party exercising its right of innocent passage through the territorial sea or the freedom of navigation in an exclusive economic zone under international law."
 
-indonesia
+#indonesia
 Mindful of the need to adjust the existing national laws and regulations, the provisions of article 3 (1) of this Convention shall only be implemented by Indonesia after the new revised laws and regulations have been enacted and entered into force.
 
-italy
+#italy
 The Government of Italy declares . . . that it is in favour of the establishment of a global control system for the environmentally sound management of transboundary movements of hazardous wastes.
 
-japan
+#japan
 The Government of Japan declares that nothing in the Basel Convention on the Control of Transboundary Movement of Hazardous Wastes and Their Disposal be interpreted as requiring notice to or consent of any State for the mere passage of hazardous wastes or other wastes on a vessel exercising navigational rights and freedoms, as paragraph 12 of article 4 of the said Convention stipulates that nothing in the Convention shall affect in any way the exercise of navigational rights and freedoms as provided for in international law and as reflected in relevant international instruments.
 
-lebanon
+#lebanon
 "Lebanon declares that it can under no circumstances permit burial of toxic and other wastes in any of the areas subject to its legal authority which they have entered illegally. In 1988, Lebanon announced a total ban on the import of such wastes and adopted Act No. 64/88 of 12 August 1988 to that end. In all such situations, Lebanon will endeavour to co-operate with the States concerned, and with the other States parties, in accordance with the provisions of this treaty."
 
-mexico
+#mexico
 Mexico is signing ad referendum the Basel Convention on the Control of the Transboundary Movements of Hazardous Wastes and their disposal because it duly protects its rights as a coastal State in the areas subject to its national jurisdiction, including the territorial sea, the exclusive economic zone and the continental shelf and, in so far as it is relevant, its airspace, and the exercise in those areas of its legislative and administrative competence in relation to the protection and preservation of the environment, as recognized by international law and, in particular, the law of the sea.Mexico considers that, by means of this Convention, important progress has been made in protection of the environment through the legal regulation of transboundary movements of hazardous wastes. A framework of general obligations for States parties has been established, fundamentally with a view to reducing to a minimum the generation and transboundary movement of dangerous wastes and ensuring their environmentally rational management, promoting international co-operation for those purposes, establishing co-ordination and follow-up machinery and regulating the implementation of procedures for the peaceful settlement of disputes.Mexico further hopes that, as an essential supplement to the standard-setting character of the Convention, a protocol will be adopted as soon as possible, establishing, in accordance with the principles and provisions of international law, appropriate procedures in the matter of responsibility and compensation for damage resulting from the transboundary movement and management of dangerous wastes.
 
-netherlands
+#netherlands
 “The Kingdom of the Netherlands declares, in accordance with paragraph 3 of Article 20 of the Basel Convention on the Control of Transboundary Movements of Hazardous Wastes and their Disposal, that it accepts both means of dispute settlement referred to in that paragraph as compulsory in relation to any Party accepting one or both means of dispute settlement.”
 
-norway
+#norway
 "Norway accepts the binding means of settling disputes set out in Article 20, paragraphs 3 ( a ) and ( b ), of the Convention, by ( a ) submission of the dispute to the International Court of Justice and/or ( b ) arbitration in accordance with the procedures set out in Annex VI."
 
-poland
+#poland
 With respect to article 20, paragraph 2, of the Convention, the Polish Republic declares that it recognizes submission to arbitration in accordance with the procedures and under the conditions set out in Annex VI to the Convention, as compulsory ipso facto .
 
-romania
+#romania
 In conformity with article 26, paragraph 2, of the Convention, Romania declares that the import and the disposal on its national territory of hazardous wastes and other wastes can take place only with the prior approval of the competent Romanian authorities.
 
-russian federation
+#russian federation
 The definition of "Territory" in the Cairo Guidelines and Principles for the Environmentally Sound Management of Hazardous Wastes (UNEP Governing Council decision 14/30 of 17 June 1987) to which reference is made in the preamble to the Convention is a special formulation and cannot be used for purposes of interpreting the present Convention or any of its provisions in the light of article 31, paragraph 2, or article 32 of the 1969 Vienna Convention on the Law of Treaties or on any other basis.
 
-singapore
+#singapore
 "The Government of Singapore declares that, in accordance with article 4 (12), the provisions of the Convention do not in any way affect the exercise of navigational rights and freedoms as provided in international law. Accordingly, nothing in this Convention requires notice to or consent of any State for the passage of a vessel under the flag of a party, exercising rights of passage through the territorial sea or freedom of navigation in an exclusive economic zone under international law."
 
-spain
+#spain
 The Spanish Government declares, in accordance with article 26.2 of the Convention, that the criminal characterization of illegal traffic in hazardous wastes or other wastes, established as an obligation of States Parties under article 4.3, will in future take place within the general framework of reform of the substantive criminal legal order.
 
-st. kitts and nevis
+#st. kitts and nevis
 "With respect to article 20, paragraph 2 of the Convention, the Government of Saint Kitts and Nevis declares that it recognizes submission to arbitration in accordance with the procedures and the conditions set out in Annex VI to the Convention, as compulsory ipso facto ."
 
-united kingdom of great britain and northern ireland
+#united kingdom of great britain and northern ireland
 "The Government of the United Kingdom of Great Britain and Northern Ireland declare that, in accordance with article 4 (12), the provisions of the Convention do not affect in any way the exercise of navigational rights and freedoms as provided for in international law. Accordingly, nothing in this Convention requires notice to or consent of any state for the passage of hazardous wastes on a vessel under the flag of a party, exercising rights of passage through the territorial sea or freedom of navigation in an exclusive economic zone under international law."
 
-uruguay
+#uruguay
 Uruguay is signing ad referendum the Convention on the Control of the Transboundary Movements of Hazardous Wastes and their Disposal because it is duly protecting its rights as a riparian State in the areas subject to its national jurisdiction, including the territorial sea, the exclusive economic zone and the continental shelf and, as appropriate, the superjacent air space as well as the exercise in such areas of its standard-setting and administrative competence in connection with the protection and preservation of the environment as recognized by international law and, in particular, by the law of the sea.
 
-venezuela (bolivarian republic of)
+#venezuela (bolivarian republic of)
 Venezuela considers that the Convention as adopted properly protects its sovereign rights as a riparian State over the areas under its national jurisdiction, including its territorial sea, exclusive economic zone and continental shelf, and, as appropriate, its air space. The Convention also safeguards the exercise in such areas of its standard-setting and administrative jurisdiction for the purpose of protecting and preserving the environment and its natural resources in accordance with international law, and in particular the law of the sea.
 

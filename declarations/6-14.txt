@@ -1,15 +1,15 @@
-cambodia
+#cambodia
 The Royal Government of Cambodia expresses its intention of availing itself of the provisions of article 19 of the Protocol.
 
-france
+#france
 It is expressly declared that the French Government reserves the right, in respect of French establishments in India, to apply the transitional measures of article 19 of this Protocol, it being understood that the period mentioned in paragraph 1, sub-paragraph (b) (iii) of that article shall be fifteen years after the coming into effect of this Protocol.The French Government likewise reserves the right in accordance with the transitional measures of article 19 to authorize the export of opium to French establishments in India for the same period of time.
 
-india
+#india
 "1.It is hereby expressly declared that the Government of India, in accordance with the provisions of article 19 of this Protocol, will permit"(i)The use of opium for quasi-medical purposes until 31 December 1959;"(ii)The production of opium and the export thereof, for quasi-medical purposes, to Pakistan, Ceylon, Aden and the French and Portuguese possessions on the subcontinent of India for a period of fifteen years from the date of the coming into force of this Protocol; and"(iii)The smoking of opium, for their lifetime, by addicts not under 21 years of age, registered by the appropriate authorities for that purpose on or before 30 September 1953."2.The Government of India expressly reserve to them selves the right to modify this declaration or to make any other declaration under article 19 of this Protocol, at the time of the deposit by them of their instrument of ratification."
 
-iran (islamic republic of)
+#iran (islamic republic of)
 "The Imperial Government of Iran, in accordance with article 25 of the Protocol for Limiting and Regulating the Cultivation of the Poppy Plant, the Production of, International and Wholesale Trade in, and Use of Opium, done at New York on 23 June 1953, and in accordance with article 16 of the Bill approved by the Iranian Parliament on 16 Bahman 1337 (7 February 1959), declares its ratification of the Protocol, and hereby further specifies that its ratification of the Protocol will in no way affect the status of the Law providing for the Prohibition of the Poppy Cultivation, as approved by Parliament on 7 Aban 1334 (30 October 1955)."
 
-pakistan
+#pakistan
 "The Government of Pakistan will permit for a period of fifteen years after the coming into effect of the said Protocol: (i) the use of opium for quasi-medical purposes; and (ii) the production of opium and/or import thereof from India or Iran for such purposes."
 

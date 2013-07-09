@@ -1,24 +1,24 @@
-germany
+#germany
 (1)"Until the expiration of the interim period as defined in article 3 of the Treaty between France and the Federal Republic of Germany of 27 October 1956 on the Settlement of the Saar Questions, the above-mentioned Agreement does not apply to the Saar Territory;(2)"In accordance with the aims of the Agreement, as out lined in its preamble, the Federal Republic's interpretation of the provisions contained in article 1 of the Agreement is that the granting of customs exemption is intended to serve the promotion of a free exchange of ideas and knowledge between the States Parties; that, however, this provision does not aim at furthering the shifting of production to a foreign country if such shifts are made chiefly for commercial reasons."
 
-hungary
+#hungary
 The Hungarian People's Republic calls attention to the fact that articles XIII and XIV of the Agreement are at variance with resolution 1514 on the Granting of Independence to Colonial Countries and Peoples, adopted by the General Assembly of the United Nations at its XVth session on 14 December 1960.
 
-iraq
+#iraq
 Accession by the Republic of Iraq to the Agreement shall . . . in no way imply recognition of Israel or lead to entry into any relations with it.
 
-kenya
+#kenya
 "1.Annex B (vi) of the Agreement requires free admission for `Antiques, being articles in excess of 100 years of age'. Under the relevant laws in force in Kenya, such items are admitted free of duty only if–"(a) They can be classified as `Works of Art'; and"(b) They are not intended for resale and are admitted as such by the Commissioner of Customs and Excise; and"(c) They are proved to the satisfaction of the Commissioner of Customs and Excise to be `over 100 years old'."If the above conditions are not fulfilled, such articles attract appropriate duty under the Tariff."2.With respect to Annex C (i) of the Agreement, films, filmstrips, microfilms and slides of an educational or scientific character are granted duty-free entry into Kenya under condi- tions which accord with those specified in the Agreement. This is not necessarily so in the case of similar materials of a cultural nature which are dutiable under the appropriate items in the Tariff. This position may be attributed to the impossibility of defining the word `cultural' with any degree of precision."3.With respect to Annex C (iii), sound recordings of an educational or scientific character for use under conditions specified in the Agreement are admitted into Kenya free of duty. However, no special provision exists for the admission of sound recordings of a cultural character and these attract duty under the relevant items of the Tariff."
 
-libya
+#libya
 The acceptance of the Libyan Arab Republic of this Agreement does not imply recognition of Israel or the assumption towards Israel of any commitments arising out of this Agreement.
 
-romania
+#romania
 The State Council of the Socialist Republic of Romania considers that the maintenance of the state of dependence of certain territories to which the provisions of articles XIII and XIV of the Agreement refer is inconsistent with the Declaration on the Granting of Independence to Colonial Countries and Peoples, which was adopted by the General Assembly of the United Nations on 14 December 1960, by resolution 1514 (XV), which proclaims the necessity of bringing to a speedy and unconditional end colonialism in all its forms and manifestations.The State Council of the Socialist Republic of Romania considers that the provisions of paragraph 1 of article IX are inconsistent with the principle that all multilateral treaties whose aim and purpose concern the international community as a whole should be open to universal participation.
 
-switzerland
+#switzerland
 The Government of Switzerland reserves the right to resume its freedom of action with regard to contracting States which unilaterally apply quantitative restrictions and exchange control measures of a nature to render the Agreement inoperative.Furthermore, the signature by the Government of Switzer- land is appended without prejudice to the attitudes of the Government of Switzerland in regard to the Havana Charter for an International Trade Organization signed at Havana on 24 March 1948.
 
-united states of america
+#united states of america
 The ratification is subject to the reservation contained in the Protocol annexed to the Agreement.
 

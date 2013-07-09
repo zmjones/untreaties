@@ -141,8 +141,6 @@ def get_declarations(soup, treaty_id):
             name = clean_entry(row.find("participant").get_text(strip = True).lower(), True)
             text = row.find_all(lambda tag:tag.name == "text" and 
                                tag.has_attr("type") and tag["type"] == "para")
-            if os.path.exists("declarations/" + treaty_id + ".txt"):
-                os.remove("declarations/" + treaty_id + ".txt")
             with open("declarations/" + treaty_id + ".txt", "a+") as f:
                 f.writelines("#" + name.encode("utf-8") + "\n")
                 for entry in text:
@@ -165,6 +163,8 @@ def get_treaties(base_url, treaty_list):
         treaty_id = re.sub("\.", "-", treaty_id)
         if not os.path.exists("declarations"):
             os.makedirs("declarations")
+        if os.path.exists("declarations/" + treaty_id + ".txt"):
+            os.remove("declarations/" + treaty_id + ".txt")
         get_declarations(soup, treaty_id)
         if not os.path.exists("treaties"):
             os.makedirs("treaties")

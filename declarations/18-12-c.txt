@@ -1,60 +1,60 @@
-algeria
+#algeria
 Reservation:The Government of the People's Democratic Republic of Algeria does not consider itself bound by the provisions of article 16, paragraph 2 of this Protocol, which provides that any dispute between two or more States Parties concerning the interpretation or application of the Protocol that cannot be settled through negotiation shall, at the request of one of those States Parties, be submitted to arbitration or to the International Court of Justice.The Government of the People's Democratic Republic of Algeria considers that no dispute of such nature may be submitted to arbitration or to the International Court of Justice without the consent of all the parties to the dispute.Declaration:The ratification of this Protocol by the People's Democratic Republic of Algeria does not in any way signify recognition of Israel.The present ratification may not be interpreted as leading to the establishment of relations of any kind with Israel.
 
-argentina
+#argentina
 The Argentine Republic declares that, in relation to article 2, the provisions of the Protocol shall be without prejudice to the right of the Argentine Republic to adopt, at the domestic level, stricter provisions designed to fulfil the objectives of the Protocol of preventing, combating and eradicating the illicit manufacturing of and trafficking in firearms, their parts and components and ammunition.
 
-azerbaijan
+#azerbaijan
 "The Republic of Azerbaijan declares that it will be unable to guarantee compliance with the provisions of this Protocol in its territories occupied by the Republic of Armenia until these territories are liberated from that occupation...""With regard to Article 16, paragraph 3, of the Protocol, the Republic of Azerbaijan does not consider itself bound by paragraph 2 of Article 16."
 
-bahamas
+#bahamas
 “In accordance with Article 16 paragraph 3, the Commonwealth of The Bahamas enters a specific reservation to the procedure established under Article 16 paragraph 2 of the Protocol on the basis that referral of a dispute concerning the application or interpretation of the provisions of the Protocol to arbitration or to the International Court of Justice must be by consent of all the parties to the dispute.”
 
-belgium
+#belgium
 The Government of Belgium makes the following reservation concerning article 4, paragraph 2 of the Additional Protocol: the activities of armed forces during a period of armed conflict, in the sense given these terms under international humanitarian law, which are governed by this law, are not governed by the present Protocol.
 
-cuba
+#cuba
 In accordance with the provisions of article 16, paragraph 3, of the Protocol, Cuba declares that it does not consider itself bound by paragraph 2 of said article, which refers to the settlement of disputes between two or more States Parties.
 
-el salvador
+#el salvador
 The Government of the Republic of El Salvador does not consider itself bound by paragraph 2 of article 16, inasmuch as it does not recognize the compulsory jurisdiction of the International Court of Justice.With regard to article 16, paragraph 3, of the Protocol, the Government of the Republic of El Salvador does not consider itself bound by paragraph 2 of this article, inasmuch as it does not recognize the compulsory jurisdiction of the International Court of Justice.The Republic of El Salvador, in accordance with its domestic law (Act on Control and Monitoring of Firearms, Ammunition, Explosives and Similar Articles and their Regulation) interprets the following as collector's weapons: weapons of war which have been deactivated; and antique and obsolete weapons and those of historical value which shall not be utilized, subject to technical review by the Ministry of National Defence which shall so certify them; weapons of war: pistols, rifles and carbines with automatic firing action as well as those classified as light and heavy, mines, grenades and military explosives; antique weapons are those which are no longer manufactured and may be registered only for purposes of collection, in accordance with technical certification and prior authorization of the Ministry of National Defence; deactivated weapons: any weapon of war that, for purposes of collection, has been deactivated for its original use, with prior authorization by the Ministry of National Defence; firearm: weapons that, by the use of rimfire or centerfire percussion cartridges, expel projectiles through a smooth or rifled barrel, by means of the expansion of gases produced by the combustion of explosive solids or powder or other flammable material contained in the cartridge; furthermore, for identification purposes, pistols and revolvers shall be marked on the weapon and for rifles, carbines and shotguns, the serial number shall appear on the case of the mechanism; explosives are the combination of various substances and mixtures that produce an exothermic reaction when ignited. Any substance or material which, when struck, subjected to friction, heated or subjected to the effect of a small detonation or a chemical reaction, reacts violently, producing gases at high temperature and pressure that impact anything found in their vicinity; articles similar to firearms or ammunition: any articles or objects made by hand that have similar characteristics or can be used for the same purposes.
 
-ethiopia
+#ethiopia
 Ethiopia does not accept the jurisdiction of the International Court of Justice which is provided under Article 16(2) of the said Protocol.
 
-finland
+#finland
 “Pursuant to Article 13 (2) of the Protocol, the Republic of Finland declares that a national body to act as liaison between it and other States Parties on matters relating to the Protocol is the National Police Board.”
 
-guatemala
+#guatemala
 The Republic of Guatemala shall provide the information referred to in article 12 of the Protocol in the case of information disclosed by individuals on a confidential basis only in the context of a request for judicial assistance.
 
-lao people's democratic republic
+#lao people's democratic republic
 "In accordance with paragraph 3, Article 16 of the Protocol Against the Illicit Manufacturing of and Trafficking in Firearms, Their Parts and Components and Ammunition, Supplementing the United Nations Convention Against Transnational Organized Crime, the Lao People's Democratic Republic does not consider itself bound by paragraph 2, Article 16 of the present Protocol. The Lao People's Democratic Republic declares that to refer a dispute relating to interpretation and application of the present Protocol to arbitration or the International Court of Justice, the agreement of all parties concerned in the dispute is necessary."
 
-lithuania
+#lithuania
 ".....in accordance with Article 16 (3) of the Protocol, the Seimas of the Republic of Lithuania declares that the Republic of Lithuania does not consider itself bound by paragraph 2, Article 16 of the Protocol providing the settlement of disputes concerning the interpretation and application of this Protocol at the International Court of Justice."
 
-malawi
+#malawi
 "The Government of the Republic of Malawi in its efforts to curb and stamp out offences related to trafficking in persons especially women and children has embarked upon various social and legal reforms to incorporate obligations emanating from this Protocol (Article 17 (4));Further, expressly declares its acceptance of Article 16 (2) on settlement of disputes concerning interpretation and application of this Protocol in consonant with Article 16 (3).”
 
-republic of moldova
+#republic of moldova
 Until the full re-establishment of the territorial integrity of the Republic of Moldova, the provisions of the Protocol shall be applied only on the territory controlled effectively by the authorities of the Republic of Moldova.
 
-saudi arabia
+#saudi arabia
 “The Government of the Kingdom of Saudi Arabia does not consider itself obligated under paragraph 2 of Article 16 of this Protocol, concerning the settlement of disputes.”
 
-south africa
+#south africa
 "AND WHEREAS pending a decision by the Government of the Republic of South Africa on the compulsory jurisdiction of the International Court of Justice, the Government of the Republic does not consider itself bound by the terms of Article 16 (2) of the Protocol which provided for the compulsory jurisdiction of the International Court of Justice in differences arising out of the interpretation or application of the Protocol. The Republic will adhere to the position that, for the submission of a particular dispute for settlement by the International Court, the consent of all the parties to the dispute is required in every individual case."
 
-spain
+#spain
 1.Spain is not opposed to the application of the principle of self-determination in the process of decolonization but wishes to emphasize that the application of the principle of self-determination must be compatible with the principle of the territorial integrity of States. This is particularly relevant in those cases in which a sovereignty dispute exists concerning the territory in question, as is the case with Gibraltar.2.This position taken by Spain is based on the doctrine established by the United Nations on this point, to be found in General Assembly resolutions 1514 (XV), 2353 (XXII), 2429 (XXIII) and 2625 (XXV), among others.
 
-switzerland
+#switzerland
 Reservation with regard to article 10 (2) b):In the absence of objection to the transit within 30 days from the date of the written request of non-objection to transit, the requested transit State shall be deemed not to have objected and to have tacitly agreed to the transit.Reservation with regard to article 10 (3):Information on transit States shall not be systematically mentioned in the authorizations for export from and import into Swiss territory, or in the corresponding accompanying documentation, in accordance with Swiss law, which does not always require such mention.
 
-tunisia
+#tunisia
 ... with a reservation to article 16 (2)..... With a reservation to article 16 (2).
 
-venezuela (bolivarian republic of)
+#venezuela (bolivarian republic of)
 The Bolivarian Republic of Venezuela, in accordance with the provisions of article 16 (3) of the Protocol against the Illicit Manufacturing of and Trafficking in Firearms, Their Parts and Components and Ammunition, supplementing the United Nations Convention against Transnational Organized Crime, formulates an express reservation with respect to the provisions of article 16 (2). Consequently, it does not consider itself bound by the referral of a dispute to arbitration as a means of settlement of disputes, nor does it recognize the compulsory jurisdiction of the International Court of Justice.
 

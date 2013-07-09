@@ -1,27 +1,27 @@
-algeria
+#algeria
 The Democratic and Popular Republic of Algeria does not consider itself bound by the provisions of article 16 of the Convention concerning the competence of the International Court of Justice and affirms that the agreement of all the parties concerned is required in each case before a dispute can be brought before the International Court of Justice.
 
-argentina
+#argentina
 (a)The Argentine Republic reserves the right, with respect to article 10 of the Convention, to restrict the application of the expression "highest priority" in the light of the provisions governing exchange controls in Argentina.(b)In the event that another Contracting Party extends the application of the Convention to territories over which the Argentine Republic exercises sovereignty, such extension shall in no way affect the latter's rights (the reference is to article 12 of the Convention).(c)The Argentine Government reserves the right not to apply the procedure provided for in article16 of the Convention in any dispute directly or indirectly related to the territories referred to in its declaration concerning article 12.
 
-australia
+#australia
 "Australia wishes to declare, in accordance with Article 12, that with the exception of the Territory of Norfolk Island, the Convention shall not be applicable to the territories for the International relations of which Australia is responsible."
 
-israel
+#israel
 " Article 5 : The Transmitting Agency shall transmit under paragraph 1 any order, final or provisional, and any other judicial act, obtained by the claimant for the payment of maintenance in a competent tribunal of Israel, and, where necessary and possible, the record of the proceedings in which such order was made." Article 10: Israel reserves the right:"a)to take the necessary measures to prevent transfers of funds under this Article for purposes other than the bona fide payment of existing maintenance obligations;"b)to limit the amounts transferable pursuant to this Article, to amounts necessary for subsistence."
 
-netherlands
+#netherlands
 The Government of the Kingdom makes the following reservation with regard to article 1 of the Convention: the recovery of maintenance shall not be facilitated by virtue of this article if, the claimant and the respondent being both in the Netherlands, or, respectively, in Surinam, the Netherlands Antilles or Netherlands New Guinea, and assistance having been granted or similar arrangements made under the Assistance to the Needy Act ( Loi sur l'Assistance des Pauvres ), no recovery was in general obtained for such assistance from the respondent, having regard to the circumstances of the case in question."The Convention has for the time being been ratified for the Kingdom of the Netherlands in Europe only. If, in accordance with article 12, the application of the Convention will at any time be extended to the parts of the Kingdom outside Europe, the Secretary-General will be duly notified thereof. In that event the notification will contain such reservation as may be made on behalf of any of these parts of the Kingdom."
 
-republic of moldova
+#republic of moldova
 "Until the full re-establishment of the territorial integrity of the Republic of Moldova, the provisions of the Convention shall be applied only on the territory controlled effectively by the authorities of the Republic of Moldova."
 
-seychelles
+#seychelles
 "The Republic of Seychelles reserves the right, with respect to article 10 of the Convention, to restrict the application of the expression ' highest priority ' in the light of the legal provisions governing exchange control in Seychelles."
 
-sweden
+#sweden
 Article 1: Sweden reserves the right to reject, where the circumstances of the case under consideration appear to make this necessary, any application for legal support aimed at the recovery of maintenance from a person who entered Sweden as a political refugee.Article 9: "Where the proceedings are pending in Sweden, the exemptions in the payment of costs and the facilities provided in paragraph 1 shall be granted only to persons resident in a State Party to the Convention or to any person who would otherwise enjoy such advantages under an agreement concluded with the State of which he is a national."
 
-tunisia
+#tunisia
 (1)Persons living abroad may only claim the advantages provided for in the Convention when considered non-residents under the exchange regulations in force in Tunisia.(2)A dispute may only be referred to the International Court of Justice with the agreement of all the parties to the dispute.
 

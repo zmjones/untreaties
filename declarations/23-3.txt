@@ -1,24 +1,24 @@
-belgium
+#belgium
 The Belgian State will not be bound by articles 53 and 64 of the Convention with regard to any party which, in formulating a reservation concerning article 66 (2), objects to the settlement procedure established by this article.
 
-bulgaria
+#bulgaria
 The People's Republic of Bulgaria considers that the practice of an individual International Organization may be considered as established according to article 2, paragraph 1, sub-paragraph j, only when it has been adopted as such by all Member States of this Organization.The People's Republic of Bulgaria considers that the term "Boundary" as it is used in the text of article 62, paragraph 2, means State Boundary and it may be established only by States.The People's Republic of Bulgaria considers that a treaty which an International Organization is a party to, may establish obligations for Members States of this Organization only if the Member States have expressed their consent in advance in each individual case.
 
-colombia
+#colombia
 (a) With respect to articles 11 to 17, and in accordance with article 46, Colombia specifies that Colombia’s plenipotentiary representative can express the consent of the Colombian State only after the treaty has been approved by the Congress and reviewed by the Constitutional Court.(b) With respect to article 25, Colombia specifies that only treaties relating to economic or commercial matters that have been agreed upon within the framework of international organizations which so provide may be applied provisionally by Colombia without prior approval of the Congress and review by the Constitutional Court.(c) With respect to article 27, paragraph 1, Colombia specifies that it accepts that a State may not invoke the provisions of its internal law as justification for its failure to perform the treaty, on the understanding that this rule does not exclude judicial control of the constitutionality of laws adopting treaties.”
 
-denmark
+#denmark
 ... Where parties formulate reservations or partial reserva- tions with respect to the provisions of article 66 of the Convention concerning the obligatory settlement of certain disputes, Denmark does not consider itself bound by the provisions of Part V of the Convention whereby the procedures for settlement set forth in article 66 shall not be applied if reservations have been formulated by other parties.
 
-germany
+#germany
 1. The Federal Republic of Germany presumes that the juris- diction of the International Court of Justice brought about by consent of States outside the said Convention cannot be excluded by invoking the provisions of article 66, paragraph 4 of the Convention.2. The Federal Republic of Germany interprets "measures taken in conformity with the Charter of the United Nations" as referred to in article 76 of the said Convention to mean decisions taken in future by the United Nations Security Council in conformity with Chapter VII of the Charter on the maintenance of international peace and security.
 
-hungary
+#hungary
 
 
-netherlands
+#netherlands
 "The Kingdom of the Netherlands does not regard the provisions of article 66 (b), (c) and (d) of the Convention as providing `some other method of peaceful settlement' within the meaning of the declaration of the Kingdom of the Netherlands accepting as compulsory the jurisdiction of the International Court of Justice which was deposited with the Secretary-General of the United Nations on 1 August 1956;The Kingdom of the Netherlands is of the opinion that the provisions regarding the settlement of disputes, as laid down in article 66 of the Convention, are an important part of the Convention and that they cannot be separated from the substantive rules with which they are connected."
 
-senegal
+#senegal
 In signing this Convention, the Government of Senegal de- clares that the completion of this formality shall not be inter- preted in so far as Senegal is concerned as a recognition of the right of international organizations to appear as parties before the International Court of Justice.
 

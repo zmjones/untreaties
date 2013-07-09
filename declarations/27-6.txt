@@ -1,21 +1,21 @@
-austria
+#austria
 "The Republic of Austria declares in accordance with article 21 paragraph 2 of the Convention to accept both of the means of the settlement of disputes mentioned in this paragraph as compulsory in relation to any Party accepting one or both of these means of settlement of disputes as compulsory."
 
-azerbaijan
+#azerbaijan
 "1. The Republic of Azerbaijan declares that the term ‘military installations' appearing in article 2, paragraph 2 (b), of the Convention on the Transboundary Effects of Industrial Accidents is understood to refer to installations serving the interests of national defence and functioning on legal causes.2. With reference to article 3, paragraph 1, of the Convention, the Republic of Azerbaijan declares that, in relation to any Party, it will cooperate within the framework of the Convention on the Transboundary Effects of Industrial Accidents in accordance with the principles and norms of international law.3. In accordance with article 21, paragraph 2, of the Convention, the Republic of Azerbaijan declares that, for a dispute not resolved in accordance with paragraph 1 of article 21, it accepts the arbitration in accordance with the procedure set out in Annex XIII as compulsory in relation to any Party accepting one or both of the means of dispute settlement referred to in paragraph 2 of article 21."
 
-european union
+#european union
 On 27 April 2007, the European Community informed the Secretary-General of its decision to withdraw the reservation made upon approval to the Convention (see United Nations, Treaty Series, vol. 2105, p. 575 for the text of the reservation) and replace it with the following reservation:"The Member States of the European Community, in their mutual relations, will apply the Convention in accordance with the Community's internal rules. The Community therefore reserves the right as concerns the threshold quantities mentioned in Annex I, Part I, Nos. 4, 5, and 6 to the Convention, to apply threshold quantities of 100 tonnes for bromine (very toxic substance), 5000 tonnes for methanol (toxic substance) and 2000 tonnes for oxygen (oxidising substance)."“In accordance with the EC Treaty, the objectives and principles of the Community’s environmental policy are, in particular, to preserve and protect the quality of the environment and human health through preventive action. In pursuit of those objectives, the Council adopted Council Directive 82/501/EEC of 24 June 1982 on the major-accident hazards of certain industrial activities which has been replaced by Council Directive 96/82/EC of 9 December 1996 on the control of major-accident hazards involving dangerous substances. These instruments aim at the prevention of major-accident hazards involving dangerous substances and the limitations of their consequences for man and the environment and cover matters which are the subject of the said Convention. The Community will inform the depositary of any amendment to this Directive and of any further relevant development in the field covered by the Convention.As regards the application of the Convention, the Community and its Member States are responsible, within their respective spheres of competence.”
 
-france
+#france
 1. Interpretative declaration:The French Government declares that the term "military installations" appearing in article 2, paragraph 2 (b), of the Convention on the Transboundary Effects of Industrial Accidents is understood to refer to installations serving the interests of national defence and to weapons systems and nuclear-powered vessels of the national navy.2. Reservation:At the time of adopting the Convention on the Transboundary Effects of Industrial Accidents, signed at Helsinki on 18 March 1992, the French Republic associates itself with the reservations expressed by the European Community at the time of the deposit of its instrument of ratification and states that it will apply the Convention in accordance with its obligations under Directive 96/82 of the Council of the European Union of 9 December 1996 on the control of major-accident hazards involving dangerous substances.
 
-hungary
+#hungary
 "The Government of the Republic of Hungary accepts both means of dispute settlement as compulsory in relation to any Party accepting the same obligation."
 
-netherlands
+#netherlands
 "The Kingdom of the Netherlands accepts, for a dispute not resolved in accordance with paragraph 1 of Article 21 of the Convention, both means of dispute settlement mentioned in this paragraph as compulsory in relation to any Party accepting the same obligation.”“The Kingdom of the Netherlands reserves the right as concerns the threshold quantities mentioned in Annex I of the Convention, to apply the threshold quantities mentioned in European Council Directive 96/82/EC of 9 December 1996 on the control of major-accident hazards involving dangerous substances.”
 
-serbia
+#serbia
 “The Republic of Serbia declares in accordance with article 21 paragaph 2 of the Convention that it accepts submission of the dispute to the International Court of Justice, mentioned in paragraph 2 (a).”
 

@@ -1,6 +1,6 @@
-italy
+#italy
 “With reference to article 39 b) of the Agreement, the Government of the Italian Republic retains the right to tax not only its own citizens or nationals, but also those foreign citizens who reside permanently in Italy."
 
-japan
+#japan
 "With reference to the provisions of paragraph (b) of article 39 of the said Agreement, it is hereby declared that Japan retains for itself and its political subdivisions the right to tax salaries, expense allowances, and emoluments paid by the said Bank to its nationals."
 

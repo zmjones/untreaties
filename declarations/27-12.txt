@@ -1,12 +1,12 @@
-denmark
+#denmark
 Until further notice, the Convention shall not apply to the Faroe Islands and Greenland.
 
-hungary
+#hungary
 "The Government of the Republic of Hungary declares itself bound by either of the two means for the settlement of disputes (International Court of Justice, arbitration), reserving its right to agree on the competent body of jurisdiction, as the case may be."
 
-netherlands
+#netherlands
 “The Kingdom of the Netherlands declares, in accordance with paragraph 10 of Article 33 of the United Nations Convention on the Law of the Non-Navigational Uses of International Watercourses, that it accepts both means of dispute settlement referred to in that paragraph as compulsory in relation to any Party accepting one or both means of dispute settlement.”
 
-syrian arab republic
+#syrian arab republic
 The acceptance by the Syrian Arab Republic of this Convention and its ratification by the Government shall not under any circumstances be taken to imply recognition of Israel and shall not lead to its entering into relations therewith that are governed by its provisions.
 
