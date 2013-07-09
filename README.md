@@ -1,4 +1,4 @@
-This repository contains a set of scripts that allow the retrieval of the [United Nations' Treaty Collection](http://treaties.un.org/), and transformation of the retrieved data.
+This repository contains a set of scripts that allow the retrieval of the [United Nations' Treaty Collection](http://treaties.un.org/), and transformation of the retrieved data. Please [open an issue]() if you find any errors or would like to suggest a feature. Pull requests are welcome!
 
 ### Getting the data
 
@@ -8,7 +8,7 @@ You can clone (see below) or [download](https://github.com/zmjones/untreaties/ar
 
 ### Transforming the data
 
-The `R` script `utilities.R` contains a number of functions that make working with the raw data easier. You can load these functions by simply sourcing the file. It requires `stringr`, `lubridate`, `plyr`, and `reshape2`.
+The [R](http://cran.us.r-project.org/) script `utilities.R` contains a number of functions that make working with the raw data easier. You can load these functions by simply sourcing the file. It requires `stringr`, `lubridate`, and `plyr`.
 
  - `loadData` loads the data for a specific treaty given its chapter and treaty numbers, which are passed as strings. You can optionally expand the column names (if needed). If you choose to expand the column names you can also transform the data into a country-year format, given a start date and an end date (both passed as strings in a day-month-year format).
 
@@ -18,7 +18,7 @@ The `R` script `utilities.R` contains a number of functions that make working wi
 
  - `expandColumns` takes a dataframe that may need to be expanded, passes columns that need to be expanded to `createColumns`, and combines the results.
 
- - `convertPanel` takes a character vector of dates (of the form "%d-%b-%Y") and a year for comparison and returns a binary variable indicating whether the year of the date that was passed is less than or equal to the comparison year.
+ - `convertPanel` takes a character vector of dates (of the form `"%d-%b-%Y"`) and a year for comparison and returns a binary variable indicating whether the year of the date that was passed is less than or equal to the comparison year.
 
  - `expandPanel` takes a dataframe, a start year, and an ending year, and returns a dataframe with in country-year format.
 
@@ -26,6 +26,7 @@ The `R` script `utilities.R` contains a number of functions that make working wi
 
 ### Examples
 
+	> source("utilities.R")
     > loadData(chap = "10", treaty = "2")
        Participant   Signature Ratification, Accession(a)
     1      Algeria  4 Aug 1963                10 Sep 1964
@@ -80,7 +81,7 @@ The `R` script `utilities.R` contains a number of functions that make working wi
     [4] "amendment to article 109 of the charter of the united nations, adopted by the..."
     [5] "amendment to article 61 of the charter of the united nations, adopted by the ..."
     Which treaty would you like to load? 1
-    loading charter of the united nations (deposited in the archives of the gover
+    loading charter of the united nations (deposited in the archives of the gover...
                            Participant Ratification
     1                        Argentina  24 Sep 1945
     2                        Australia   1 Nov 1945

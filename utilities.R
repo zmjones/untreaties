@@ -1,7 +1,6 @@
 require(stringr)
 require(lubridate)
 require(plyr)
-require(reshape2)
 
 createColumns <- function(x, head) {
   if (is.data.frame(x) & ncol(x) == 1) {
@@ -96,9 +95,5 @@ searchTreaties <- function(treaty.name, dist.val = .1, trim = TRUE, ...) {
     cat("Which treaty would you like to load? ")
     tname <- as.integer(readLines(file("stdin"), 1))
   }
-  if (str_length(tname) >= 69)
-    message(paste0("loading ", strtrim(index.df$treaty_name[tname], 69), "..."))
-  else
-    message(paste0("loading ", strtrim(index.df$treaty_name[tname], 69)))
   return(loadData(index.df$chapter_no[tname], index.df$treaty_no[tname], ...))
 }
