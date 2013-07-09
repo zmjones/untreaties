@@ -93,7 +93,9 @@ searchTreaties <- function(treaty.name, dist.val = .1, trim = TRUE, ...) {
     message("multiple matches found")
     print(paste0(strtrim(index.df$treaty_name[tname], 77), "..."))
     cat("Which treaty would you like to load? ")
-    tname <- as.integer(readLines(file("stdin"), 1))
+    con <- file("stdin")
+    tname <- as.integer(readLines(con, 1))
+    close(con)
   }
   return(loadData(index.df$chapter_no[tname], index.df$treaty_no[tname], ...))
 }
