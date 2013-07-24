@@ -1,6 +1,6 @@
-#european union
+#European Union
 "The European Community declares that, in accordance with the Treaty establishing the European Community, and in particular Article 175(l) thereof, it is competent for entering into international agreements, and for implementing the obligations resulting therefrom, which contribute to the pursuit of the following objectives:- preserving, protecting and improving the quality of the environment;- protecting human health;- prudent and rational utilisation of natural resources;- promoting measures at international level to deal with regional or worldwide environmental problems.Moreover, the European Community declares that it has already adopted legal instruments, binding on its Member States, covering matters governed by this Protocol, and will submit and update, as appropriate, a list of those legal instruments to the Biosafety Clearing House in accordance with Article 20(3)(a) of the Cartagena Protocol on Biosafety.The European Community is responsible for the performance of those obligations resulting from the Cartagena Protocol on Biosafety which are covered by Community law in force.The exercise of Community competence is, by its nature, subject to continuous development."
 
-#syrian arab republic
+#Syrian Arab Republic
 The Government of the Syrian Arab Republic affirms, however, that the accession of the Syrian Arab Republic to the said Protocol in no way signifies recognition of Israel nor shall it be conducive to entry into any dealings therewith in respect of matters governed by that Protocol.
 

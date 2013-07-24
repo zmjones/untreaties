@@ -1,78 +1,78 @@
-#austria
+#Austria
 "With regard to article 2 (basic obligations) Austria declares to be bound by the provisions of paragraph 2 ( a ). Furthermore, Austria chooses the year 1988 as a base year with respect to paragraph 2 ( a )."
 
-#belgium
+#Belgium
 Belgium undertakes to reduce its national annual emissions of VOCs by at least 30 per cent by the year 1999, using 1988 levels as a basis (article 2, paragraph 2 ( a )).
 
-#bulgaria
+#Bulgaria
 "Bulgaria declares under article 2, paragraph 2, sub-paragraph ( c ) that it shall, as soon as possible and as a first step, take effective measures to ensure at least that at the latest by the year 1999 its national annual emissions of VOCs do not exceed the 1988 levels."
 
-#canada
+#Canada
 "Pursuant to article 2, paragraph 2 of the Protocol, Canada is pleased to inform other Parties to the present Protocol that it selects option ( b ) from among the three options available. Base year: 1988."
 
-#czech republic
+#Czech Republic
 "The Government of the Czech Republic declares that it shall use the 1990 levels as the basis for its reduction of annual emissions of VOCs pursuant to article 2, paragraph 2( a ) of the Protocol."
 
-#denmark
+#Denmark
 "Denmark hereby declares that it will reduce its national annual emissions of VOCs by at least 30% by the year 1999, using 1985 as a basis.
 
-#european union
+#European Union
 "The European Economic community, taking account in particular of the alternatives available to its Member States in application of Article 2 (2) of the Protocol, hereby declares that its obligations under the Protocol with regard to the objectives for reducing VOC emissions may not be greater than the sum of the obligations entered into by its Member States which have ratified the Protocol."
 
-#finland
+#Finland
 "Finland declares that it intends to reduce its annual national emissions of VOCs by at least 30%, using 1988 levels as a basis."
 
-#france
+#France
 The French Republic undertakes to reduce its national annual emissions of VOCs by at least 30 per cent by the year 1999, using 1988 levels as a basis (article 2, paragraph 2 ( a )).
 
-#germany
+#Germany
 "Germany specifies that it shall reduce its national annual emissions of VOCs by at least 30% by the year 1999 using 1988 levels as a basis according to article 2, paragraph 2 ( a )."
 
-#greece
+#Greece
 "Greece declares under article 2, paragraph 2, sub-paragraph c) that it shall, as soon as possible and as a first step, take effective measures to ensure at least that at the latest by the year 1999 its national annual emissions of VOCs do not exceed the 1988 levels."
 
-#hungary
+#Hungary
 "The Republic of Hungary shall control and reduce its national annual emissions of VOCs or their transboundary fluxes in accordance with the provisions of paragraph 2 ( c ) of article 2 of the Protocol."
 
-#italy
+#Italy
 "Italy declares its intention to meet the requirements of article 2.1 of the Protocol in the way specified at article 2, paragraph 2, letter ( a ) and its intention to indicate as reference year as a basis for reduction: 1990."
 
-#liechtenstein
+#Liechtenstein
 "As a basis to reduce its annual emissions of VOCs by at least 30% by the year 1999, Liechtenstein will use 1984 levels."
 
-#luxembourg
+#Luxembourg
 Luxembourg undertakes to reduce its national annual emissions of VOCs by at least 30 per cent by the year 1999, using 1990 levels as a basis (article 2, paragraph 2 ( a )).
 
-#monaco
+#Monaco
 The Government of the Principality of Monaco shall reduce its emissions of VOCs by 30% during the year 2001, using 1990 levels as a basis.
 
-#netherlands
+#Netherlands
 "The Netherlands declares that it intends to reduce its annual national emissions of VOCs by at least 30% using 1988 levels as a basis."
 
-#norway
+#Norway
 "The Government of Norway intends to fulfil the obligations of the VOC Protocol as specified in article 2, paragraph 2 (b). Norway will use the year 1989 as the base year for reductions.Based on present prognosis of VOC emissions the total Norwegian reduction of VOC will be in the order of 20% by the year 1999."Norway will apply equivalent measures based on the best available technologies which are economically feasible, outside the TOMA as inside."The Government of Norway will fulfil its obligations in the Exclusive Economic Zone of Norway under the Protocol in conformity with international law."
 
-#portugal
+#Portugal
 "Portugal declares under its article 2, paragraph 2, sub-paragraph a ), that is shall control and reduce its national annual emissions of VOC's or their transboundary fluxes in accordance with the way specified at that article."
 
-#slovakia
+#Slovakia
 “... the Slovak Republic specifies the year 1990 as the base year for purposes of the Protocol.”
 
-#spain
+#Spain
 The Government of the Kingdom of Spain declares that it accepts the commitment set forth in article 2 (2) ( a ) to reduce national annual emissions by at least 30 per cent by the year 1999, using 1988 levels as a basis.
 
-#sweden
+#Sweden
 "Sweden declares that it intends to reduce its annual national emissions of VOCs by at least 30%, using 1988 levels as a basis.""Sweden declares that it intends to reduce its annual national emissions of VOCs by at least 30% by the year 1999, using 1988 levels as a basis."
 
-#switzerland
+#Switzerland
 "As a basis to reduce its annual emissions of VOCs by at least 30% by the year 1999, Switzerland will use 1984 levels."
 
-#ukraine
+#Ukraine
 The Government of Ukraine signs the said Protocol on the conditions set out in paragraph 2 ( b ) of article 2 of the Protocol.In so doing the Government of Ukraine stipulates that the following designated tropospheric ozone management areas (TOMAs) situated in Ukraine should be included in Annex I to the Protocol:TOMA No. 1: the Poltavian, Dnepropetrovsk, Zaporozhian, Donetsk, Lugantsk, Nikolaivian, Khersonian regions (194.3 thousand square kilometres);TOMA No. 2: Lvovian, Ternopol, Ivano-Frankovsk, Zakarpatian regions (62.3 thousand square kilometres).
 
-#united kingdom of great britain and northern ireland
+#United Kingdom of Great Britain and Northern Ireland
 "The Government of the United Kingdom of Great Britain and Northern Ireland declares that it intends to reduce its annual national emissions of VOCs by at least 30%, using 1988 levels as a basis."
 
-#united states of america
+#United States of America
 "In accordance with article 2, paragraph 2 of the Protocol, the Government of the United States of America specifies 1984 emission levels as the basis for its VOC reductions under this Protocol article 2, paragraph 2 ( a )".
 
