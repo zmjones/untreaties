@@ -35,7 +35,6 @@ expandColumns <- function(df) {
     df <- data.frame(nexpand.df, do.call("cbind", cols))
   } else if (ncol(date.df) == 1)
     df <- data.frame(other.df, createColumns(date.df, colnames(date.df)))
-  else stop("Empty dataframe passed.")
   colnames(df) <- gsub("\\.", "_", tolower(colnames(df)))
   return(df)
 }
@@ -49,7 +48,6 @@ loadData <- function(chap, treaty, expand = FALSE, panel = FALSE, ...) {
     df <- expandColumns(df)
   else if (expand == FALSE & panel == TRUE)
     stop("column names must be expanded to use panel expansion.")
-  else stop("expand and panel are logical arguments.")
   return(df)
 }
 
