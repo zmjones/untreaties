@@ -2,6 +2,7 @@ pkgs <- c("stringr", "lubridate", "plyr")
 invisible(lapply(pkgs, function(x) if(!is.element(x, installed.packages()[, 1]))
                  install.packages(x, repos = c(CRAN = "http://cran.rstudio.com"))))
 invisible(lapply(pkgs, require, character.only = TRUE))
+options(stringsAsFactors=FALSE)
 
 createColumns <- function(x, head) {
   if (is.data.frame(x) & ncol(x) == 1) {
