@@ -14,7 +14,7 @@ You can clone (see below) or [download](https://github.com/zmjones/untreaties/ar
 
 The [R](http://cran.us.r-project.org/) script `utilities.R` contains a number of functions that make working with the raw data easier. You can load these functions by simply sourcing the file. It requires `stringr`, `lubridate`, and `plyr`.
 
- - `loadData` loads the data for a specific treaty given its chapter and treaty numbers, which are passed as strings. You can optionally expand the column names (if needed). If you choose to expand the column names you can also transform the data into a country-year format, given a start date and an end date (both passed as strings in a day-month-year format).
+ - `loadData` loads the data for a specific treaty given its chapter and treaty numbers, which are passed as strings. You can optionally expand the column names (if needed). If you choose to expand the column names you can also transform the data into a country-year format, given a start year and an end year (both passed as strings).
 
  - `searchTreaties` searches through the `treaty_name` column in `index.csv` using approximate string matching given a maximum distance (internally it uses `agrep`). If multiple matches are found, the user can select the best match from the console. The `trim` option is logical and truncates console output to 80 characters (it is true by default). This function calls `loadData` internally, and allows overloading, so you can pass arguments to `loadData` by passing arguments to `searchTreaties`. Note that you have to name the arguments explicitly (you can't just use argument ordering).
 
