@@ -4,6 +4,9 @@ Until further notice, the Convention shall not apply to the Faroe Islands and Gr
 #Hungary
 "The Government of the Republic of Hungary declares itself bound by either of the two means for the settlement of disputes (International Court of Justice, arbitration), reserving its right to agree on the competent body of jurisdiction, as the case may be."
 
+#Montenegro
+“Montenegro declares that in respect of any dispute not resolved in accordance with Article 33 paragraph 2 of the said Convention, Montenegro recognizes as compulsory ipso facto, and without special agreement in relationship to any party accepting the same obligation:1. Submission of the dispute to the International Court of Justice; and/or2. Arbitration by an arbitral tribunal established and operating, unless the parties to the dispute otherwise agreed, in accordance with the procedure laid down in the annex to the present Convention.”
+
 #Netherlands
 “The Kingdom of the Netherlands declares, in accordance with paragraph 10 of Article 33 of the United Nations Convention on the Law of the Non-Navigational Uses of International Watercourses, that it accepts both means of dispute settlement referred to in that paragraph as compulsory in relation to any Party accepting one or both means of dispute settlement.”
 

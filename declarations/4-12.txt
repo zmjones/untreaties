@@ -13,6 +13,9 @@ Reservation:The State of Chile formulates the reservation authorised under artic
 #Greece
 Subject to article 2 for the application of the death penalty in time of war pursuant to a conviction for a most serious crime of a military nature committed during wartime.
 
+#Guinea-Bissau
+Hereby declare that the declaration the Government has made in accordance with Article 41 of the International Covenant on Civil and Political Rights to recognize the competence of the Human Rights Committee to receive and consider communications when a State Party claims that another State Party is not fulfilling its obligations do not extend to the provisions of the Second Optional Protocol, as provided in Article 4 thereof.Also, declare that the competence that the Government of Guinea-Bissau recognizes for the Human Rights Committee to receive and consider communications from individuals subject to its jurisdiction does not extend to the provisions of the Second Optional Protocol, in accordance with the option provided in Article 5 thereof.
+
 #Malta
 
 
