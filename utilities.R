@@ -5,35 +5,47 @@ invisible(lapply(pkgs, require, character.only = TRUE))
 options(stringsAsFactors = FALSE)
 
 createColumns <- function(x, head) {
-  if (is.data.frame(x) & ncol(x) == 1) {
+  if (is.data.frame(x)) {
     head <- colnames(x)
-    x <- x[, 1]
+    if (ncol(x) == 1)
+      x <- x[, 1]
   }
   type <- str_extract(x, "[a-zA-Z]+$")
   type <- ifelse(type == "1", "one", type) #I think there is only one instance of this
   atypes <- unique(type[!is.na(type)])
   df <- vector(mode = "list", length(atypes))
-
+  
   for(i in seq_along(atypes)) {
     check <- grepl(paste0(" ", atypes[i], "$"), x)
     data <- ifelse(check, gsub(" [a-zA-Z]+$", "", x[check]), NA)
     assign(atypes[i], data)
     df[[i]] <- get(atypes[i])
   }
-  df <- do.call("cbind", df)
-  df <- data.frame(x, df)
-  df$x <- ifelse(apply(df, 1, function(x) all(is.na(x[-1]))), x, NA)
+
+  if (length(unique(type)) == 1)
+    df <- data.frame(df[[1]])
+  else {
+    df <- do.call("cbind", df)
+    df <- data.frame(x, df)
+    df$x <- ifelse(apply(df, 1, function(x) all(is.na(x[-1]))), x, NA)
+  }
+  
+  head <- tolower(str_trim(unlist(str_split(head, ","))))
+  head.types <- gsub("\\(|\\)", "", str_extract(head, "\\([a-zA-Z]\\)$"))
+  head <- head[sapply(head.types, function(x) x %in% type | is.na(x))]
   names(df) <- gsub("\\(.*\\)", "", tolower(str_trim(unlist(str_split(head, ",")))))
   return(df)
 }
 
 expandColumns <- function(df) {
   date.df <- findDates(df, TRUE)
-  other.df <- df[, !(colnames(df) %in% colnames(date.df))]
+  other.df <- data.frame(df[, !(colnames(df) %in% colnames(date.df))])
+  colnames(other.df) <- colnames(df)[!(colnames(df) %in% colnames(date.df))]
   if (ncol(date.df) > 1) {
     cols <- vector("list", ncol(date.df))
-    cols <- lapply(cols, createColumns(date.df, colnames(date.df)))
-    df <- data.frame(nexpand.df, do.call("cbind", cols))
+    for(i in 1:ncol(date.df))
+      cols[[i]] <- createColumns(date.df[, i], colnames(date.df)[i])
+    df <- data.frame(other.df, do.call("cbind", cols))
   } else if (ncol(date.df) == 1)
     df <- data.frame(other.df, createColumns(date.df, colnames(date.df)))
   colnames(df) <- gsub("\\.", "_", tolower(colnames(df)))
