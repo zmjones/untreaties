@@ -28,27 +28,43 @@ createColumns <- function(x, head) {
     df <- do.call("cbind", df)
     df <- data.frame(x, df)
     df$x <- ifelse(apply(df, 1, function(x) all(is.na(x[-1]))), x, NA)
+    head <- str_trim(unlist(str_split(head, ",")))
+    head.types <- gsub("\\(|\\)", "", str_extract(head, "\\([a-zA-Z]\\)$"))
+    head <- head[sapply(head.types, function(x) x %in% type | is.na(x))]
+    df <- df[, !(apply(df, 2, function(x) all(is.na(x))))]
   }
   
-  head <- str_trim(unlist(str_split(head, ",")))
-  head.types <- gsub("\\(|\\)", "", str_extract(head, "\\([a-zA-Z]\\)$"))
-  head <- head[sapply(head.types, function(x) x %in% type | is.na(x))]
-  df <- df[, !(apply(df, 2, function(x) all(is.na(x))))]
   names(df) <- gsub("\\(.*\\)", "", tolower(head))
   return(df)
 }
 
 expandColumns <- function(df) {
-  date.df <- findDates(df, TRUE)
+  date.df <- findDates(df)
   other.df <- data.frame(df[, !(colnames(df) %in% colnames(date.df))])
+  has.type <- apply(date.df, 2, function(x) any(grepl("[a-zA-Z]+$", x)))
+  date.nt.df <- data.frame(date.df[, !(has.type)])
+  other.df <- data.frame(other.df, date.nt.df)
+  temp <- colnames(date.df)[has.type]
+  date.df <- data.frame(date.df[, has.type])
+  if (ncol(date.df) != 0)
+    colnames(date.df) <- temp
   colnames(other.df) <- colnames(df)[!(colnames(df) %in% colnames(date.df))]
-  if (ncol(date.df) > 1) {
-    cols <- vector("list", ncol(date.df))
-    for(i in 1:ncol(date.df))
-      cols[[i]] <- createColumns(date.df[, i], colnames(date.df)[i])
-    df <- data.frame(other.df, do.call("cbind", cols))
-  } else if (ncol(date.df) == 1)
-    df <- data.frame(other.df, createColumns(date.df, colnames(date.df)))
+
+  if (any(has.type) == FALSE) {
+    colnames(other.df) <- gsub(".*\\(([^\\)]+)\\), ", "", colnames(other.df))
+    df <- other.df
+    date.df <- NULL
+  }
+  else if (!(is.null(date.df))) {
+    if (ncol(date.df) > 1) {
+      cols <- vector("list", ncol(date.df))
+      for(i in 1:ncol(date.df))
+        cols[[i]] <- createColumns(date.df[, i], colnames(date.df)[i])
+      df <- data.frame(other.df, do.call("cbind", cols))
+    }
+    else
+      df <- data.frame(other.df, createColumns(date.df, colnames(date.df)))
+  }
   colnames(df) <- gsub("\\.", "_", tolower(colnames(df)))
   return(df)
 }
@@ -82,11 +98,8 @@ expandPanel <- function(df, syear, eyear) {
   return(df)
 }
 
-findDates <- function(df, type = FALSE) {
-  if (type)
-    re.date <- "[0-9]?{2} [a-zA-Z]?{4} [0-9]{4} [a-zA-Z]+$"
-  else
-    re.date <- "[0-9]?{2} [a-zA-Z]?{4} [0-9]{4}"
+findDates <- function(df) {
+  re.date <- "[0-9]?{2} [a-zA-Z]?{4} [0-9]{4}( [a-zA-Z]+)?$"
   test <- apply(df, 2, function(x) any(grepl(re.date, x)))
   date.df <- data.frame(df[, test])
   colnames(date.df) <- colnames(df)[test]
