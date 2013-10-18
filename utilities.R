@@ -30,10 +30,11 @@ createColumns <- function(x, head) {
     df$x <- ifelse(apply(df, 1, function(x) all(is.na(x[-1]))), x, NA)
   }
   
-  head <- tolower(str_trim(unlist(str_split(head, ","))))
+  head <- str_trim(unlist(str_split(head, ",")))
   head.types <- gsub("\\(|\\)", "", str_extract(head, "\\([a-zA-Z]\\)$"))
   head <- head[sapply(head.types, function(x) x %in% type | is.na(x))]
-  names(df) <- gsub("\\(.*\\)", "", tolower(str_trim(unlist(str_split(head, ",")))))
+  df <- df[, !(apply(df, 2, function(x) all(is.na(x))))]
+  names(df) <- gsub("\\(.*\\)", "", tolower(head))
   return(df)
 }
 
