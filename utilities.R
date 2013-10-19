@@ -29,13 +29,20 @@ createColumns <- function(x, head) {
     df <- data.frame(x, df)
     df$x <- ifelse(apply(df, 1, function(x) all(is.na(x[-1]))), x, NA)
     head <- str_trim(unlist(str_split(head, ",")))
-    head.types <- gsub("\\(|\\)", "", str_extract(head, "\\([a-zA-Z]\\)$"))
+    case <- sapply(head, function(x) grepl("^[a-z]", x))
+    if (any(case) == TRUE) {
+      head[(which(case) - 1)] <- paste0(head[(which(case) - 1):which(case)], collapse = " ")
+      head <- head[-c(which(case))]
+    }
+    dupes <- !(grepl("\\)$", head))
+    if (sum(dupes) > 1)
+      head <- c(paste0(head[which(dupes)], collapse = "/"), head[-c(which(dupes))])
+    head.types <- gsub("\\(|\\)", "", str_extract(head, "\\([a-zA-Z]?{2}\\)$"))
     head <- head[sapply(head.types, function(x) x %in% type | is.na(x))]
-    df <- df[, !(apply(df, 2, function(x) all(is.na(x))))]
   }
   
   names(df) <- gsub("\\(.*\\)", "", tolower(head))
-  return(df)
+  return(df[, !(apply(df, 2, function(x) all(is.na(x))))])
 }
 
 expandColumns <- function(df) {
