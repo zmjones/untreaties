@@ -7,5 +7,3 @@ treaties <- lapply(list.files("./treaties/"), function(x) {
   if (x != "8-5.csv") #haven't figured out how to parse this one yet
     loadData(split[1], split[2], TRUE)
 })
-
-df <- loadData("8", "5")

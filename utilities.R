@@ -14,35 +14,44 @@ createColumns <- function(x, head) {
   type <- ifelse(type == "1", "one", type) #I think there is only one instance of this
   atypes <- unique(type[!is.na(type)])
   df <- vector(mode = "list", length(atypes))
-  
+  names(df) <- atypes
   for(i in seq_along(atypes)) {
+    check.index <- 1
     check <- grepl(paste0(" ", atypes[i], "$"), x)
-    data <- ifelse(check, gsub(" [a-zA-Z]+$", "", x[check]), NA)
-    assign(atypes[i], data)
-    df[[i]] <- get(atypes[i])
-  }
-
+    for (j in seq_along(check)) {
+      if (check[j] == TRUE) {
+        df[[atypes[i]]][j] <- gsub(" [a-zA-Z]+$", "", x[check][check.index])
+        check.index <- check.index + 1
+      }
+      else
+        df[[atypes[i]]][j] <- NA
+    }}
   if (length(unique(type)) == 1)
     df <- data.frame(df[[1]])
   else {
     df <- do.call("cbind", df)
     df <- data.frame(x, df)
     df$x <- ifelse(apply(df, 1, function(x) all(is.na(x[-1]))), x, NA)
+    head <- gsub(" ", "_", head)
     head <- str_trim(unlist(str_split(head, ",")))
-    case <- sapply(head, function(x) grepl("^[a-z]", x))
-    if (any(case) == TRUE) {
-      head[(which(case) - 1)] <- paste0(head[(which(case) - 1):which(case)], collapse = " ")
-      head <- head[-c(which(case))]
-    }
+    head <- gsub("^_", "", head)
+    ## case <- sapply(head, function(x) grepl("\\([a-zA-Z]+\\)$", x))
+    ## if (any(case) == TRUE) {
+    ##   head[(which(case) - 1)] <- paste0(head[(which(case) - 1):which(case)], collapse = " ")
+    ##   head <- head[-c(which(case))]
+    ## }
     dupes <- !(grepl("\\)$", head))
     if (sum(dupes) > 1)
       head <- c(paste0(head[which(dupes)], collapse = "/"), head[-c(which(dupes))])
     head.types <- gsub("\\(|\\)", "", str_extract(head, "\\([a-zA-Z]?{2}\\)$"))
-    head <- head[sapply(head.types, function(x) x %in% type | is.na(x))]
+    head <- head[sapply(head.types, function(x) x %in% colnames(df) | is.na(x))]
   }
-  
-  names(df) <- gsub("\\(.*\\)", "", tolower(head))
-  return(df[, !(apply(df, 2, function(x) all(is.na(x))))])
+  is.ref <- grepl("\\([a-zA-Z]?{2}\\)$", head)
+  if (any(!is.ref))
+    head <- head[c(which(is.ref), which(!is.ref))]
+  colnames(df) <- gsub("\\(.*\\)", "", tolower(head))
+  df <- as.data.frame(df[, !(apply(df, 2, function(x) all(is.na(x))))])
+  return(df)
 }
 
 expandColumns <- function(df) {
@@ -56,7 +65,6 @@ expandColumns <- function(df) {
   if (ncol(date.df) != 0)
     colnames(date.df) <- temp
   colnames(other.df) <- colnames(df)[!(colnames(df) %in% colnames(date.df))]
-
   if (any(has.type) == FALSE) {
     colnames(other.df) <- gsub(".*\\(([^\\)]+)\\), ", "", colnames(other.df))
     df <- other.df
@@ -70,7 +78,7 @@ expandColumns <- function(df) {
       df <- data.frame(other.df, do.call("cbind", cols))
     }
     else
-      df <- data.frame(other.df, createColumns(date.df, colnames(date.df)))
+      df <- as.data.frame(cbind(other.df, createColumns(date.df, colnames(date.df))))
   }
   colnames(df) <- gsub("\\.", "_", tolower(colnames(df)))
   return(df)
