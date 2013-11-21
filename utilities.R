@@ -48,7 +48,7 @@ createColumns <- function(x, head) {
   }
   is.ref <- grepl("\\([a-zA-Z]?{2}\\)$", head)
   if (any(!is.ref))
-    head <- head[c(which(is.ref), which(!is.ref))]
+    head <- head[c(which(!is.ref), which(is.ref))]
   colnames(df) <- gsub("\\(.*\\)", "", tolower(head))
   df <- as.data.frame(df[, !(apply(df, 2, function(x) all(is.na(x))))])
   return(df)
