@@ -35,21 +35,21 @@ createColumns <- function(x, head) {
     head <- gsub(" ", "_", head)
     head <- str_trim(unlist(str_split(head, ",")))
     head <- gsub("^_", "", head)
-    ## case <- sapply(head, function(x) grepl("\\([a-zA-Z]+\\)$", x))
-    ## if (any(case) == TRUE) {
-    ##   head[(which(case) - 1)] <- paste0(head[(which(case) - 1):which(case)], collapse = " ")
-    ##   head <- head[-c(which(case))]
-    ## }
-    dupes <- !(grepl("\\)$", head))
+    dupes <- !(grepl("\\)$", head)) #looking for multiple reference categories
     if (sum(dupes) > 1)
       head <- c(paste0(head[which(dupes)], collapse = "/"), head[-c(which(dupes))])
     head.types <- gsub("\\(|\\)", "", str_extract(head, "\\([a-zA-Z]?{2}\\)$"))
     head <- head[sapply(head.types, function(x) x %in% colnames(df) | is.na(x))]
   }
   is.ref <- grepl("\\([a-zA-Z]?{2}\\)$", head)
-  if (any(!is.ref))
-    head <- head[c(which(!is.ref), which(is.ref))]
-  colnames(df) <- gsub("\\(.*\\)", "", tolower(head))
+  if (any(!is.ref)) {
+    ref <- head[!is.ref]
+    head <- head[c(match(colnames(df), head.types))]
+    colnames(df) <- gsub("\\(.*\\)", "", tolower(head))
+    colnames(df)[is.na(colnames(df))] <- ref
+  }
+  else
+    colnames(df) <- gsub("\\(.*\\)", "", tolower(head))    
   df <- as.data.frame(df[, !(apply(df, 2, function(x) all(is.na(x))))])
   return(df)
 }
