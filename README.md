@@ -33,83 +33,83 @@ The [R](http://cran.us.r-project.org/) script `utilities.R` contains a number of
 ### Examples
 
 ```r
-> source("utilities.R")
-> loadData(chap = "10", treaty = "2")
-   Participant   Signature Ratification, Accession(a)
-1      Algeria  4 Aug 1963                10 Sep 1964
-2       Angola        <NA>               9 Jan 1981 a
-3        Benin  8 Oct 1963                25 Aug 1964
-4     Botswana        <NA>              31 Mar 1972 a
-5 Burkina Faso 21 Nov 1963                22 Sep 1964
-6      Burundi  4 Aug 1963               2 Jan 1968 a
+source("utilities.R")
+loadData(chap = "10", treaty = "2")
+#    Participant   Signature Ratification, Accession(a)
+# 1      Algeria  4 Aug 1963                10 Sep 1964
+# 2       Angola        <NA>               9 Jan 1981 a
+# 3        Benin  8 Oct 1963                25 Aug 1964
+# 4     Botswana        <NA>              31 Mar 1972 a
+# 5 Burkina Faso 21 Nov 1963                22 Sep 1964
+# 6      Burundi  4 Aug 1963               2 Jan 1968 a
 
-> loadData(chap = "10", treaty = "2", expand = TRUE)
-   participant   signature ratification   accession
-1      Algeria  4 Aug 1963  10 Sep 1964        <NA>
-2       Angola        <NA>         <NA> 31 Mar 1972
-3        Benin  8 Oct 1963  25 Aug 1964        <NA>
-4     Botswana        <NA>         <NA> 15 Apr 1976
-5 Burkina Faso 21 Nov 1963  22 Sep 1964        <NA>
-6      Burundi  4 Aug 1963         <NA> 26 Aug 1968
+loadData(chap = "10", treaty = "2", expand = TRUE)
+#    participant   signature ratification   accession
+# 1      Algeria  4 Aug 1963  10 Sep 1964        <NA>
+# 2       Angola        <NA>         <NA> 31 Mar 1972
+# 3        Benin  8 Oct 1963  25 Aug 1964        <NA>
+# 4     Botswana        <NA>         <NA> 15 Apr 1976
+# 5 Burkina Faso 21 Nov 1963  22 Sep 1964        <NA>
+# 6      Burundi  4 Aug 1963         <NA> 26 Aug 1968
 
-> loadData(chap = "10", treaty = "2", expand = TRUE, panel = TRUE, syear = "1945", eyear = "2013")
-   participant year signature ratification accession
-1      Algeria 1945         0            0         0
-2      Algeria 1946         0            0         0
-3      Algeria 1947         0            0         0
-4      Algeria 1948         0            0         0
-5      Algeria 1949         0            0         0
-6      Algeria 1950         0            0         0
-7      Algeria 1951         0            0         0
-8      Algeria 1952         0            0         0
-9      Algeria 1953         0            0         0
-10     Algeria 1954         0            0         0
-11     Algeria 1955         0            0         0
-12     Algeria 1956         0            0         0
-13     Algeria 1957         0            0         0
-14     Algeria 1958         0            0         0
-15     Algeria 1959         0            0         0
-16     Algeria 1960         0            0         0
-17     Algeria 1961         0            0         0
-18     Algeria 1962         0            0         0
-19     Algeria 1963         1            0         0
-20     Algeria 1964         1            1         0
-21     Algeria 1965         1            1         0
-22     Algeria 1966         1            1         0
-23     Algeria 1967         1            1         0
-24     Algeria 1968         1            1         0
-25     Algeria 1969         1            1         0
+loadData(chap = "10", treaty = "2", expand = TRUE, panel = TRUE, syear = "1945", eyear = "2013")
+#    participant year signature ratification accession
+# 1      Algeria 1945         0            0         0
+# 2      Algeria 1946         0            0         0
+# 3      Algeria 1947         0            0         0
+# 4      Algeria 1948         0            0         0
+# 5      Algeria 1949         0            0         0
+# 6      Algeria 1950         0            0         0
+# 7      Algeria 1951         0            0         0
+# 8      Algeria 1952         0            0         0
+# 9      Algeria 1953         0            0         0
+# 10     Algeria 1954         0            0         0
+# 11     Algeria 1955         0            0         0
+# 12     Algeria 1956         0            0         0
+# 13     Algeria 1957         0            0         0
+# 14     Algeria 1958         0            0         0
+# 15     Algeria 1959         0            0         0
+# 16     Algeria 1960         0            0         0
+# 17     Algeria 1961         0            0         0
+# 18     Algeria 1962         0            0         0
+# 19     Algeria 1963         1            0         0
+# 20     Algeria 1964         1            1         0
+# 21     Algeria 1965         1            1         0
+# 22     Algeria 1966         1            1         0
+# 23     Algeria 1967         1            1         0
+# 24     Algeria 1968         1            1         0
+# 25     Algeria 1969         1            1         0
 
-> searchTreaties(treaty.name = "charter of the united nations", dist.val = .1)
-multiple matches found
-[1] "charter of the united nations (deposited in the archives of the government of..."
-[2] "declarations of acceptance of the obligations contained in the charter of the..."
-[3] "amendments to articles 23,27 and 61 of the charter of the united nations, ado..."
-[4] "amendment to article 109 of the charter of the united nations, adopted by the..."
-[5] "amendment to article 61 of the charter of the united nations, adopted by the ..."
-Which treaty would you like to load? 1
-					   Participant Ratification
-1                        Argentina  24 Sep 1945
-2                        Australia   1 Nov 1945
-3                          Belarus  24 Oct 1945
-4                          Belgium  27 Dec 1945
-5 Bolivia (Plurinational State of)  14 Nov 1945
-6                           Brazil  21 Sep 1945
+searchTreaties(treaty.name = "charter of the united nations", dist.val = .1)
+# multiple matches found
+# [1] "charter of the united nations (deposited in the archives of the government of..."
+# [2] "declarations of acceptance of the obligations contained in the charter of the..."
+# [3] "amendments to articles 23,27 and 61 of the charter of the united nations, ado..."
+# [4] "amendment to article 109 of the charter of the united nations, adopted by the..."
+# [5] "amendment to article 61 of the charter of the united nations, adopted by the ..."
+# Which treaty would you like to load? 1
+# 					   Participant Ratification
+# 1                        Argentina  24 Sep 1945
+# 2                        Australia   1 Nov 1945
+# 3                          Belarus  24 Oct 1945
+# 4                          Belgium  27 Dec 1945
+# 5 Bolivia (Plurinational State of)  14 Nov 1945
+# 6                           Brazil  21 Sep 1945
 
-> searchTreaties(treaty.name = "charter of the united nations",
-				 expand = TRUE, panel = TRUE, syear = "1945", eyear = "2011")
-multiple matches found
-[1] "charter of the united nations (deposited in the archives of the government of..."
-[2] "declarations of acceptance of the obligations contained in the charter of the..."
-[3] "amendments to articles 23,27 and 61 of the charter of the united nations, ado..."
-[4] "amendment to article 109 of the charter of the united nations, adopted by the..."
-[5] "amendment to article 61 of the charter of the united nations, adopted by the ..."
-Which treaty would you like to load? 1
-  participant year ratification
-1   Argentina 1945            1
-2   Argentina 1946            1
-3   Argentina 1947            1
-4   Argentina 1948            1
-5   Argentina 1949            1
-6   Argentina 1950            1
+searchTreaties(treaty.name = "charter of the united nations",
+			   expand = TRUE, panel = TRUE, syear = "1945", eyear = "2011")
+# multiple matches found
+# [1] "charter of the united nations (deposited in the archives of the government of..."
+# [2] "declarations of acceptance of the obligations contained in the charter of the..."
+# [3] "amendments to articles 23,27 and 61 of the charter of the united nations, ado..."
+# [4] "amendment to article 109 of the charter of the united nations, adopted by the..."
+# [5] "amendment to article 61 of the charter of the united nations, adopted by the ..."
+# Which treaty would you like to load? 1
+#   participant year ratification
+# 1   Argentina 1945            1
+# 2   Argentina 1946            1
+# 3   Argentina 1947            1
+# 4   Argentina 1948            1
+# 5   Argentina 1949            1
+# 6   Argentina 1950            1
 ```
