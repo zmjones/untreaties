@@ -97,3 +97,6 @@ In ratifying the Protocol to Prevent, Suppress and Punish Trafficking in Persons
 #Viet Nam
 “The Socialist Republic of Viet Nam does not consider itself bound by paragraph 2 of Article 15 of this Protocol.”
 
+#Zimbabwe
+“The Government of the Republic of Zimbabwe hereby declares that it enters a reservation to Article 15 (2) which provides that where Parties fail to resolve their dispute through arbitration any Party may refer the dispute to the International Court of Justice.”
+

@@ -4,6 +4,7 @@ This repository contains a set of scripts that allow the retrieval of the [Unite
 
 You can clone (see below) or [download](https://github.com/zmjones/untreaties/archive/master.zip) the data contained in this repository or scrape it using `un_data.py`, which requires `pandas`, `requests`, and `beautifulsoup4`. These dependencies are listed in `requirements.txt`. The script will generate `index.csv` along with a folder containing the treaty data itself (`treaties/`) and a folder containing declarations made by participants (contained in `declarations/`).
 
+	:::shell
 	git clone git@github.com:zmjones/untreaties.git
 	cd untreaties
 	pip install -r requirements.txt
@@ -30,6 +31,7 @@ The [R](http://cran.us.r-project.org/) script `utilities.R` contains a number of
 
 ### Examples
 
+	:::r
 	> source("utilities.R")
     > loadData(chap = "10", treaty = "2")
        Participant   Signature Ratification, Accession(a)

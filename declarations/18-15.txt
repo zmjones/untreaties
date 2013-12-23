@@ -13,6 +13,9 @@ The Kingdom of Bahrain does not consider itself bound by the provisions of artic
 #Belgium
 The Kingdom of Belgium declares that only nuclear materials and facilities containing nuclear materials are covered by article 18, paragraph 1(b) and (c).
 
+#Canada
+“The Government of Canada considers the application of Article 2 (4) (c) of the International Convention for the Suppression of Acts of Nuclear Terrorism to be limited to acts committed in furthering a conspiracy of two or more persons to commit a specific criminal offence contemplated in paragraph 1, 2, or 3 of Article 2.”
+
 #China
 The People's Republic of China does not consider itself bound by paragraph 1 of article 23 of the Convention.
 
