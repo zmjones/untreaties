@@ -158,7 +158,7 @@ def get_treaties(base_url, treaty_list):
         if not os.path.exists("treaties"):
             os.makedirs("treaties")
         df = pd.DataFrame(df)
-        if not df.empty:
+        if not df.empty and len(df.index) > 1:
             df.ix[:, 0] = df.ix[:, 0].map(lambda x: re.sub("\d|,", "", x))
             df.to_csv("treaties/" + treaty_id + ".csv", header=False,
                       index=False, encoding="utf-8")
