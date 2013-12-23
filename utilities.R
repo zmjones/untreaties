@@ -39,7 +39,9 @@ createColumns <- function(x, head) {
     if (sum(dupes) > 1)
       head <- c(paste0(head[which(dupes)], collapse = "/"), head[-c(which(dupes))])
     head.types <- gsub("\\(|\\)", "", str_extract(head, "\\([a-zA-Z]?{2}\\)$"))
-    head <- head[sapply(head.types, function(x) x %in% colnames(df) | is.na(x))]
+    head.types <- sapply(head.types, function(x) x %in% colnames(df) | is.na(x))
+    head <- head[head.types]
+    head.types <- names(head.types[head.types == TRUE])
   }
   is.ref <- grepl("\\([a-zA-Z]?{2}\\)$", head)
   if (any(!is.ref)) {

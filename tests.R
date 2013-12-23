@@ -21,3 +21,9 @@ head(loadData("27", "3", TRUE))
 
 head(loadData("16", "3"))
 head(loadData("16", "3", TRUE))
+
+head(loadData("26", "2"))
+head(loadData("26", "2", TRUE))
+
+head(loadData("6", "16"))
+head(loadData("6", "16", TRUE))
