@@ -122,19 +122,3 @@ findDates <- function(df) {
   colnames(date.df) <- colnames(df)[test]
   return(date.df)
 }
-
-searchTreaties <- function(treaty.name, dist.val = .1, trim = TRUE, ...) {
-  index.df <- read.csv("index.csv")
-  tname <- agrep(treaty.name, index.df$treaty_name, max.distance = dist.val)
-  if (length(tname) == 0)
-    stop("no matches found")
-  else if (length(tname) > 1) {
-    message("multiple matches found")
-    print(paste0(strtrim(index.df$treaty_name[tname], 77), "..."))
-    cat("Which treaty would you like to load? ")
-    con <- file("stdin")
-    tname <- as.integer(readLines(con, 1))
-    close(con)
-  }
-  return(loadData(index.df$chapter_no[tname], index.df$treaty_no[tname], ...))
-}
