@@ -15,7 +15,7 @@ python un_data.py
 
 The [R](http://cran.us.r-project.org/) script `utilities.R` contains a number of functions that make working with the raw data easier. You can load these functions by simply sourcing the file. It requires `stringr`, `lubridate`, and `plyr`. The `loadData` function allows the user to load a specific treaty given its chapter and treaty numbers, which are passed as strings. You can optionally expand the column names (if needed). If you choose to expand the column names you can also transform the data into a country-year format, given a start year and an end year (both passed as strings).
 
-```R
+```r
 source("utilities.R")
 loadData(chap = "10", treaty = "2")
 loadData(chap = "10", treaty = "2", expand = TRUE)
