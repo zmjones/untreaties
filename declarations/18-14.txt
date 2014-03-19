@@ -79,6 +79,9 @@ Reservation:"With regard to any dispute between two or more States Parties conce
 #Nepal
 “The Government of Nepal does not consider itself bound by the provision of Article 66 of the United Nations Convention against Corruption under which any dispute between two or more States Parties concerning the interpretation or application of the Convention, at the request of one of those States to the dispute shall be submitted to arbitration, or any of those States Parties may refer the dispute in question to the International Court of Justice.”
 
+#Oman
+With a reservation to article 66 (2) made in accordance with article 66 (3).
+
 #Pakistan
 “The Government of the Islamic Republic of Pakistan declares that, pursuant to Article 66, Paragraph 3 of the Convention, it does not consider itself bound by the provisions of paragraph 2 of this Article."
 

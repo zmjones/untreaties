@@ -133,6 +133,9 @@ The Arab Republic of Egypt hereby declares that in accordance with its current l
 #Eritrea
 "The State of Eritrea declares that the minimum age for the recruitment of persons into the armed forces is eighteen years."
 
+#Estonia
+“According to Article 3 paragraph 2 the Republic of Estonia declares that the minimum age for voluntary recruitment into national armed forces is 18 years.”
+
 #Finland
 "The Government of Finland declares in accordance with Article 3, paragraph 2, of the Optional Protocol that the minimum age for any recruitment of persons into its national armed forces is 18 years. The minimum age applies equally to the military service of men and to the voluntary service of women."
 
@@ -363,6 +366,9 @@ For the purposes of the provisions of article 3 of the Protocol, Spain declares 
 
 #Sri Lanka
 “The Democratic Socialist Republic of Sri Lanka ... declares in accordance with article 3 (2) of the Protocol that under the laws of Sri Lanka:(a)there is no compulsory, forced or coerced recruitment into the national armed forces;(b)recruitment is solely on a voluntary basis;(c)the minimum age for voluntary recruitment into national armed forces is 18 years.”
+
+#St. Lucia
+“In accordance with Article 3, paragraph 2 of the Optional Protocol to the Convention on the Rights of the Child on the Involvement of Children in Armed Conflict, 2000, the Government of Saint Lucia declares that the minimum age required for voluntary recruitment into the Police Force is eighteen (18) years, in accordance with section 3 (a) of the Police (amendment) Act, 2013.”
 
 #St. Vincent and the Grenadines
 “In accordance with Article 3, paragraph 2, of the Optional Protocol to the Convention on the Rights of the Child on Involvement of Children in Armed Conflicts, 2000, the Government of Saint Vincent and the Grenadines declares that the minimum age required for voluntary recruitment into the Police Force is nineteen (19) years in accordance with the Police Act, Chapter 280 section 6(1) of the Law of Saint Vincent and the Grenadines.”
