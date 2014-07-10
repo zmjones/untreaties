@@ -10,6 +10,9 @@ Reservation:The State of Chile formulates the reservation authorised under artic
 #Cyprus
 
 
+#El Salvador
+The Government of the Republic of El Salvador accedes to the Second Optional Protocol to the International Covenant on Civil and Political Rights aiming at the abolition of the death penalty with an express reservation permitted to States under article 2 of the Protocol, which consists on the application of the death penalty in accordance with article 27 of the Constitution of the Republic of El Salvador, which reads as follows: ‘The death penalty may be imposed only in the cases provided by the military laws during an international state of war’.
+
 #Greece
 Subject to article 2 for the application of the death penalty in time of war pursuant to a conviction for a most serious crime of a military nature committed during wartime.
 

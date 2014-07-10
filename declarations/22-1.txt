@@ -40,6 +40,9 @@ In accordance with article I, paragraph 3, the Government of the Kingdom of Belg
 #Bulgaria
 "Bulgaria will apply the Convention to recognition and en- forcement of awards made in the territory of another contracting State. With regard to awards made in the territory of non-con- tracting States it will apply the Convention only to the extent to which these States grant reciprocal treatment."
 
+#Burundi
+The Republic of Burundi will apply the Convention only to differences arising out of legal relationships, whether contractual or not, which are considered as commercial under the national law of Burundi.
+
 #Canada
 "The Government of Canada declares that it will apply the Convention only to differences arising out of legal relationships, whether contractual or not, which are considered as commercial under the laws of Canada, except in the case of the Province of Quebec where the law does not provide for such limitation."
 

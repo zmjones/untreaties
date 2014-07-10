@@ -13,3 +13,6 @@ Until further notice, the Convention shall not apply to the Faroe Islands and Gr
 #Syrian Arab Republic
 The acceptance by the Syrian Arab Republic of this Convention and its ratification by the Government shall not under any circumstances be taken to imply recognition of Israel and shall not lead to its entering into relations therewith that are governed by its provisions.
 
+#Viet Nam
+“The Socialist Republic of Viet Nam reserves the right to choose the appropriate means of dispute settlement notwithstanding the decision of the other party to the concerned dispute.”
+

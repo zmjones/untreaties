@@ -2,7 +2,7 @@
 “According to article 12, first paragraph of the Optional Protocol, the Republic of Albania hereby declares it accepts the competence of the committee to receive and examine the communications in which a State party claims that another State party does not meet its obligations under the instruments referred to in this paragraph to which the State is a party.”
 
 #Belgium
-Upon SignatureDeclaration:“This signature engages also the French Community, the Flemish Community, the German-speaking Community, the Walloon Region, the Flemish Region and the Brussels-Capital Region.”
+Declaration:The Kingdom of Belgium recognizes the competence of the Committee on the Rights of the Child to receive, pursuant to article 12 of the Optional Protocol, communications from a State party which claims that another State is not fulfilling its obligations.Declaration:“This signature engages also the French Community, the Flemish Community, the German-speaking Community, the Walloon Region, the Flemish Region and the Brussels-Capital Region.”
 
 #Germany
 “The Federal Republic of Germany recognizes the competence of the Committee to receive and consider communications pursuant to Article 12(1) of the Optional Protocol.”

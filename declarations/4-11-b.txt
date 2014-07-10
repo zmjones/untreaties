@@ -136,6 +136,9 @@ The Arab Republic of Egypt hereby declares that in accordance with its current l
 #Estonia
 “According to Article 3 paragraph 2 the Republic of Estonia declares that the minimum age for voluntary recruitment into national armed forces is 18 years.”
 
+#Ethiopia
+… in accordance with Article 3(2) of the said Optional Protocol, the Government of the Federal Democratic Republic of Ethiopia declares that the minimum age at which it will permit voluntary recruitment into its national armed forces is 18 years old …
+
 #Finland
 "The Government of Finland declares in accordance with Article 3, paragraph 2, of the Optional Protocol that the minimum age for any recruitment of persons into its national armed forces is 18 years. The minimum age applies equally to the military service of men and to the voluntary service of women."
 
@@ -372,6 +375,9 @@ For the purposes of the provisions of article 3 of the Protocol, Spain declares 
 
 #St. Vincent and the Grenadines
 “In accordance with Article 3, paragraph 2, of the Optional Protocol to the Convention on the Rights of the Child on Involvement of Children in Armed Conflicts, 2000, the Government of Saint Vincent and the Grenadines declares that the minimum age required for voluntary recruitment into the Police Force is nineteen (19) years in accordance with the Police Act, Chapter 280 section 6(1) of the Law of Saint Vincent and the Grenadines.”
+
+#State of Palestine
+“… in accordance with article 3(2) of the Optional Protocol, … the minimum age for recruitment of persons into Palestine’s national armed forces is 18 years.”
 
 #Sudan
 ... pursuant to article 3 (2) of the Optional Protocol, the Government of the Republic of the Sudan declares that the Republic of the Sudan is committed to maintain the minimum age for voluntary service in the Sudan armed forces at 18, and to maintain the prohibition of forced or voluntary conscription of any person under the age of 18 years.
