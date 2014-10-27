@@ -75,16 +75,72 @@ def clean(s, head=False):
         s = re.sub("\d|,", "", s)
     return s.strip()
 
+	
+def int_to_roman(input):
+   """
+   Convert an integer to Roman numerals.
 
-def get_xml(treaty_url):
+   Examples:
+   >>> int_to_roman(0)
+   Traceback (most recent call last):
+   ValueError: Argument must be between 1 and 3999
+
+   >>> int_to_roman(-1)
+   Traceback (most recent call last):
+   ValueError: Argument must be between 1 and 3999
+
+   >>> int_to_roman(1.5)
+   Traceback (most recent call last):
+   TypeError: expected integer, got <type 'float'>
+
+   >>> for i in range(1, 21): print int_to_roman(i)
+   ...
+   I
+   II
+   III
+   IV
+   V
+   VI
+   VII
+   VIII
+   IX
+   X
+   XI
+   XII
+   XIII
+   XIV
+   XV
+   XVI
+   XVII
+   XVIII
+   XIX
+   XX
+   >>> print int_to_roman(2000)
+   MM
+   >>> print int_to_roman(1999)
+   MCMXCIX
+   """
+   if type(input) != type(1):
+      raise TypeError, "expected integer, got %s" % type(input)
+   if not 0 < input < 4000:
+      raise ValueError, "Argument must be between 1 and 3999"
+   ints = (1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1)
+   nums = ("M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I")
+   result = ""
+   for i in range(len(ints)):
+      count = int(input / ints[i])
+      result += nums[i] * count
+      input -= ints[i] * count
+   return result
+
+
+def get_xml(chap, treaty):
     """
     finds the XML link on a treaty page
     """
-    soup = read_page(treaty_url)
-    xml_link = soup.find(lambda tag: tag.name == "a" and
-                         tag.has_attr("id") and
-                         tag["id"] == "ctl00_ContentPlaceHolder1_lnkXml")
-    return read_page("http://treaties.un.org" + str(xml_link["href"]))
+    base_xml = "https://treaties.un.org/doc/Publication/MTDSG/Volume%20I/Chapter%20"
+    url = base_xml + int_to_roman(chap) + "/" + int_to_roman(chap) + "-" + str(treaty) + ".en.xml"
+    return read_page(url)
 
 
 def get_normal_table(soup):
@@ -144,7 +200,7 @@ def get_treaties(base_url, treaty_list):
     fetches all treaty data and writes it to file
     """
     for treaty in range(len(treaty_list)):
-        soup = get_xml(str(treaty_list[treaty][3]))
+        soup = get_xml(int(treaty_list[treaty][0]), re.sub("\.", "-", treaty_list[treaty][1]))
         df = get_normal_table(soup)
         if df is None:
             df = get_special_table(soup)

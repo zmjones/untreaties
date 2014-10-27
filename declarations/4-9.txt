@@ -37,6 +37,9 @@ Ecuador declares that, in accordance with the provisions of article 42 of its Po
 #Equatorial Guinea
 First - The Government of Equatorial Guinea hereby declares that, pursuant to article 28 of this Convention, it does not recognize the competence of the Committee provided for in article 20 of the Convention.Second - With reference to the provisions of article 30, the Government of Equatorial Guinea does not consider itself bound by paragraph 1 thereof.
 
+#Eritrea
+“In accordance with Article 28 of the Convention, Eritrea declares that it does not recognize the competence of the Committee provided for it in article 20.The State of Eritrea does not consider itself bound by paragraph 1 of Article 30 which stipulates that all disputes concerning the interpretation or application of the Convention shall be referred to the International Court of Justice by one of the parties.”
+
 #France
 The Government of France declares in accordance with article 30, paragraph 2, of the Convention, that it shall not be bound by the provisions of paragraph 1 of article 30.
 
